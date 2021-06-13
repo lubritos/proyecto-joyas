@@ -1,0 +1,657 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+#container{
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+#grilla{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-areas:
+        "h1 h1 h1"
+        "slides slides slides"
+        "destacados destacados destacados"
+        "destacados destacados destacados"
+        "banner2 banner2 banner2"
+        "contacto-index contacto-index contacto-index";
+    grid-template-rows: 3% 23% 18% 16% 18% 18%;
+    width: 100%;
+    height: 100%;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    justify-content: center;
+}
+#banner2 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 1rem 0;
+    max-width: 960px;
+    width: 100%;
+}
+.item-1:hover,
+.item-2:hover,
+.item-3:hover{
+    transform: scale(1.1,1.1);
+}
+.item-1-2{
+    display: flex;
+    flex-direction: column;
+}
+.item-1{
+    margin: 0 1rem;
+    max-height: 420px;
+}
+.item-2{
+    margin: 0 0 1rem 0;
+    max-width: 450px;
+}
+.item-3{
+    max-width: 450px;
+}
+h1{
+    grid-area: h1;
+}
+article#slides{
+    grid-area: slides;
+}
+article#destacados{
+    grid-area: destacados;
+}
+article#banner2{
+    grid-area: banner2;
+}
+article#contacto-index{
+    grid-area: contacto-index;
+}
+#encabezado{
+    display: flex;
+    justify-content: center;
+    width: 100%; 
+    height: 100%;
+    max-height: 5rem;
+    background: #fdf9ee; 
+    z-index: 9999; 
+}
+#cabesera{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-between;
+    align-items: center;
+    max-width: 960px;
+    width:100%;
+}
+.fixed{
+    position: fixed;
+    right: 0;
+    top: 0;
+    border: 1px solid #c7a762;
+}
+#menu{
+    display:flex;
+    margin: 0 2rem;
+}
+.menu{
+    display:flex;
+    padding: 0;
+}
+#buscador{
+    display:flex;
+    margin-left: 1rem;
+}
+.buscador{
+    display: flex;
+    margin: 0 0.5rem;
+}
+.iconoMenu{
+    display: flex;
+    margin-left: 1rem;
+}
+#logo > img{
+    max-width: 50px;
+    width: 100%;
+}
+.link {
+    list-style: none;
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.3em;
+}
+.active,
+.link a:hover {
+    border-bottom: 2px solid #c7a762;
+}
+.textD{
+    text-decoration: none;
+}
+.colorBrown{
+    color:#c7a762;
+}
+.fa-search,
+.fa-shopping-cart,
+.fa-user{
+    font-size: 1.8rem;
+    color: #c7a762;
+    padding: 0rem 0.5rem;
+}
+.fa-map-marker-alt,
+.fa-envelope,
+.fa-whatsapp-square,
+.fa-phone-alt{
+    font-size: 1.8rem;
+}
+
+#contacto{
+    text-align: center;
+    margin: 6rem 0 2rem 0;
+}
+.usuario {
+    position: relative;
+}
+.usuario label {cursor: pointer;}
+#cuentaRegistro{
+    display:none;
+    position:absolute;
+    margin:0;
+    top:32px;
+    right:0px;
+    width: 100px;
+}
+.usuario ul li{list-style: none;}
+.usuario ul li{list-style: none;}
+input#user {
+    display: none;
+}
+.usuario input:checked ~ #cuentaRegistro {
+    display: block;
+}
+.title {
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem 0;
+}
+#imgDestacados{
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 960px;
+    width: 100%;;
+    height: 800px;
+}
+#imgDestacados img{
+    max-width: 300px;
+    width: 100%;
+}
+.textDestacado{
+    text-align: center; 
+}
+.nombreProducto,
+.valor{
+    color: #c7a762;
+    text-align: center;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+#relojes,
+#aros,
+#anillos,
+#collares {
+    display: flex;
+    flex-flow:row wrap;
+    width: 100%;
+    margin: 6rem 0;
+    justify-content: center;
+}
+.inputBus{
+    border: 1px solid #c7a762;
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 20px 20px 20px 20px;
+}
+.inputBus:focus{
+    outline: none !important;
+    border: 2px solid #c7a762;
+    border-radius: 20px 20px 20px 20px;
+}
+#datosForm {
+    margin:1rem;
+    padding: 1rem;
+    width: 93%;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: space-around; 
+}
+.datosForm{
+    width: 35%;
+    margin: 1rem;
+    display: flex;
+    flex-flow: column;
+}
+#mensaje{
+    width: 100%;
+    border: 1px solid #c7a762;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+}
+#nombre{
+    width: 100%;
+    border: 1px solid #c7a762;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+}
+#mensaje:focus,
+#nombre:focus{
+    border:1.6px solid #c7a762;
+}
+#footer{
+    margin: 1rem 0 0 0;
+    background:  #1d1d1d;
+    width: 100%;
+    height: 260px;
+    display: flex;
+}
+#destacados,
+#contacto-index{
+    max-width: 960px;
+}
+#contactanos{
+    align-self: center;
+}
+#redes{
+    display:flex;
+    justify-content: space-around;
+    align-self: center;
+}
+#itemsFooter{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.font1{
+    font-size: 1rem;
+}
+.font2{
+    font-size: 2rem;
+}
+.p05{
+    padding:0.5rem;
+}
+.p1{
+    padding: 1rem;
+}
+.m-05{
+    margin:0.5rem;
+}
+.m1{
+    margin: 1rem;
+}
+.mt2{
+    margin-top: 2rem;
+}
+.mb2{
+    margin-bottom: 1rem;
+}
+.center{
+    text-align: center;
+}
+
+#registro,
+#cuenta{
+    background: #fdf9ee;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+    width: 35%;
+    margin-top: 8rem;
+}
+#nombre,
+#mensaje{
+    border-radius: 8px;
+}
+#nombre,
+#mensaje,
+.btn:focus{
+    outline: none !important;
+}
+.casillero{
+    display: flex;
+    padding: 1rem 0;
+    margin: 1rem 0;
+    width: 100%;
+    border: 1px solid #fdf9ee ;
+    outline: none;
+}
+.casillero:focus{
+    border: 2px solid #c7a762;
+}
+#loginReset,
+#submitReset{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+}
+.formRegistro,
+.formCuenta{
+    justify-content: center;
+    display: flex;
+}
+.btn{
+    padding: 0.5rem;
+    background: #c7a762; 
+    color: white;
+    border: outset;
+    opacity: 80%;
+}
+.btn:hover{
+    opacity: 100;
+}
+.from {
+    margin: 1rem 0;
+    padding: 0.5rem 0;
+}
+#from{
+    color: #c7a762;
+    font-size: 16px;
+    border: 1px solid white;
+}
+.productos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4rem 0.5rem;
+    max-width: 300px;
+    width: 100%;
+    max-height: 300px;
+    height: 100%;
+}
+.productos:hover{
+    animation-duration: 2s;
+    animation-name: rotarImagen;
+    animation-delay: 0.5s;
+}
+.productos > .thumb:hover > .bgImagen, 
+.productos > .thumb:hover > .verProducto{
+    display: block;
+}
+.productos:active >.thumb > .infoDetalle > .info >.descripcion{
+    display: block;
+}
+.productos:active >.thumb {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.productos:active .thumb .bgImagen,
+.productos:active .thumb .verProducto {
+    display:none
+}
+.productos:active{
+    max-width: 960px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background:#fdf9ee ;
+    padding: 1.5rem;
+    position: fixed;
+    z-index: 9999;
+}
+.productos:active .carrito{
+    display: block;
+}
+.detalleProducto{
+    display: flex;
+    flex-direction: column;
+}
+.infoDetalle{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin: 1rem;
+    align-items: center;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+}
+.thumb{
+    max-width: 300px;
+    max-height: 300px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.bgImagen{
+    display: none;
+    width: 300px;
+    height: 300px;
+    background:radial-gradient(circle, white 0%, #dd9d14 70%, #d8a73d 100% );    
+    position: absolute;
+    opacity: 30%;
+}
+.verProducto{
+    display: none;
+    position: absolute;
+    top: 140px;
+    left: 62px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #666
+}
+.carrito{
+    display: none;
+}
+span.carrito:hover ~ .thumb > .bgImagen{
+    display: block;
+}
+.descripcion{
+    width: 270px;
+    display: none;
+    line-height: 1.5rem;
+    margin: 0.5rem;
+    text-align: center;
+}
+#facebook,
+#instagram,
+#linkedin,
+#twitter {
+    display: inline;
+    font-size: 3rem;
+    color: #fdf9ee;
+}
+#facebook:hover,
+#instagram:hover,
+#linkedin:hover,
+#twitter:hover {
+    color:#c7a762;
+}
+#menuMobile, label[for="menuMobile"] {
+    display: none;
+    padding-left: 1rem;
+    background: #fdf9ee;
+    color: #c7a762;
+    font-size: 1.8rem;   
+}
+input#menuMobile{
+    display: none;
+}
+#logo,
+#menu,
+#buscador,
+#contactanos,
+#redes{
+    animation-duration: 1s;
+    animation-name: moveFromTop;
+}
+.thumbDestacado {
+    max-width: 300px;
+    position: relative;
+}
+.bgFavorito{
+    background:#1d1d1d ;
+    opacity: 0;
+    height: 0;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    transition:heigth 3s, opacity 1s;
+    z-index: 9999;
+    font-size: 0.8rem;
+    color: #c7a762;
+    cursor: pointer;
+}
+.thumbDestacado:hover > .bgFavorito {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+    height: 25%;
+    opacity: 60%;
+}
+.thumbDestacado:hover > .nombreProducto,
+.thumbDestacado:hover > .valor {
+    visibility: hidden;
+}
+.bgFavorito span .fa-shopping-cart,
+.bgFavorito span .fa-star{
+    font-size: 1rem;
+}
+@keyframes moveFromTop{
+    0% {
+        opacity: 0;
+        transform: translateX(-200%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+@keyframes rotarImagen{
+    0% {
+        transform: rotatey(90deg);
+    }
+    100% {
+        transform: rotatey(0deg);
+    }
+}
+@media screen and (max-width: 620px) {
+    #grilla{
+        display: grid;
+        grid-template-columns:  100% 1fr 1fr;
+        grid-template-areas:
+            "h1 h1 h1"
+            "slides slides slides"
+            "destacados destacados destacados"
+            "destacados destacados destacados"
+            "banner2 banner2 banner2"
+            "contacto-index contacto-index contacto-index";
+        /*grid-template-rows: 100% 1fr 1fr 1fr 1fr 1fr;*/
+        width: 100%;
+        height: 100%;
+        column-gap: 1rem;
+        row-gap: 1rem;
+    }
+    #banner2 {
+        display: grid;
+        grid-template-areas:
+            "item-1 item-2" 
+            "item-1 item-3";
+        grid-template-columns:10% 40%;
+        grid-template-rows:20% 20%;
+        row-gap: 1rem;
+        column-gap: 1rem;
+        margin: 2rem 0;
+        width: 100%;
+        height: 100%;
+    }
+    label[for="menuMobile"] {
+        display: block;
+        cursor: pointer;
+    }
+    #buscador {
+        margin-left:0;
+        margin-right: 1rem;
+    }
+    
+    .link{
+        font-size:1.1em;
+        
+    }
+    .link:hover{
+        background: #ffff;
+    }
+    .hamburguesa{
+        display: block;
+    }
+    #menu {
+        display: flex;
+        position: absolute;
+        right: -25px;
+        top: 25px;
+        background:#1d1d1d;
+        flex-direction: column;
+        text-align: right;
+    }
+    .menu{
+        display: none;
+        flex-direction: column;
+    }
+    #menuMobile:checked ~ .menu {
+        display: flex!important;
+    }
+    #relojes, 
+    #aros, 
+    #anillos, 
+    #collares {
+        display: flex;
+        flex-flow: column wrap;
+        width: 100%;
+        margin: 6rem 0;
+        justify-content: center;
+    }
+    .productos {
+        display: flex;
+        flex-direction:column;
+        width: 100%;
+        align-items: center;
+        margin: 4rem 0.5rem;
+    } 
+    .borderContacto{
+        border-top:1px solid #c7a762;
+        margin-bottom:2em ;
+        width: 90%;
+        text-align: center;
+    }  
+    .inputBus{
+        padding: 0.3rem;
+    } 
+}
+@media screen and (max-width:760px) {
+    #datosForm {
+        height: 100%;
+        display: flex;
+        align-content: space-evenly; 
+    }  
+    .datosForm{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+@media screen and (max-width:980px) {
+    #logo{
+        margin-right: 1rem;
+    }
+    
+}
