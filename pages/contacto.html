@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/estilos.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-</head>
+    <link rel="stylesheet" href="../css/responsive.css"/></head>
 <body id="container">
     <header id="encabezado" class="fixed">
         <div id="cabecera">
@@ -16,27 +16,33 @@
                 <img src="../imagenes/logo.png" width="60" />
             </div>
             <nav id="menu">
-                <ul class="menu">
-                    <li class="link">
-                        <a href="../index.html" class="textD colorBrown">Inicio</a>
-                    </li>
-                    <li class="link">
-                        <a href="../pages/anillos.html" class="textD colorBrown ">Anillos</a>
-                    </li>
-                    <li class="link"> 
-                        <a href="../pages/aros.html" class="textD colorBrown ">Aros</a>    
-                    </li>
-                    <li class="link">
-                        <a href="../pages/collares.html" class="textD colorBrown ">Collares</a>
-                    </li>
-                    <li class="link">
-                        <a href="../pages/relojes.html" class="textD colorBrown ">Relojes</a>
-                    </li>
-                        
-                    <li class="link">
-                        <a href="../pages/contacto.html" class="textD colorBrown borderB active">Contacto</a>
-                    </li>
-                </ul>
+                <div id="hamburguesa">
+                    <input type="checkbox" id="menuMobile">
+                        <label for="menuMobile">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </label>
+                    <ul class="menu">
+                        <li class="link">
+                            <a href="./index.html" class="textD colorBrown active">Inicio</a>
+                        </li>
+                        <li class="link">
+                            <a href="../pages/anillos.html" class="textD colorBrown ">Anillos</a>
+                        </li>
+                        <li class="link"> 
+                            <a href="../pages/aros.html" class="textD colorBrown ">Aros</a>    
+                        </li>
+                        <li class="link">
+                            <a href="../pages/collares.html" class="textD colorBrown ">Collares</a>
+                        </li>
+                        <li class="link">
+                            <a href="../pages/relojes.html" class="textD colorBrown ">Relojes</a>
+                        </li>
+                            
+                        <li class="link">
+                            <a href="../pages/contacto.html" class="textD colorBrown borderB">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
             <div id="buscador">
                 <div class="buscador">
