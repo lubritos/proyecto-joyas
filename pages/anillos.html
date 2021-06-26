@@ -5,459 +5,446 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />    
 </head>
-<body id="container">
-    <header id="encabezado" class="fixed">
-            <div id="cabecera">
-            <div id="logo">
-                <img src="../imagenes/logo.png" width="60" />
-            </div>
-            <nav id="menu">
-                <div id="hamburguesa">
-                    <input type="checkbox" id="menuMobile">
-                        <label for="menuMobile">
-                            <i class="fas fa-ellipsis-v"></i>
-                        </label>
-                    <ul class="menu">
-                        <li class="link">
-                            <a href="./index.html" class="textD colorBrown active">Inicio</a>
+<body>
+    <header id="encabezado" class="fixed row">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid flex-between">
+                <a id="logo" class="navbar-brand" href="#">
+                    <img src="../imagenes/logo.png"/>
+                </a>
+                <button class="navbar-toggler colorBrown" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    Menú
+                    <i class="fas fa-bars colorBrown"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active colorBrown fs-4" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link colorBrown fs-4" aria-current="page" href="./anillos.html">Anillos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link colorBrown fs-4" aria-current="page" href="./aros.html">Aros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link colorBrown fs-4" aria-current="page" href="./collares.html">Collares</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link colorBrown fs-4" aria-current="page" href="./relojes.html">Relojes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link colorBrown fs-4" href="./contacto.html">Contacto</a>
+                    </li>
+                    </ul>
+                </div>
+                <form class="d-flex justify-content-end">
+                    <div class="input-group m-2">
+                        <input type="text" class="rounded-pill form-control colorBrown" placeholder="Buscar..." aria-label="Example text with button addon" aria-describedby="button-addon1">
+                    </div>
+                </form>
+                <div class="dropdown">
+                    <a href="#" class="dropdown-toggle colorBrown" type="button" id="menuLogin" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-user"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="dropdownMenuButton2">
+                        <li>
+                            <a class="dropdown-item colorBrown fs-5" href="./cuenta.html">Crear cuenta</a>
                         </li>
-                        <li class="link">
-                            <a href="../pages/anillos.html" class="textD colorBrown ">Anillos</a>
-                        </li>
-                        <li class="link"> 
-                            <a href="../pages/aros.html" class="textD colorBrown ">Aros</a>    
-                        </li>
-                        <li class="link">
-                            <a href="../pages/collares.html" class="textD colorBrown ">Collares</a>
-                        </li>
-                        <li class="link">
-                            <a href="../pages/relojes.html" class="textD colorBrown ">Relojes</a>
-                        </li>
-                            
-                        <li class="link">
-                            <a href="../pages/contacto.html" class="textD colorBrown borderB">Contacto</a>
+                        <li>
+                            <a class="dropdown-item colorBrown fs-5" href="./registro.html">Registrarse</a>
                         </li>
                     </ul>
                 </div>
-            </nav>
-            <div id="buscador">
-                <div class="buscador">
-                    <div class="lupa">
-                        <i class="fas fa-search"></i>
-                    </div>
-                    <form action="#">
-                        <input type="text" placeholder="Buscar..." class="inputBus" >
-                    </form>
-                </div>
-                <div class="iconoMenu">
-                    <span class="carrito"> 
-                        <i class="fas fa-shopping-cart"></i>
-                    </span>
-                    <div class="usuario">
-                        <input type="checkbox" id="user">
-                        <label for="user">
-                            <i class="fas fa-user"></i>
-                        </label>
-                        <ul id="cuentaRegistro">
-                            <li>
-                                <a href="../pages/cuenta.html" class="colorBrown">Crear Cuenta</a>
-                            </li>
-                            <li>
-                                <a href="../pages/registro.html" class="colorBrown">Loguearse</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>            
-        </div>
-        </header>
-    <section id="contenido">
-        <article id="anillos">
-            <div class="productos">
-                <div class="thumb">
-                    <div class="bgImagen"></div>
-                    <img src="../imagenes/img-anillos/anillo-3.jpg" alt="" width="300">
-                    <span class="verProducto">
+            </div>
+        </nav>
+    </header>
+    <section id="contenido" class="container">
+        <article id="anillos" class="row text-center justify-content-center mt-3 mb-3">
+            <div class="productos col-3 m-1 mt-3 mb-3">
+                <div class="thumb position-relative">
+                    <div class="bgImagen position-absolute"></div>
+                    <img src="../imagenes/img-anillos/alianzas-grabadas.png" alt="">
+                    <span class="verProducto position-absolute top-50 start-50 translate-middle position-absolute top-50 start-50 translate-middle">
                         Ver Producto
                     </span>
-                    <div class="infoDetalle">
+                </div>
+                <div class="infoDetalle text-center mt-2 mb-2">
+                    <div class="detalleProducto colorBrown text-uppercase">
+                        <div class="nombreProducto">
+                            Alianzas Grabadas
+                        </div>
+                        <div class="valor">
+                            $7000
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="descripcion">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error fuga animi quas, porro ab perferendis nemo eos. Eos esse soluta blanditiis!
+                        </div>                    
+                        <span class="carrito colorBrown">
+                            Añadir al carrito 
+                            <i class="fas fa-shopping-cart"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="productos col-3 m-1 mt-3 mb-3">
+                <div class="thumb position-relative">
+                    <div class="bgImagen position-absolute"></div>
+                    <img src="../imagenes/img-anillos/alianzas-oro-blanco-y-amarillo-mate.jpg" alt="">
+                    <span class="verProducto position-absolute top-50 start-50 translate-middle">
+                        Ver Producto
+                    </span>
+                </div>
+                <div class="infoDetalle text-center mt-2 mb-2">
+                    <div class="detalleProducto colorBrown text-uppercase">
+                        <div class="nombreProducto">
+                            Anillo oro blanco y amarillo
+                        </div>
+                        <div class="valor">
+                            $7000
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="descripcion">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error fuga animi quas, porro ab perferendis nemo eos. Eos esse soluta blanditiis!
+                        </div>                    
+                        <span class="carrito colorBrown">
+                            Añadir al carrito 
+                            <i class="fas fa-shopping-cart"></i>
+                        </span>
+                    </div>
+                </div>                
+            </div>
+            <div class="productos col-3 m-1 mt-3 mb-3">
+                <div class="thumb position-relative">
+                    <div class="bgImagen position-absolute"></div>
+                    <img src="../imagenes/img-anillos/anillo-3.jpg" alt="">
+                    <span class="verProducto position-absolute top-50 start-50 translate-middle">
+                        Ver Producto
+                    </span>
+                </div>
+                <div class="infoDetalle text-center mt-2 mb-2">
+                    <div class="detalleProducto colorBrown text-uppercase">
+                        <div class="nombreProducto">
+                            Anillo de plata con piedra cubic
+                        </div>
+                        <div class="valor">
+                            $7000
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="descripcion">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error fuga animi quas, porro ab perferendis nemo eos. Eos esse soluta blanditiis!
+                        </div>                    
+                        <span class="carrito colorBrown">
+                            Añadir al carrito 
+                            <i class="fas fa-shopping-cart"></i>
+                        </span>
+                    </div>
+                </div>                
+            </div>
+            <div class="productos col-3 m-1 mt-3 mb-3">
+                <div class="thumb position-relative">
+                    <div class="bgImagen position-absolute"></div>
+                    <img src="../imagenes/img-anillos/Anillo-4.jpg" alt="">
+                    <span class="verProducto position-absolute top-50 start-50 translate-middle">
+                        Ver Producto
+                    </span>
+                </div>
+                <div class="infoDetalle text-center mt-2 mb-2">
+                    <div class="detalleProducto colorBrown text-uppercase">
+                        <div class="nombreProducto">
+                            Anillo con brillantes 
+                        </div>
+                        <div class="valor">
+                            $7000
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="descripcion">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error fuga animi quas, porro ab perferendis nemo eos. Eos esse soluta blanditiis!
+                        </div>                    
+                        <span class="carrito colorBrown">
+                            Añadir al carrito 
+                            <i class="fas fa-shopping-cart"></i>
+                        </span>
+                    </div>
+                </div>                    
+            </div>
+            <div class="productos col-3 m-1 mt-3 mb-3">
+                <div class="thumb position-relative">
+                    <div class="bgImagen position-absolute"></div>
+                    <img src="../imagenes/img-anillos/alianzas-plata.jpg" alt="">
+                    <span class="verProducto position-absolute top-50 start-50 translate-middle">
+                        Ver Producto
+                    </span>
+                </div>
+                <div class="infoDetalle text-center mt-2 mb-2">
+                    <div class="detalleProducto colorBrown text-uppercase">
+                        <div class="nombreProducto">
+                            Alianzas de plata
+                        </div>
+                        <div class="valor">
+                            $7000
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="descripcion">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error fuga animi quas, porro ab perferendis nemo eos. Eos esse soluta blanditiis!
+                        </div>                    
+                        <span class="carrito colorBrown">
+                            Añadir al carrito 
+                            <i class="fas fa-shopping-cart"></i>
+                        </span>
+                    </div>
+                </div>                
+            </div>
+            <div class="productos col-3 m-1 mt-3 mb-3">
+                <div class="thumb position-relative">
+                    <div class="bgImagen position-absolute"></div>
+                    <img src="../imagenes/img-anillos/anillo-oro-18.png" alt="">
+                    <span class="verProducto position-absolute top-50 start-50 translate-middle">
+                        Ver Producto
+                    </span>
+                </div>                    
+                <div class="infoDetalle text-center mt-2 mb-2">
+                    <div class="detalleProducto colorBrown text-uppercase">
+                        <div class="nombreProducto">
+                            Anillo 18k con piedra
+                        </div>
+                        <div class="valor">
+                            $7000
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="descripcion">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error fuga animi quas, porro ab perferendis nemo eos. Eos esse soluta blanditiis!
+                        </div>                    
+                        <span class="carrito colorBrown">
+                            Añadir al carrito 
+                            <i class="fas fa-shopping-cart"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="productos col-3 m-1 mt-3 mb-3">
+                <div class="thumb position-relative">
+                    <div class="bgImagen position-absolute"></div>
+                    <img src="../imagenes/img-anillos/anillo-oro-diamantes.png" alt="">
+                    <span class="verProducto position-absolute top-50 start-50 translate-middle">
+                        Ver Producto
+                    </span>
+                </div>                    
+                <div class="infoDetalle text-center mt-2 mb-2">
+                    <div class="detalleProducto colorBrown text-uppercase">
+                        <div class="nombreProducto">
+                            Anillo corazon con brillantes
+                        </div>
+                        <div class="valor">
+                            $7000
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="descripcion">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error fuga animi quas, porro ab perferendis nemo eos. Eos esse soluta blanditiis!
+                        </div>                    
+                        <span class="carrito colorBrown">
+                            Añadir al carrito 
+                            <i class="fas fa-shopping-cart"></i>
+                        </span>
+                    </div>
+                </div>                
+            </div>
+            <div class="productos col-3 m-1 mt-3 mb-3">
+                <div class="thumb position-relative">
+                    <div class="bgImagen position-absolute"></div>
+                    <img src="../imagenes/img-anillos/Anillo-oro.png" alt="">
+                    <span class="verProducto position-absolute top-50 start-50 translate-middle">
+                        Ver Producto
+                    </span>
+                </div>
+                <div class="infoDetalle text-center mt-2 mb-2">
+                    <div class="detalleProducto colorBrown text-uppercase">
+                        <div class="nombreProducto">
+                            Anillo oro piedra rubí
+                        </div>
+                        <div class="valor">
+                            $7000
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="descripcion">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error fuga animi quas, porro ab perferendis nemo eos. Eos esse soluta blanditiis!
+                        </div>                    
+                        <span class="carrito colorBrown">
+                            Añadir al carrito 
+                            <i class="fas fa-shopping-cart"></i>
+                        </span>
+                    </div>
+                </div>   
+            </div>
+            <div class="productos col-3 m-1 mt-3 mb-3">
+                <div class="thumb position-relative">
+                    <div class="bgImagen position-absolute"></div>
+                    <img src="../imagenes/img-anillos/anillo-plata-925-.jpg" alt="">
+                    <span class="verProducto position-absolute top-50 start-50 translate-middle">
+                        Ver Producto
+                    </span>
+                </div>
+                <div class="infoDetalle text-center mt-2 mb-2">
+                    <div class="detalleProducto colorBrown text-uppercase">
+                        <div class="nombreProducto">
+                            Anillo plata 925
+                        </div>
+                        <div class="valor">
+                            $7000
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="descripcion">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error fuga animi quas, porro ab perferendis nemo eos. Eos esse soluta blanditiis!
+                        </div>                    
+                        <span class="carrito colorBrown">
+                            Añadir al carrito 
+                            <i class="fas fa-shopping-cart"></i>
+                        </span>
+                    </div>
+                </div>    
+            </div>
+            <div class="productos col-3 m-1 mt-3 mb-3">
+                <div class="thumb position-relative">
+                    <div class="bgImagen position-absolute"></div>
+                    <img src="../imagenes/img-anillos/Anillo-zafiro.jpg" alt="">
+                    <span class="verProducto position-absolute top-50 start-50 translate-middle">
+                        Ver Producto
+                    </span>
+                </div>
+                <div class="infoDetalle text-center mt-2 mb-2">
+                    <div class="detalleProducto colorBrown text-uppercase">
+                        <div class="nombreProducto">
+                            Anillo Zafiro
+                        </div>
+                        <div class="valor">
+                            $7000
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="descripcion">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error fuga animi quas, porro ab perferendis nemo eos. Eos esse soluta blanditiis!
+                        </div>                    
+                        <span class="carrito colorBrown">
+                            Añadir al carrito 
+                            <i class="fas fa-shopping-cart"></i>
+                        </span>
+                    </div>
+                </div>                                    
+            </div>
+            <div class="productos col-3 m-1 mt-3 mb-3">
+                <div class="thumb position-relative">
+                    <div class="bgImagen position-absolute"></div>
+                    <img src="../imagenes/img-anillos/Anillos-de-boda.jpg" alt="">
+                    <span class="verProducto position-absolute top-50 start-50 translate-middle">
+                        Ver Producto
+                    </span>
+                </div>
+                <div class="infoDetalle text-center mt-2 mb-2">
+                    <div class="detalleProducto colorBrown text-uppercase">
+                        <div class="nombreProducto">
+                            Anillo Tres piedras azules
+                        </div>
+                        <div class="valor">
+                            $7000
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="descripcion">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error fuga animi quas, porro ab perferendis nemo eos. Eos esse soluta blanditiis!
+                        </div>                    
+                        <span class="carrito colorBrown">
+                            Añadir al carrito 
+                            <i class="fas fa-shopping-cart"></i>
+                        </span>
+                    </div>
+                </div>                
+            </div>
+            <div class="productos col-3 m-1 mt-3 mb-3">
+                <div class="thumb position-relative">
+                    <div class="bgImagen"></div>
+                    <img src="../imagenes/img-anillos/putent-incorrupte.jpg" alt=""/>
+                    <span class="verProducto position-absolute top-50 start-50 translate-middle">
+                        Ver Producto
+                    </span>
+                </div>
+                <div class="infoDetalle text-center mt-2 mb-2">
+                    <div class="detalleProducto colorBrown text-uppercase">
                         <div class="nombreProducto p05" >
-                            Anillo his queen
+                            Anillo putent incorrupte
                         </div>
                         <div class="valor p05">
                             $7000
                         </div>
-                        <div class="info">
-                            <div class="descripcion">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error fuga animi quas, porro ab perferendis nemo eos. Eos esse soluta blanditiis!
-                            </div>                    
-                            <span class="carrito colorBrown font1">
-                                Añadir al carrito 
-                                <i class="fas fa-shopping-cart"></i>
-                            </span>                        
-                        </div> 
-                    </div>                                     
-                </div>
-            </div>
-            <div class="productos">
-                <div class="thumb">
-                    <div class="bgImagen"></div>
-                    <img src="../imagenes/img-anillos/Anillo-4.jpg" alt="" width="300">
-                    <span class="verProducto">
-                        Ver Producto
-                    </span>
-                    <div class="infoDetalle">
-                        <div class="detalleProducto">
-                            <div class="nombreProducto p05" >
-                                Anillo piedra cubic
-                            </div>
-                            <div class="valor p05">
-                                $7000
-                            </div>
-                        </div>
-                        <div class="info">
-                            <div class="descripcion">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error fuga animi quas, porro ab perferendis nemo eos. Eos esse soluta blanditiis!
-                            </div> 
-                            <span class="carrito colorBrown font1">
-                                Añadir al carrito 
-                                <i class="fas fa-shopping-cart"></i>
-                            </span>
-                        </div>
-                    </div>                    
-                </div>
-            </div>
-            <div class="productos">
-                <div class="thumb">
-                    <div class="bgImagen"></div>
-                    <img src="../imagenes/img-anillos/anillo-diamante.jpg" alt="" width="300">
-                    <span class="verProducto">
-                        Ver Producto
-                    </span>
-                    <div class="infoDetalle">
-                        <div class="detalleProducto">
-
-                            <div class="nombreProducto p05" >
-                                Anillo diamantes
-                            </div>
-                            <div class="valor p05">
-                                $7000
-                            </div>
-                        </div>
-                        <div class="info">
-                            <div class="descripcion">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error fuga animi quas, porro ab perferendis nemo eos. Eos esse soluta blanditiis!
-                            </div>                    
-                            <span class="carrito colorBrown font1">
-                                Añadir al carrito 
-                                <i class="fas fa-shopping-cart"></i>
-                            </span>
-                        </div>
-                    </div>                                        
-                </div>
-            </div>
-            <div class="productos">
-                <div class="thumb">
-                    <div class="bgImagen"></div>
-                    <img src="../imagenes/img-anillos/Anillo-oro.png" alt="" width="300">
-                    <span class="verProducto">
-                        Ver Producto
-                    </span>
-                    <div class="infoDetalle">
-                        <div class="detalleProducto"> 
-                            <div class="nombreProducto p05" >
-                                Anillo oro 24k
-                            </div>
-                            <div class="valor p05">
-                                $7000
-                            </div>
-                        </div>                       
-                        <div class="info">
-                            <div class="descripcion">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error fuga animi quas, porro ab perferendis nemo eos. Eos esse soluta blanditiis!
-                            </div>                    
-                            <span class="carrito colorBrown font1">
-                                Añadir al carrito 
-                                <i class="fas fa-shopping-cart"></i>
-                            </span>
-                        </div>
-                    </div>                    
-                </div>
-            </div>
-            <div class="productos">
-                <div class="thumb">
-                    <div class="bgImagen"></div>
-                    <img src="../imagenes/img-anillos/anillo-plata-925-.jpg" alt="" width="300">
-                    <span class="verProducto">
-                        Ver Producto
-                    </span>
-                    <div class="infoDetalle">
-                        <div class="detalleProducto">
-                            <div class="nombreProducto p05" >
-                                Anillo plata 925 con piedra
-                            </div>
-                            <div class="valor p05">
-                                $7000
-                            </div>
-                        </div>
-                        <div class="info">
-                            <div class="descripcion">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error fuga animi quas, porro ab perferendis nemo eos. Eos esse soluta blanditiis!
-                            </div>                    
-                            <span class="carrito colorBrown font1">
-                                Añadir al carrito 
-                                <i class="fas fa-shopping-cart"></i>
-                            </span>
-                        </div>
-                    </div>                    
-                </div>
-            </div>
-            <div class="productos">
-                <div class="thumb">
-                    <div class="bgImagen"></div>
-                    <img src="../imagenes/img-anillos/Anillo-zafiro.jpg" alt="" width="300">
-                    <span class="verProducto">
-                        Ver Producto
-                    </span>
-                    <div class="infoDetalle">
-                        <div class="detalleProducto">
-                            <div class="nombreProducto p05" >
-                                Anillo Zafiro
-                            </div>
-                            <div class="valor p05">
-                                $7000
-                            </div>
-                        </div>
-                        <div class="info">
-                            <div class="descripcion">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error fuga animi quas, porro ab perferendis nemo eos. Eos esse soluta blanditiis!
-                            </div>                    
-                            <span class="carrito colorBrown font1">
-                                Añadir al carrito 
-                                <i class="fas fa-shopping-cart"></i>
-                            </span>
-                        </div>
                     </div>
-                </div>                
-            </div>
-            <div class="productos">
-                <div class="thumb">
-                    <div class="bgImagen"></div>
-                    <img src="../imagenes/img-anillos/Anillos-de-boda.jpg" alt="" width="300">
-                    <span class="verProducto">
-                        Ver Producto
-                    </span>
-                    <div class="infoDetalle">
-                        <div class="detalleProducto">
-                            <div class="nombreProducto p05" >
-                                Anillos de boda
-                            </div>
-                            <div class="valor p05">
-                                $7000
-                            </div>
-                            <div class="info">
-                                <div class="descripcion">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error fuga animi quas, porro ab perferendis nemo eos. Eos esse soluta blanditiis!
-                                </div>                    
-                                <span class="carrito colorBrown font1">
-                                    Añadir al carrito 
-                                    <i class="fas fa-shopping-cart"></i>
-                                </span>
-                            </div>
-                        </div>
-                    </div>                                    
-                </div>                
-            </div>
-            <div class="productos">
-                <div class="thumb">
-                    <div class="bgImagen"></div>
-                    <img src="../imagenes/img-anillos/putent-incorrupte.jpg" alt="" width="300">
-                    <span class="verProducto">
-                        Ver Producto
-                    </span>
-                    <div class="infoDetalle">
-                        <div class="detalleProducto">
-                            <div class="nombreProducto p05" >
-                                Anillo putent incorrupte
-                            </div>
-                            <div class="valor p05">
-                                $7000
-                            </div>
-                        </div>
-                        <div class="info">
-                            <div class="descripcion">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error fuga animi quas, porro ab perferendis nemo eos. Eos esse soluta blanditiis!
-                            </div>                    
-                            <span class="carrito colorBrown font1">
-                                Añadir al carrito 
-                                <i class="fas fa-shopping-cart"></i>
-                            </span>
-                        </div>
-                    </div>                                        
-                </div>                
-            </div>
-            <div class="productos">
-                <div class="thumb">
-                    <div class="bgImagen"></div>
-                    <img src="../imagenes/img-anillos/alianzas-plata.jpg" width="300" height=""/>
-                    <span class="verProducto">
-                        Ver Producto
-                    </span>
-                    <div class="infoDetalle">
-                        <div class="detalleProducto">
-                            <div class="nombreProducto p05" >
-                                alianzas de plata con grabado
-                            </div>
-                            <div class="valor p05">
-                                $7000
-                            </div>
-                        </div>
-                        <div class="info">
-                            <div class="descripcion">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error fuga animi quas, porro ab perferendis nemo eos. Eos esse soluta blanditiis!
-                            </div>                    
-                            <span class="carrito colorBrown font1">
-                                Añadir al carrito 
-                                <i class="fas fa-shopping-cart"></i>
-                            </span>
-                        </div>
-                    </div>                    
-                </div>
-            </div>
-            <div class="productos">
-                <div class="thumb">
-                    <div class="bgImagen"></div>
-                    <img src="../imagenes/img-anillos/alianzas-oro-blanco-y-amarillo-mate.jpg" width="300" height=""/>
-                    <span class="verProducto">
-                        Ver Producto
-                    </span>
-                    <div class="infoDetalle">
-                        <div class="detalleProducto">
-                            <div class="nombreProducto p05" >
-                                alianzas oro blanco y amarillo mate
-                            </div>
-                            <div class="valor p05">
-                                $7000
-                            </div>
-                        </div>
-                        <div class="info">
-                            <div class="descripcion">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error fuga animi quas, porro ab perferendis nemo eos. Eos esse soluta blanditiis!
-                            </div>                    
-                            <span class="carrito colorBrown font1">
-                                Añadir al carrito 
-                                <i class="fas fa-shopping-cart"></i>
-                            </span>
-                        </div>
+                    <div class="info">
+                        <div class="descripcion">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error fuga animi quas, porro ab perferendis nemo eos. Eos esse soluta blanditiis!
+                        </div>                    
+                        <span class="carrito colorBrown">
+                            Añadir al carrito 
+                            <i class="fas fa-shopping-cart"></i>
+                        </span>
                     </div>
-                    
-                </div>                
+                </div>   
             </div>
-            <div class="productos">
-                <div class="thumb">
-                    <div class="bgImagen"></div>
-                    <img src="../imagenes/img-anillos/anillo-oro-18.png" alt="" width="300">
-                    <span class="verProducto">
-                        Ver Producto
-                    </span>
-                    <div class="infoDetalle">
-                        <div class="detalleProducto">
-                            <div class="nombreProducto p05" >
-                                anillo-oro-18 con piedra
-                            </div>
-                            <div class="valor p05">
-                                $7000
-                            </div>
-    
-                        </div>
-                        <div class="info">
-                            <div class="descripcion">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error fuga animi quas, porro ab perferendis nemo eos. Eos esse soluta blanditiis!
-                            </div>                    
-                            <span class="carrito colorBrown font1">
-                                Añadir al carrito 
-                                <i class="fas fa-shopping-cart"></i>
-                            </span>
-                        </div>
-                    </div>
-                </div>               
-            </div>
-            <div class="productos">
-                <div class="thumb">
-                    <div class="bgImagen"></div>
-                    <img src="../imagenes/img-anillos/anillo-oro-diamantes.png" alt="" width="300">
-                    <span class="verProducto">
-                        Ver Producto
-                    </span>
-                    <div class="infoDetalle">
-                        <div class="detalleProducto">
-                            <div class="nombreProducto p05" >
-                                anillo de oro condiamantes
-                            </div>
-                            <div class="valor p05">
-                                $7000
-                            </div>
-                        </div>
-                        <div class="info">
-                            <div class="descripcion">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error fuga animi quas, porro ab perferendis nemo eos. Eos esse soluta blanditiis!
-                            </div>                    
-                            <span class="carrito colorBrown font1">
-                                Añadir al carrito 
-                                <i class="fas fa-shopping-cart"></i>
-                            </span>
-                        </div>
-                    </div>                                        
-                </div>               
-            </div>    
         </article>
     </section>
-    <footer id="footer">
-        <div id="itemsFooter">
-            <div id="contactanos">
-                <div id="ubicacion" class="p05">
-                    <span class="colorBrown font1 p05">
-                        <i class="fas fa-map-marker-alt"></i>
-                        Calle Fantasia 4444
-                    </span>
-                </div>
-                <div id="telefono" class="p05">
-                    <span class="colorBrown font1 p05">
-                        <i class="fas fa-phone-alt"></i>
-                        4444444
-                    </span>
-                </div>
-                <div id="whatsapp" class="p05">
-                    <span class="colorBrown font1 p05">
-                        <i class="fab fa-whatsapp-square"></i>                                3516444444
-                    </span>
-                </div>
-                <div id="email" class="p05">
-                    <span class="colorBrown font1 p05">
-                        <i class="fas fa-envelope"></i>
-                        sitio@fictisio.com
-                    </span>
-                </div>
+    <footer id="footer" class="mt-5 d-flex flex-column text-center p-4 align-items-around">
+        <div id="redes" class="d-flex flex-row align-items-center justify-content-center">
+            <div id="facebook" class="m-2 fs-1">
+                <i class="fab fa-facebook-square"></i>
             </div>
-            <div id="redes">
-                <div id="facebook" class="p05" >
-                    <i class="fab fa-facebook-square"></i>
-                </div>
-                <div id="instagram" class="p05">
-                    <i class="fab fa-instagram-square"></i>
-                </div>
-                <div id="linkedin" class="p05">
-                    <i class="fab fa-linkedin"></i>
-                </div>
-                <div id="twitter" class="p05">
-                    <i class="fab fa-twitter-square"></i>
-                </div>
+            <div id="instagram" class="m-2 fs-1">
+                <i class="fab fa-instagram-square"></i>
+            </div>
+            <div id="linkedin" class="m-2 fs-1">
+                <i class="fab fa-linkedin"></i>
+            </div>
+            <div id="twitter" class="m-2 fs-1">
+                <i class="fab fa-twitter-square"></i>
+            </div>
+        </div>
+        <div id="contactanos" class="d-flex flex-row flex-wrap justify-content-center">
+            <div id="ubicacion" class="m-2">
+                <span class="colorBrown fs-5">
+                    <i class="fas fa-map-marker-alt"></i>
+                    Calle Fantasia 4444
+                </span>
+            </div>
+            <div id="telefono" class="m-2">
+                <span class="colorBrown fs-5">
+                    <i class="fas fa-phone-alt"></i>
+                    4444444
+                </span>
+            </div>
+            <div id="whatsapp" class="m-2">
+                <span class="colorBrown fs-5">
+                    <i class="fab fa-whatsapp-square"></i>                           3516444444
+                </span>
+            </div>
+            <div id="email" class="m-2">
+                <span class="colorBrown fs-5">
+                    <i class="fas fa-envelope"></i>
+                    sitio@fictisio.com
+                </span>
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>
 </html>
