@@ -1,0 +1,32 @@
+{
+  "name": "proyecto-joyas-scss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "build-css":"node-sass --include-path scss scss/estilos.scss css/estilos.css",
+    "watch-css":"nodemon -e scss -x \"npm run build-css\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lubritos/proyecto-joyas.git"
+  },
+  "keywords": [
+    "scss",
+    "html",
+    "css",
+    "coderhouse",
+    "bootstrap"
+  ],
+  "author": "Luciana Britos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lubritos/proyecto-joyas/issues"
+  },
+  "homepage": "https://github.com/lubritos/proyecto-joyas#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.9"
+  }
+}

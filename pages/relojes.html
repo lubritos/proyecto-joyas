@@ -16,7 +16,7 @@
         <nav class="navbar navbar-expand-md">
             <div class="container-fluid flex-between">
                 <a id="logo" class="navbar-brand" href="#">
-                    <img src="../imagenes/logo.png"/>
+                    <img class="logo-img" src="../imagenes/logo.png"/>
                 </a>
                 <button class="navbar-toggler colorBrown" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     Menú
@@ -68,341 +68,665 @@
     </header>
     <section id="contenido" class="container">
         <article id="relojes" class="row text-center justify-content-center mt-3 mb-3">
-            <div class="productos col-3 m-1 mt-3 mb-3">
-                <div class="thumb position-relative">
-                    <div class="bgImagen position-absolute"></div>
-                    <img src="../imagenes/img-relojes/Reloj-10.jpg" alt="">
-                    <span class="verProducto position-absolute top-50 start-50 translate-middle position-absolute top-50 start-50 translate-middle">
-                        Ver Producto
-                    </span>
-                </div>
-                <div class="infoDetalle text-center mt-2 mb-2">
-                    <div class="detalleProducto colorBrown text-uppercase">
-                        <div class="nombreProducto">
-                            Reloj carude
-                        </div>
-                        <div class="valor">
-                            $7000
-                        </div>
+            <div class="card m-2 shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#reloj1">            
+                <div class="bgImagen position-absolute"></div>
+                <img src="../imagenes/img-relojes/reloj-1.jpg" class="card-img-top" alt="..." />
+                <span class="verProducto position-absolute top-50 start-50 translate-middle">
+                    Ver Producto
+                </span>
+                <div class="d-flex flex-column justify-content-center h-100">
+                    <div class="p-2 d-flex flex-column align-items-center">
+                        <h5 class="card-title colorBrown text-uppercase">Reloj lupay</h5>
+                        <span class="list-group-item colorBrown text-center border-0">$7000</span>
                     </div>
-                    <div class="info">
-                        <div class="descripcion">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error fuga animi quas, porro ab perferendis nemo eos. Eos esse soluta blanditiis!
-                        </div>                    
-                        <span class="carrito colorBrown">
-                            Añadir al carrito 
-                            <i class="fas fa-shopping-cart"></i>
-                        </span>
+                    <div class="d-flex p-1 justify-content-center">
+                        <a href="#" class="cardLink colorBrown d-flex fs-6">
+                            <i class="fas fa-shopping-cart m-1"></i>
+                            Comprar
+                        </a>
+                        <a href="#" class="cardLink colorBrown d-flex fs-6">
+                            <i class="far fa-star m-1"></i>
+                            Agregar a favorito</a>                    
                     </div>
                 </div>
+                <!-- Inicio modal -->
+                <div class="modal fade" id="reloj1" tabindex="-1"  aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
+                            Reloj oro brillantes lupay
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body d-flex justify-content-center align-items-center">
+                            <img src="../imagenes/img-relojes/Reloj-1.jpg"/>
+                            <div class="d-flex flex-column align-items-center">
+                                <div class="descripcion d-flex p-3">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
+                                </div>
+                                <div class="valor d-flex flex-start mt-3 colorBrown">
+                                    $7000
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                Salir
+                            </button>
+                            <button type="button" class="btn btn-primary">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!-- Fin Modal -->
             </div>
-            <div class="productos col-3 m-1 mt-3 mb-3">
-                <div class="thumb position-relative">
-                    <div class="bgImagen position-absolute"></div>
-                    <img src="../imagenes/img-relojes/Reloj-12.jpg" alt="">
-                    <span class="verProducto position-absolute top-50 start-50 translate-middle">
-                        Ver Producto
-                    </span>
-                </div>
-                <div class="infoDetalle text-center mt-2 mb-2">
-                    <div class="detalleProducto colorBrown text-uppercase">
-                        <div class="nombreProducto">
-                            Reloj bs
-                        </div>
-                        <div class="valor">
-                            $7000
-                        </div>
+            <div class="card m-2 shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#reloj2">            
+                <div class="bgImagen position-absolute"></div>
+                <img src="../imagenes/img-relojes/reloj-2.jpg" class="card-img-top" alt="..." />
+                <span class="verProducto position-absolute top-50 start-50 translate-middle">
+                    Ver Producto
+                </span>
+                <div class="d-flex flex-column justify-content-center h-100">
+                    <div class="p-2 d-flex flex-column align-items-center">
+                        <h5 class="card-title colorBrown text-uppercase">Reloj oro y brillantes lupay</h5>
+                        <span class="list-group-item colorBrown text-center border-0">$7000</span>
                     </div>
-                    <div class="info">
-                        <div class="descripcion">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error fuga animi quas, porro ab perferendis nemo eos. Eos esse soluta blanditiis!
-                        </div>                    
-                        <span class="carrito colorBrown">
-                            Añadir al carrito 
-                            <i class="fas fa-shopping-cart"></i>
-                        </span>
-                    </div>
-                </div>                
-            </div>
-            <div class="productos col-3 m-1 mt-3 mb-3">
-                <div class="thumb position-relative">
-                    <div class="bgImagen position-absolute"></div>
-                    <img src="../imagenes/img-relojes/reloj-1.jpg" alt="">
-                    <span class="verProducto position-absolute top-50 start-50 translate-middle">
-                        Ver Producto
-                    </span>
-                </div>
-                <div class="infoDetalle text-center mt-2 mb-2">
-                    <div class="detalleProducto colorBrown text-uppercase">
-                        <div class="nombreProducto">
-                            Reloj oro con piedras
-                        </div>
-                        <div class="valor">
-                            $7000
-                        </div>
-                    </div>
-                    <div class="info">
-                        <div class="descripcion">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error fuga animi quas, porro ab perferendis nemo eos. Eos esse soluta blanditiis!
-                        </div>                    
-                        <span class="carrito colorBrown">
-                            Añadir al carrito 
-                            <i class="fas fa-shopping-cart"></i>
-                        </span>
-                    </div>
-                </div>                
-            </div>
-            <div class="productos col-3 m-1 mt-3 mb-3">
-                <div class="thumb position-relative">
-                    <div class="bgImagen position-absolute"></div>
-                    <img src="../imagenes/img-relojes/reloj-3.jpg" alt="">
-                    <span class="verProducto position-absolute top-50 start-50 translate-middle">
-                        Ver Producto
-                    </span>
-                </div>
-                <div class="infoDetalle text-center mt-2 mb-2">
-                    <div class="detalleProducto colorBrown text-uppercase">
-                        <div class="nombreProducto">
-                            Reloj tressa 
-                        </div>
-                        <div class="valor">
-                            $7000
-                        </div>
-                    </div>
-                    <div class="info">
-                        <div class="descripcion">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error fuga animi quas, porro ab perferendis nemo eos. Eos esse soluta blanditiis!
-                        </div>                    
-                        <span class="carrito colorBrown">
-                            Añadir al carrito 
-                            <i class="fas fa-shopping-cart"></i>
-                        </span>
-                    </div>
-                </div>                    
-            </div>
-            <div class="productos col-3 m-1 mt-3 mb-3">
-                <div class="thumb position-relative">
-                    <div class="bgImagen position-absolute"></div>
-                    <img src="../imagenes/img-relojes/Reloj-4.jpg" alt="">
-                    <span class="verProducto position-absolute top-50 start-50 translate-middle">
-                        Ver Producto
-                    </span>
-                </div>
-                <div class="infoDetalle text-center mt-2 mb-2">
-                    <div class="detalleProducto colorBrown text-uppercase">
-                        <div class="nombreProducto">
-                            Reloj con brillante
-                        </div>
-                        <div class="valor">
-                            $7000
-                        </div>
-                    </div>
-                    <div class="info">
-                        <div class="descripcion">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error fuga animi quas, porro ab perferendis nemo eos. Eos esse soluta blanditiis!
-                        </div>                    
-                        <span class="carrito colorBrown">
-                            Añadir al carrito 
-                            <i class="fas fa-shopping-cart"></i>
-                        </span>
-                    </div>
-                </div>                
-            </div>
-            <div class="productos col-3 m-1 mt-3 mb-3">
-                <div class="thumb position-relative">
-                    <div class="bgImagen position-absolute"></div>
-                    <img src="../imagenes/img-relojes/reloj-5.jpg" alt="">
-                    <span class="verProducto position-absolute top-50 start-50 translate-middle">
-                        Ver Producto
-                    </span>
-                </div>                    
-                <div class="infoDetalle text-center mt-2 mb-2">
-                    <div class="detalleProducto colorBrown text-uppercase">
-                        <div class="nombreProducto">
-                            Reloj lupay
-                        </div>
-                        <div class="valor">
-                            $7000
-                        </div>
-                    </div>
-                    <div class="info">
-                        <div class="descripcion">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error fuga animi quas, porro ab perferendis nemo eos. Eos esse soluta blanditiis!
-                        </div>                    
-                        <span class="carrito colorBrown">
-                            Añadir al carrito 
-                            <i class="fas fa-shopping-cart"></i>
-                        </span>
+                    <div class="d-flex p-1 justify-content-center">
+                        <a href="#" class="cardLink colorBrown d-flex fs-6">
+                            <i class="fas fa-shopping-cart m-1"></i>
+                            Comprar
+                        </a>
+                        <a href="#" class="cardLink colorBrown d-flex fs-6">
+                            <i class="far fa-star m-1"></i>
+                            Agregar a favorito</a>                    
                     </div>
                 </div>
-            </div>
-            <div class="productos col-3 m-1 mt-3 mb-3">
-                <div class="thumb position-relative">
-                    <div class="bgImagen position-absolute"></div>
-                    <img src="../imagenes/img-relojes/reloj-6.webp" alt="">
-                    <span class="verProducto position-absolute top-50 start-50 translate-middle">
-                        Ver Producto
-                    </span>
-                </div>                    
-                <div class="infoDetalle text-center mt-2 mb-2">
-                    <div class="detalleProducto colorBrown text-uppercase">
-                        <div class="nombreProducto">
-                            Reloj jen cuadrado
+                <!-- Inicio modal -->
+                <div class="modal fade" id="reloj2" tabindex="-1"  aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
+                            Reloj Carude
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div class="valor">
-                            $7000
+                        <div class="modal-body d-flex justify-content-center align-items-center">
+                            <img src="../imagenes/img-relojes/reloj-2.jpg"/>
+                            <div class="d-flex flex-column align-items-center">
+                                <div class="descripcion d-flex p-3">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
+                                </div>
+                                <div class="valor d-flex flex-start mt-3 colorBrown">
+                                    $7000
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                Salir
+                            </button>
+                            <button type="button" class="btn btn-primary">
+                                Comprar
+                            </button>
                         </div>
                     </div>
-                    <div class="info">
-                        <div class="descripcion">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error fuga animi quas, porro ab perferendis nemo eos. Eos esse soluta blanditiis!
-                        </div>                    
-                        <span class="carrito colorBrown">
-                            Añadir al carrito 
-                            <i class="fas fa-shopping-cart"></i>
-                        </span>
                     </div>
-                </div>                
-            </div>
-            <div class="productos col-3 m-1 mt-3 mb-3">
-                <div class="thumb position-relative">
-                    <div class="bgImagen position-absolute"></div>
-                    <img src="../imagenes/img-relojes/Reloj-7.jpg" alt="">
-                    <span class="verProducto position-absolute top-50 start-50 translate-middle">
-                        Ver Producto
-                    </span>
                 </div>
-                <div class="infoDetalle text-center mt-2 mb-2">
-                    <div class="detalleProducto colorBrown text-uppercase">
-                        <div class="nombreProducto">
-                            Reloj Golouw
-                        </div>
-                        <div class="valor">
-                            $7000
-                        </div>
-                    </div>
-                    <div class="info">
-                        <div class="descripcion">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error fuga animi quas, porro ab perferendis nemo eos. Eos esse soluta blanditiis!
-                        </div>                    
-                        <span class="carrito colorBrown">
-                            Añadir al carrito 
-                            <i class="fas fa-shopping-cart"></i>
-                        </span>
-                    </div>
-                </div>   
+                <!-- Fin Modal -->
             </div>
-            <div class="productos col-3 m-1 mt-3 mb-3">
-                <div class="thumb position-relative">
-                    <div class="bgImagen position-absolute"></div>
-                    <img src="../imagenes/img-relojes/Reloj-9.jpg" alt="">
-                    <span class="verProducto position-absolute top-50 start-50 translate-middle">
-                        Ver Producto
-                    </span>
+            <div class="card m-2 shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#reloj3">            
+                <div class="bgImagen position-absolute"></div>
+                <img src="../imagenes/img-relojes/reloj-3.jpg" class="card-img-top" alt="..." />
+                <span class="verProducto position-absolute top-50 start-50 translate-middle">
+                    Ver Producto
+                </span>
+                <div class="d-flex flex-column justify-content-center h-100">
+                    <div class="p-2 d-flex flex-column align-items-center">
+                        <h5 class="card-title colorBrown text-uppercase">Reloj hongeui</h5>
+                        <span class="list-group-item colorBrown text-center border-0">$7000</span>
+                    </div>
+                    <div class="d-flex p-1 justify-content-center">
+                        <a href="#" class="cardLink colorBrown d-flex fs-6">
+                            <i class="fas fa-shopping-cart m-1"></i>
+                            Comprar
+                        </a>
+                        <a href="#" class="cardLink colorBrown d-flex fs-6">
+                            <i class="far fa-star m-1"></i>
+                            Agregar a favorito</a>                    
+                    </div>
                 </div>
-                <div class="infoDetalle text-center mt-2 mb-2">
-                    <div class="detalleProducto colorBrown text-uppercase">
-                        <div class="nombreProducto">
-                            Reloj detalles de corazon
+                <!-- Inicio modal -->
+                <div class="modal fade" id="reloj3" tabindex="-1"  aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
+                            Reloj hongeui
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div class="valor">
-                            $7000
+                        <div class="modal-body d-flex justify-content-center align-items-center">
+                            <img src="../imagenes/img-relojes/reloj-3.jpg"/>
+                            <div class="d-flex flex-column align-items-center">
+                                <div class="descripcion d-flex p-3">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
+                                </div>
+                                <div class="valor d-flex flex-start mt-3 colorBrown">
+                                    $7000
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                Salir
+                            </button>
+                            <button type="button" class="btn btn-primary">
+                                Comprar
+                            </button>
                         </div>
                     </div>
-                    <div class="info">
-                        <div class="descripcion">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error fuga animi quas, porro ab perferendis nemo eos. Eos esse soluta blanditiis!
-                        </div>                    
-                        <span class="carrito colorBrown">
-                            Añadir al carrito 
-                            <i class="fas fa-shopping-cart"></i>
-                        </span>
                     </div>
-                </div>    
+                </div>
+                <!-- Fin Modal -->
             </div>
-            <div class="productos col-3 m-1 mt-3 mb-3">
-                <div class="thumb position-relative">
-                    <div class="bgImagen position-absolute"></div>
-                    <img src="../imagenes/img-relojes/reloj-pulsera.jpg" alt="">
-                    <span class="verProducto position-absolute top-50 start-50 translate-middle">
-                        Ver Producto
-                    </span>
+            <div class="card m-2 shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#reloj4">            
+                <div class="bgImagen position-absolute"></div>
+                <img src="../imagenes/img-relojes/Reloj-4.jpg" class="card-img-top" alt="..." />
+                <span class="verProducto position-absolute top-50 start-50 translate-middle">
+                    Ver Producto
+                </span>
+                <div class="d-flex flex-column justify-content-center h-100">
+                    <div class="p-2 d-flex flex-column align-items-center">
+                        <h5 class="card-title colorBrown text-uppercase">Reloj jen</h5>
+                        <span class="list-group-item colorBrown text-center border-0">$7000</span>
+                    </div>
+                    <div class="d-flex p-1 justify-content-center">
+                        <a href="#" class="cardLink colorBrown d-flex fs-6">
+                            <i class="fas fa-shopping-cart m-1"></i>
+                            Comprar
+                        </a>
+                        <a href="#" class="cardLink colorBrown d-flex fs-6">
+                            <i class="far fa-star m-1"></i>
+                            Agregar a favorito</a>                    
+                    </div>
                 </div>
-                <div class="infoDetalle text-center mt-2 mb-2">
-                    <div class="detalleProducto colorBrown text-uppercase">
-                        <div class="nombreProducto">
+                <!-- Inicio modal -->
+                <div class="modal fade" id="reloj4" tabindex="-1"  aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
+                            Reloj Jen
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body d-flex justify-content-center align-items-center">
+                            <img src="../imagenes/img-relojes/Reloj-4.jpg"/>
+                            <div class="d-flex flex-column align-items-center">
+                                <div class="descripcion d-flex p-3">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
+                                </div>
+                                <div class="valor d-flex flex-start mt-3 colorBrown">
+                                    $7000
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                Salir
+                            </button>
+                            <button type="button" class="btn btn-primary">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!-- Fin Modal -->
+            </div>
+            <div class="card m-2 shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#reloj5">            
+                <div class="bgImagen position-absolute"></div>
+                <img src="../imagenes/img-relojes/reloj-5.jpg" class="card-img-top" alt="..." />
+                <span class="verProducto position-absolute top-50 start-50 translate-middle">
+                    Ver Producto
+                </span>
+                <div class="d-flex flex-column justify-content-center h-100">
+                    <div class="p-2 d-flex flex-column align-items-center">
+                        <h5 class="card-title colorBrown text-uppercase">Reloj lupay plata</h5>
+                        <span class="list-group-item colorBrown text-center border-0">$7000</span>
+                    </div>
+                    <div class="d-flex p-1 justify-content-center">
+                        <a href="#" class="cardLink colorBrown d-flex fs-6">
+                            <i class="fas fa-shopping-cart m-1"></i>
+                            Comprar
+                        </a>
+                        <a href="#" class="cardLink colorBrown d-flex fs-6">
+                            <i class="far fa-star m-1"></i>
+                            Agregar a favorito</a>                    
+                    </div>
+                </div>
+                <!-- Inicio modal -->
+                <div class="modal fade" id="reloj5" tabindex="-1"  aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
+                            Reloj plata lupay
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body d-flex justify-content-center align-items-center">
+                            <img src="../imagenes/img-relojes/reloj-5.jpg"/>
+                            <div class="d-flex flex-column align-items-center">
+                                <div class="descripcion d-flex p-3">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
+                                </div>
+                                <div class="valor d-flex flex-start mt-3 colorBrown">
+                                    $7000
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                Salir
+                            </button>
+                            <button type="button" class="btn btn-primary">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!-- Fin Modal -->
+            </div>
+            <div class="card m-2 shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#reloj6">            
+                <div class="bgImagen position-absolute"></div>
+                <img src="../imagenes/img-relojes/reloj-6.jpg" class="card-img-top" alt="..." />
+                <span class="verProducto position-absolute top-50 start-50 translate-middle">
+                    Ver Producto
+                </span>
+                <div class="d-flex flex-column justify-content-center h-100">
+                    <div class="p-2 d-flex flex-column align-items-center">
+                        <h5 class="card-title colorBrown text-uppercase">Reloj cuadrado jen</h5>
+                        <span class="list-group-item colorBrown text-center border-0">$7000</span>
+                    </div>
+                    <div class="d-flex p-1 justify-content-center">
+                        <a href="#" class="cardLink colorBrown d-flex fs-6">
+                            <i class="fas fa-shopping-cart m-1"></i>
+                            Comprar
+                        </a>
+                        <a href="#" class="cardLink colorBrown d-flex fs-6">
+                            <i class="far fa-star m-1"></i>
+                            Agregar a favorito</a>                    
+                    </div>
+                </div>
+                <!-- Inicio modal -->
+                <div class="modal fade" id="reloj6" tabindex="-1"  aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
+                            Reloj Cuadrado jen
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body d-flex justify-content-center align-items-center">
+                            <img src="../imagenes/img-relojes/reloj-6.jpg"/>
+                            <div class="d-flex flex-column align-items-center">
+                                <div class="descripcion d-flex p-3">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
+                                </div>
+                                <div class="valor d-flex flex-start mt-3 colorBrown">
+                                    $7000
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                Salir
+                            </button>
+                            <button type="button" class="btn btn-primary">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!-- Fin Modal -->
+            </div>
+            <div class="card m-2 shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#reloj7">            
+                <div class="bgImagen position-absolute"></div>
+                <img src="../imagenes/img-relojes/Reloj-7.jpg" class="card-img-top" alt="..." />
+                <span class="verProducto position-absolute top-50 start-50 translate-middle">
+                    Ver Producto
+                </span>
+                <div class="d-flex flex-column justify-content-center h-100">
+                    <div class="p-2 d-flex flex-column align-items-center">
+                        <h5 class="card-title colorBrown text-uppercase">Reloj golow</h5>
+                        <span class="list-group-item colorBrown text-center border-0">$7000</span>
+                    </div>
+                    <div class="d-flex p-1 justify-content-center">
+                        <a href="#" class="cardLink colorBrown d-flex fs-6">
+                            <i class="fas fa-shopping-cart m-1"></i>
+                            Comprar
+                        </a>
+                        <a href="#" class="cardLink colorBrown d-flex fs-6">
+                            <i class="far fa-star m-1"></i>
+                            Agregar a favorito</a>                    
+                    </div>
+                </div>
+                <!-- Inicio modal -->
+                <div class="modal fade" id="reloj7" tabindex="-1"  aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
+                            Reloj Golow
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body d-flex justify-content-center align-items-center">
+                            <img src="../imagenes/img-relojes/Reloj-7.jpg"/>
+                            <div class="d-flex flex-column align-items-center">
+                                <div class="descripcion d-flex p-3">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
+                                </div>
+                                <div class="valor d-flex flex-start mt-3 colorBrown">
+                                    $7000
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                Salir
+                            </button>
+                            <button type="button" class="btn btn-primary">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!-- Fin Modal -->
+            </div>
+            <div class="card m-2 shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#reloj8">            
+                <div class="bgImagen position-absolute"></div>
+                <img src="../imagenes/img-relojes/reloj-pulsera.jpg" class="card-img-top" alt="..." />
+                <span class="verProducto position-absolute top-50 start-50 translate-middle">
+                    Ver Producto
+                </span>
+                <div class="d-flex flex-column justify-content-center h-100">
+                    <div class="p-2 d-flex flex-column align-items-center">
+                        <h5 class="card-title colorBrown text-uppercase">Reloj Genova</h5>
+                        <span class="list-group-item colorBrown text-center border-0">$7000</span>
+                    </div>
+                    <div class="d-flex p-1 justify-content-center">
+                        <a href="#" class="cardLink colorBrown d-flex fs-6">
+                            <i class="fas fa-shopping-cart m-1"></i>
+                            Comprar
+                        </a>
+                        <a href="#" class="cardLink colorBrown d-flex fs-6">
+                            <i class="far fa-star m-1"></i>
+                            Agregar a favorito</a>                    
+                    </div>
+                </div>
+                <!-- Inicio modal -->
+                <div class="modal fade" id="reloj8" tabindex="-1"  aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
                             Reloj Genova
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div class="valor">
-                            $7000
+                        <div class="modal-body d-flex justify-content-center align-items-center">
+                            <img src="../imagenes/img-relojes/reloj-pulsera.jpg"/>
+                            <div class="d-flex flex-column align-items-center">
+                                <div class="descripcion d-flex p-3">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
+                                </div>
+                                <div class="valor d-flex flex-start mt-3 colorBrown">
+                                    $7000
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                Salir
+                            </button>
+                            <button type="button" class="btn btn-primary">
+                                Comprar
+                            </button>
                         </div>
                     </div>
-                    <div class="info">
-                        <div class="descripcion">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error fuga animi quas, porro ab perferendis nemo eos. Eos esse soluta blanditiis!
-                        </div>                    
-                        <span class="carrito colorBrown">
-                            Añadir al carrito 
-                            <i class="fas fa-shopping-cart"></i>
-                        </span>
                     </div>
-                </div>                                    
-            </div>
-            <div class="productos col-3 m-1 mt-3 mb-3">
-                <div class="thumb position-relative">
-                    <div class="bgImagen position-absolute"></div>
-                    <img src="../imagenes/img-relojes/CAY-relojes-de-lujo.jpg" alt="">
-                    <span class="verProducto position-absolute top-50 start-50 translate-middle">
-                        Ver Producto
-                    </span>
                 </div>
-                <div class="infoDetalle text-center mt-2 mb-2">
-                    <div class="detalleProducto colorBrown text-uppercase">
-                        <div class="nombreProducto">
-                            Reloj de lujo cay
-                        </div>
-                        <div class="valor">
-                            $7000
-                        </div>
-                    </div>
-                    <div class="info">
-                        <div class="descripcion">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error fuga animi quas, porro ab perferendis nemo eos. Eos esse soluta blanditiis!
-                        </div>                    
-                        <span class="carrito colorBrown">
-                            Añadir al carrito 
-                            <i class="fas fa-shopping-cart"></i>
-                        </span>
-                    </div>
-                </div>                
+                <!-- Fin Modal -->
             </div>
-            <div class="productos col-3 m-1 mt-3 mb-3">
-                <div class="thumb position-relative">
-                    <div class="bgImagen"></div>
-                    <img src="../imagenes/img-relojes/reloj-1.jpg" alt=""/>
-                    <span class="verProducto position-absolute top-50 start-50 translate-middle">
-                        Ver Producto
-                    </span>
+            <div class="card m-2 shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#reloj9">            
+                <div class="bgImagen position-absolute"></div>
+                <img src="../imagenes/img-relojes/Reloj-9.jpg" class="card-img-top" alt="..." />
+                <span class="verProducto position-absolute top-50 start-50 translate-middle">
+                    Ver Producto
+                </span>
+                <div class="d-flex flex-column justify-content-center h-100">
+                    <div class="p-2 d-flex flex-column align-items-center">
+                        <h5 class="card-title colorBrown text-uppercase">Reloj detalle corazones</h5>
+                        <span class="list-group-item colorBrown text-center border-0">$7000</span>
+                    </div>
+                    <div class="d-flex p-1 justify-content-center">
+                        <a href="#" class="cardLink colorBrown d-flex fs-6">
+                            <i class="fas fa-shopping-cart m-1"></i>
+                            Comprar
+                        </a>
+                        <a href="#" class="cardLink colorBrown d-flex fs-6">
+                            <i class="far fa-star m-1"></i>
+                            Agregar a favorito</a>                    
+                    </div>
                 </div>
-                <div class="infoDetalle text-center mt-2 mb-2">
-                    <div class="detalleProducto colorBrown text-uppercase">
-                        <div class="nombreProducto p05" >
-                            Reloj oro y diamantes lupay
+                <!-- Inicio modal -->
+                <div class="modal fade" id="reloj9" tabindex="-1"  aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
+                            Reloj detalle corazones
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div class="valor">
-                            $7000
+                        <div class="modal-body d-flex justify-content-center align-items-center">
+                            <img src="../imagenes/img-relojes/Reloj-9.jpg"/>
+                            <div class="d-flex flex-column align-items-center">
+                                <div class="descripcion d-flex p-3">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
+                                </div>
+                                <div class="valor d-flex flex-start mt-3 colorBrown">
+                                    $7000
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                Salir
+                            </button>
+                            <button type="button" class="btn btn-primary">
+                                Comprar
+                            </button>
                         </div>
                     </div>
-                    <div class="info">
-                        <div class="descripcion">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error fuga animi quas, porro ab perferendis nemo eos. Eos esse soluta blanditiis!
-                        </div>                    
-                        <span class="carrito colorBrown">
-                            Añadir al carrito 
-                            <i class="fas fa-shopping-cart"></i>
-                        </span>
                     </div>
-                </div>   
+                </div>
+                <!-- Fin Modal -->
+            </div>
+            <div class="card m-2 shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#reloj10">            
+                <div class="bgImagen position-absolute"></div>
+                <img src="../imagenes/img-relojes/Reloj-10.jpg" class="card-img-top" alt="..." />
+                <span class="verProducto position-absolute top-50 start-50 translate-middle">
+                    Ver Producto
+                </span>
+                <div class="d-flex flex-column justify-content-center h-100">
+                    <div class="p-2 d-flex flex-column align-items-center">
+                        <h5 class="card-title colorBrown text-uppercase">Reloj carude</h5>
+                        <span class="list-group-item colorBrown text-center border-0">$7000</span>
+                    </div>
+                    <div class="d-flex p-1 justify-content-center">
+                        <a href="#" class="cardLink colorBrown d-flex fs-6">
+                            <i class="fas fa-shopping-cart m-1"></i>
+                            Comprar
+                        </a>
+                        <a href="#" class="cardLink colorBrown d-flex fs-6">
+                            <i class="far fa-star m-1"></i>
+                            Agregar a favorito</a>                    
+                    </div>
+                </div>
+                <!-- Inicio modal -->
+                <div class="modal fade" id="reloj10" tabindex="-1"  aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
+                            Reloj Carude
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body d-flex justify-content-center align-items-center">
+                            <img src="../imagenes/img-relojes/Reloj-10.jpg"/>
+                            <div class="d-flex flex-column align-items-center">
+                                <div class="descripcion d-flex p-3">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
+                                </div>
+                                <div class="valor d-flex flex-start mt-3 colorBrown">
+                                    $7000
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                Salir
+                            </button>
+                            <button type="button" class="btn btn-primary">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!-- Fin Modal -->
+            </div>
+            <div class="card m-2 shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#reloj11">            
+                <div class="bgImagen position-absolute"></div>
+                <img src="../imagenes/img-relojes/CAY-relojes-de-lujo.jpg" class="card-img-top" alt="..." />
+                <span class="verProducto position-absolute top-50 start-50 translate-middle">
+                    Ver Producto
+                </span>
+                <div class="d-flex flex-column justify-content-center h-100">
+                    <div class="p-2 d-flex flex-column align-items-center">
+                        <h5 class="card-title colorBrown text-uppercase">Reloj con perlas cay</h5>
+                        <span class="list-group-item colorBrown text-center border-0">$7000</span>
+                    </div>
+                    <div class="d-flex p-1 justify-content-center">
+                        <a href="#" class="cardLink colorBrown d-flex fs-6">
+                            <i class="fas fa-shopping-cart m-1"></i>
+                            Comprar
+                        </a>
+                        <a href="#" class="cardLink colorBrown d-flex fs-6">
+                            <i class="far fa-star m-1"></i>
+                            Agregar a favorito</a>                    
+                    </div>
+                </div>
+                <!-- Inicio modal -->
+                <div class="modal fade" id="reloj11" tabindex="-1"  aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
+                            Reloj con perlas cay
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body d-flex justify-content-center align-items-center">
+                            <img src="../imagenes/img-relojes/CAY-relojes-de-lujo.jpg"/>
+                            <div class="d-flex flex-column align-items-center">
+                                <div class="descripcion d-flex p-3">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
+                                </div>
+                                <div class="valor d-flex flex-start mt-3 colorBrown">
+                                    $7000
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                Salir
+                            </button>
+                            <button type="button" class="btn btn-primary">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!-- Fin Modal -->
+            </div>
+            <div class="card m-2 shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#reloj12">            
+                <div class="bgImagen position-absolute"></div>
+                <img src="../imagenes/img-relojes/Reloj-12.jpg" class="card-img-top" alt="..." />
+                <span class="verProducto position-absolute top-50 start-50 translate-middle">
+                    Ver Producto
+                </span>
+                <div class="d-flex flex-column justify-content-center h-100">
+                    <div class="p-2 d-flex flex-column align-items-center">
+                        <h5 class="card-title colorBrown text-uppercase">Reloj Bs</h5>
+                        <span class="list-group-item colorBrown text-center border-0">$7000</span>
+                    </div>
+                    <div class="d-flex p-1 justify-content-center">
+                        <a href="#" class="cardLink colorBrown d-flex fs-6">
+                            <i class="fas fa-shopping-cart m-1"></i>
+                            Comprar
+                        </a>
+                        <a href="#" class="cardLink colorBrown d-flex fs-6">
+                            <i class="far fa-star m-1"></i>
+                            Agregar a favorito</a>                    
+                    </div>
+                </div>
+                <!-- Inicio modal -->
+                <div class="modal fade" id="reloj12" tabindex="-1"  aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
+                            Reloj BS
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body d-flex justify-content-center align-items-center">
+                            <img src="../imagenes/img-relojes/Reloj-12.jpg"/>
+                            <div class="d-flex flex-column align-items-center">
+                                <div class="descripcion d-flex p-3">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
+                                </div>
+                                <div class="valor d-flex flex-start mt-3 colorBrown">
+                                    $7000
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                Salir
+                            </button>
+                            <button type="button" class="btn btn-primary">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!-- Fin Modal -->
             </div>
         </article>
     </section>

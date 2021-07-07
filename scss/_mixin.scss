@@ -1,0 +1,7 @@
+@mixin border($direction, $width, $style, $color) {
+    @if $direction {
+        border-#{$direction}: $width $style $color;
+    } @else {
+        border: $width $style $color;
+    }
+}

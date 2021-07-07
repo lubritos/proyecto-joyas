@@ -17,7 +17,7 @@
         <nav class="navbar navbar-expand-md">
             <div class="container-fluid flex-between">
                 <a id="logo" class="navbar-brand" href="#">
-                    <img src="../imagenes/logo.png"/>
+                    <img class="logo-img" src="../imagenes/logo.png"/>
                 </a>
                 <button class="navbar-toggler colorBrown" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     Menú
@@ -69,342 +69,667 @@
     </header>
     <section id="contenido" class="container">
         <article id="collares" class="row text-center justify-content-center mt-3 mb-3">
-            <div class="productos col-3 m-1 mt-3 mb-3">
-                <div class="thumb position-relative">
-                    <div class="bgImagen position-absolute"></div>
-                    <img src="../imagenes/img-collares/CHCO169T.jpg" alt="">
-                    <span class="verProducto position-absolute top-50 start-50 translate-middle position-absolute top-50 start-50 translate-middle">
-                        Ver Producto
-                    </span>
-                </div>
-                <div class="infoDetalle text-center mt-2 mb-2">
-                    <div class="detalleProducto colorBrown text-uppercase">
-                        <div class="nombreProducto">
-                            Collar corazones 
-                        </div>
-                        <div class="valor">
-                            $7000
-                        </div>
+            <div class="card m-2 shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#collar1">            
+                <div class="bgImagen position-absolute"></div>
+                <img src="../imagenes/img-collares/collar-1.jpg" class="card-img-top" alt="..." />
+                <span class="verProducto position-absolute top-50 start-50 translate-middle">
+                    Ver Producto
+                </span>
+                <div class="d-flex flex-column justify-content-center h-100">
+                    <div class="p-2 d-flex flex-column align-items-center">
+                        <h5 class="card-title colorBrown text-uppercase">Collar Mariposa</h5>
+                        <span class="list-group-item colorBrown text-center border-0">$7000</span>
                     </div>
-                    <div class="info">
-                        <div class="descripcion">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error fuga animi quas, porro ab perferendis nemo eos. Eos esse soluta blanditiis!
-                        </div>                    
-                        <span class="carrito colorBrown">
-                            Añadir al carrito 
-                            <i class="fas fa-shopping-cart"></i>
-                        </span>
+                    <div class="d-flex p-1 justify-content-center">
+                        <a href="#" class="cardLink colorBrown d-flex fs-6">
+                            <i class="fas fa-shopping-cart m-1"></i>
+                            Comprar
+                        </a>
+                        <a href="#" class="cardLink colorBrown d-flex fs-6">
+                            <i class="far fa-star m-1"></i>
+                            Agregar a favorito</a>                    
                     </div>
                 </div>
-            </div>
-            <div class="productos col-3 m-1 mt-3 mb-3">
-                <div class="thumb position-relative">
-                    <div class="bgImagen position-absolute"></div>
-                    <img src="../imagenes/img-collares/Collar de Plata Corazon.png" alt="">
-                    <span class="verProducto position-absolute top-50 start-50 translate-middle">
-                        Ver Producto
-                    </span>
-                </div>
-                <div class="infoDetalle text-center mt-2 mb-2">
-                    <div class="detalleProducto colorBrown text-uppercase">
-                        <div class="nombreProducto">
-                            Collar de plata 925
+                <!-- Inicio modal -->
+                <div class="modal fade" id="collar1" tabindex="-1"  aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
+                            Collar Mariposa
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div class="valor">
-                            $7000
+                        <div class="modal-body d-flex justify-content-center align-items-center">
+                            <img src="../imagenes/img-collares/collar-1.jpg"/>
+                            <div class="d-flex flex-column align-items-center">
+                                <div class="descripcion d-flex p-3">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
+                                </div>
+                                <div class="valor d-flex flex-start mt-3 colorBrown">
+                                    $7000
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="info">
-                        <div class="descripcion">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error fuga animi quas, porro ab perferendis nemo eos. Eos esse soluta blanditiis!
-                        </div>                    
-                        <span class="carrito colorBrown">
-                            Añadir al carrito 
-                            <i class="fas fa-shopping-cart"></i>
-                        </span>
-                    </div>
-                </div>                
-            </div>
-            <div class="productos col-3 m-1 mt-3 mb-3">
-                <div class="thumb position-relative">
-                    <div class="bgImagen position-absolute"></div>
-                    <img src="../imagenes/img-collares/collar-1.jpg" alt="">
-                    <span class="verProducto position-absolute top-50 start-50 translate-middle">
-                        Ver Producto
-                    </span>
-                </div>
-                <div class="infoDetalle text-center mt-2 mb-2">
-                    <div class="detalleProducto colorBrown text-uppercase">
-                        <div class="nombreProducto">
-                            Collar dije mariposa
-                        </div>
-                        <div class="valor">
-                            $7000
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                Salir
+                            </button>
+                            <button type="button" class="btn btn-primary">
+                                Comprar
+                            </button>
                         </div>
                     </div>
-                    <div class="info">
-                        <div class="descripcion">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error fuga animi quas, porro ab perferendis nemo eos. Eos esse soluta blanditiis!
-                        </div>                    
-                        <span class="carrito colorBrown">
-                            Añadir al carrito 
-                            <i class="fas fa-shopping-cart"></i>
-                        </span>
-                    </div>
-                </div>                
-            </div>
-            <div class="productos col-3 m-1 mt-3 mb-3">
-                <div class="thumb position-relative">
-                    <div class="bgImagen position-absolute"></div>
-                    <img src="../imagenes/img-collares/collar-5.jpg" alt="">
-                    <span class="verProducto position-absolute top-50 start-50 translate-middle">
-                        Ver Producto
-                    </span>
-                </div>
-                <div class="infoDetalle text-center mt-2 mb-2">
-                    <div class="detalleProducto colorBrown text-uppercase">
-                        <div class="nombreProducto">
-                            Collar dije personalizado
-                        </div>
-                        <div class="valor">
-                            $7000
-                        </div>
-                    </div>
-                    <div class="info">
-                        <div class="descripcion">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error fuga animi quas, porro ab perferendis nemo eos. Eos esse soluta blanditiis!
-                        </div>                    
-                        <span class="carrito colorBrown">
-                            Añadir al carrito 
-                            <i class="fas fa-shopping-cart"></i>
-                        </span>
-                    </div>
-                </div>                    
-            </div>
-            <div class="productos col-3 m-1 mt-3 mb-3">
-                <div class="thumb position-relative">
-                    <div class="bgImagen position-absolute"></div>
-                    <img src="../imagenes/img-collares/collar-dije-circulo.png" alt="">
-                    <span class="verProducto position-absolute top-50 start-50 translate-middle">
-                        Ver Producto
-                    </span>
-                </div>
-                <div class="infoDetalle text-center mt-2 mb-2">
-                    <div class="detalleProducto colorBrown text-uppercase">
-                        <div class="nombreProducto">
-                            Collar dije circulo
-                        </div>
-                        <div class="valor">
-                            $7000
-                        </div>
-                    </div>
-                    <div class="info">
-                        <div class="descripcion">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error fuga animi quas, porro ab perferendis nemo eos. Eos esse soluta blanditiis!
-                        </div>                    
-                        <span class="carrito colorBrown">
-                            Añadir al carrito 
-                            <i class="fas fa-shopping-cart"></i>
-                        </span>
-                    </div>
-                </div>                
-            </div>
-            <div class="productos col-3 m-1 mt-3 mb-3">
-                <div class="thumb position-relative">
-                    <div class="bgImagen position-absolute"></div>
-                    <img src="../imagenes/img-collares/dije zafiro.jpg" alt="">
-                    <span class="verProducto position-absolute top-50 start-50 translate-middle">
-                        Ver Producto
-                    </span>
-                </div>                    
-                <div class="infoDetalle text-center mt-2 mb-2">
-                    <div class="detalleProducto colorBrown text-uppercase">
-                        <div class="nombreProducto">
-                            Collar dije piedra blue
-                        </div>
-                        <div class="valor">
-                            $7000
-                        </div>
-                    </div>
-                    <div class="info">
-                        <div class="descripcion">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error fuga animi quas, porro ab perferendis nemo eos. Eos esse soluta blanditiis!
-                        </div>                    
-                        <span class="carrito colorBrown">
-                            Añadir al carrito 
-                            <i class="fas fa-shopping-cart"></i>
-                        </span>
                     </div>
                 </div>
+                <!-- Fin Modal -->
             </div>
-            <div class="productos col-3 m-1 mt-3 mb-3">
-                <div class="thumb position-relative">
-                    <div class="bgImagen position-absolute"></div>
-                    <img src="../imagenes/img-collares/corazon-plata.jpg" alt="">
-                    <span class="verProducto position-absolute top-50 start-50 translate-middle">
-                        Ver Producto
-                    </span>
-                </div>                    
-                <div class="infoDetalle text-center mt-2 mb-2">
-                    <div class="detalleProducto colorBrown text-uppercase">
-                        <div class="nombreProducto">
-                            Collar corazon con piedra
-                        </div>
-                        <div class="valor">
-                            $7000
-                        </div>
+            <div class="card m-2 shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#collar2">            
+                <div class="bgImagen position-absolute"></div>
+                <img src="../imagenes/img-collares/collar-2.png" class="card-img-top" alt="..." />
+                <span class="verProducto position-absolute top-50 start-50 translate-middle">
+                    Ver Producto
+                </span>
+                <div class="d-flex flex-column justify-content-center h-100">
+                    <div class="p-2 d-flex flex-column align-items-center">
+                        <h5 class="card-title colorBrown text-uppercase">Collar Circulo</h5>
+                        <span class="list-group-item colorBrown text-center border-0">$7000</span>
                     </div>
-                    <div class="info">
-                        <div class="descripcion">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error fuga animi quas, porro ab perferendis nemo eos. Eos esse soluta blanditiis!
-                        </div>                    
-                        <span class="carrito colorBrown">
-                            Añadir al carrito 
-                            <i class="fas fa-shopping-cart"></i>
-                        </span>
+                    <div class="d-flex p-1 justify-content-center">
+                        <a href="#" class="cardLink colorBrown d-flex fs-6">
+                            <i class="fas fa-shopping-cart m-1"></i>
+                            Comprar
+                        </a>
+                        <a href="#" class="cardLink colorBrown d-flex fs-6">
+                            <i class="far fa-star m-1"></i>
+                            Agregar a favorito</a>                    
                     </div>
-                </div>                
-            </div>
-            <div class="productos col-3 m-1 mt-3 mb-3">
-                <div class="thumb position-relative">
-                    <div class="bgImagen position-absolute"></div>
-                    <img src="../imagenes/img-collares/dije.-.png" alt="">
-                    <span class="verProducto position-absolute top-50 start-50 translate-middle">
-                        Ver Producto
-                    </span>
                 </div>
-                <div class="infoDetalle text-center mt-2 mb-2">
-                    <div class="detalleProducto colorBrown text-uppercase">
-                        <div class="nombreProducto">
-                            Collar dije letra inicial
+                <!-- Inicio modal -->
+                <div class="modal fade" id="collar2" tabindex="-1"  aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
+                            Collar Circulo
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div class="valor">
-                            $7000
+                        <div class="modal-body d-flex justify-content-center align-items-center">
+                            <img src="../imagenes/img-collares/collar-2.png"/>
+                            <div class="d-flex flex-column align-items-center">
+                                <div class="descripcion d-flex p-3">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
+                                </div>
+                                <div class="valor d-flex flex-start mt-3 colorBrown">
+                                    $7000
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                Salir
+                            </button>
+                            <button type="button" class="btn btn-primary">
+                                Comprar
+                            </button>
                         </div>
                     </div>
-                    <div class="info">
-                        <div class="descripcion">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error fuga animi quas, porro ab perferendis nemo eos. Eos esse soluta blanditiis!
-                        </div>                    
-                        <span class="carrito colorBrown">
-                            Añadir al carrito 
-                            <i class="fas fa-shopping-cart"></i>
-                        </span>
                     </div>
-                </div>   
-            </div>
-            <div class="productos col-3 m-1 mt-3 mb-3">
-                <div class="thumb position-relative">
-                    <div class="bgImagen position-absolute"></div>
-                    <img src="../imagenes/img-collares/dije.jpg" alt="">
-                    <span class="verProducto position-absolute top-50 start-50 translate-middle">
-                        Ver Producto
-                    </span>
                 </div>
-                <div class="infoDetalle text-center mt-2 mb-2">
-                    <div class="detalleProducto colorBrown text-uppercase">
-                        <div class="nombreProducto">
-                            Collar dije cuadrado
-                        </div>
-                        <div class="valor">
-                            $7000
-                        </div>
-                    </div>
-                    <div class="info">
-                        <div class="descripcion">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error fuga animi quas, porro ab perferendis nemo eos. Eos esse soluta blanditiis!
-                        </div>                    
-                        <span class="carrito colorBrown">
-                            Añadir al carrito 
-                            <i class="fas fa-shopping-cart"></i>
-                        </span>
-                    </div>
-                </div>    
+                <!-- Fin Modal -->
             </div>
-            <div class="productos col-3 m-1 mt-3 mb-3">
-                <div class="thumb position-relative">
-                    <div class="bgImagen position-absolute"></div>
-                    <img src="../imagenes/img-collares/topaz-neackle-silver-(1).jpg" alt="">
-                    <span class="verProducto position-absolute top-50 start-50 translate-middle">
-                        Ver Producto
-                    </span>
+            <div class="card m-2 shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#collar3">            
+                <div class="bgImagen position-absolute"></div>
+                <img src="../imagenes/img-collares/collar-3.png" class="card-img-top" alt="..." />
+                <span class="verProducto position-absolute top-50 start-50 translate-middle">
+                    Ver Producto
+                </span>
+                <div class="d-flex flex-column justify-content-center h-100">
+                    <div class="p-2 d-flex flex-column align-items-center">
+                        <h5 class="card-title colorBrown text-uppercase">Mariposa de Plata</h5>
+                        <span class="list-group-item colorBrown text-center border-0">$7000</span>
+                    </div>
+                    <div class="d-flex p-1 justify-content-center">
+                        <a href="#" class="cardLink colorBrown d-flex fs-6">
+                            <i class="fas fa-shopping-cart m-1"></i>
+                            Comprar
+                        </a>
+                        <a href="#" class="cardLink colorBrown d-flex fs-6">
+                            <i class="far fa-star m-1"></i>
+                            Agregar a favorito</a>                    
+                    </div>
                 </div>
-                <div class="infoDetalle text-center mt-2 mb-2">
-                    <div class="detalleProducto colorBrown text-uppercase">
-                        <div class="nombreProducto">
-                            Collar topaz neackle silver
+                <!-- Inicio modal -->
+                <div class="modal fade" id="collar3" tabindex="-1"  aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
+                            Mariposa de Plata
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div class="valor">
-                            $7000
+                        <div class="modal-body d-flex justify-content-center align-items-center">
+                            <img src="../imagenes/img-collares/collar-3.png"/>
+                            <div class="d-flex flex-column align-items-center">
+                                <div class="descripcion d-flex p-3">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
+                                </div>
+                                <div class="valor d-flex flex-start mt-3 colorBrown">
+                                    $7000
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                Salir
+                            </button>
+                            <button type="button" class="btn btn-primary">
+                                Comprar
+                            </button>
                         </div>
                     </div>
-                    <div class="info">
-                        <div class="descripcion">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error fuga animi quas, porro ab perferendis nemo eos. Eos esse soluta blanditiis!
-                        </div>                    
-                        <span class="carrito colorBrown">
-                            Añadir al carrito 
-                            <i class="fas fa-shopping-cart"></i>
-                        </span>
                     </div>
-                </div>                                    
-            </div>
-            <div class="productos col-3 m-1 mt-3 mb-3">
-                <div class="thumb position-relative">
-                    <div class="bgImagen position-absolute"></div>
-                    <img src="../imagenes/img-collares/Gargantilla-2.jpg" alt="">
-                    <span class="verProducto position-absolute top-50 start-50 translate-middle">
-                        Ver Producto
-                    </span>
                 </div>
-                <div class="infoDetalle text-center mt-2 mb-2">
-                    <div class="detalleProducto colorBrown text-uppercase">
-                        <div class="nombreProducto">
-                            Collar cruz
-                        </div>
-                        <div class="valor">
-                            $7000
-                        </div>
-                    </div>
-                    <div class="info">
-                        <div class="descripcion">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error fuga animi quas, porro ab perferendis nemo eos. Eos esse soluta blanditiis!
-                        </div>                    
-                        <span class="carrito colorBrown">
-                            Añadir al carrito 
-                            <i class="fas fa-shopping-cart"></i>
-                        </span>
-                    </div>
-                </div>                
+                <!-- Fin Modal -->
             </div>
-            <div class="productos col-3 m-1 mt-3 mb-3">
-                <div class="thumb position-relative">
-                    <div class="bgImagen position-absolute"></div>
-                    <img src="../imagenes/img-collares/collar-mariposa-plata.png" alt="">
-                    <span class="verProducto position-absolute top-50 start-50 translate-middle">
-                        Ver Producto
-                    </span>
+            <div class="card m-2 shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#collar4">            
+                <div class="bgImagen position-absolute"></div>
+                <img src="../imagenes/img-collares/collar-4.jpg" class="card-img-top" alt="..." />
+                <span class="verProducto position-absolute top-50 start-50 translate-middle">
+                    Ver Producto
+                </span>
+                <div class="d-flex flex-column justify-content-center h-100">
+                    <div class="p-2 d-flex flex-column align-items-center">
+                        <h5 class="card-title colorBrown text-uppercase">Corazón de Plata</h5>
+                        <span class="list-group-item colorBrown text-center border-0">$7000</span>
+                    </div>
+                    <div class="d-flex p-1 justify-content-center">
+                        <a href="#" class="cardLink colorBrown d-flex fs-6">
+                            <i class="fas fa-shopping-cart m-1"></i>
+                            Comprar
+                        </a>
+                        <a href="#" class="cardLink colorBrown d-flex fs-6">
+                            <i class="far fa-star m-1"></i>
+                            Agregar a favorito</a>                    
+                    </div>
                 </div>
-                <div class="infoDetalle text-center mt-2 mb-2">
-                    <div class="detalleProducto colorBrown text-uppercase">
-                        <div class="nombreProducto">
-                            Collar mariposa de plata
+                <!-- Inicio modal -->
+                <div class="modal fade" id="collar4" tabindex="-1"  aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
+                            Corazón de Plata
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div class="valor">
-                            $7000
+                        <div class="modal-body d-flex justify-content-center align-items-center">
+                            <img src="../imagenes/img-collares/collar-4.jpg"/>
+                            <div class="d-flex flex-column align-items-center">
+                                <div class="descripcion d-flex p-3">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
+                                </div>
+                                <div class="valor d-flex flex-start mt-3 colorBrown">
+                                    $7000
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                Salir
+                            </button>
+                            <button type="button" class="btn btn-primary">
+                                Comprar
+                            </button>
                         </div>
                     </div>
-                    <div class="info">
-                        <div class="descripcion">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error fuga animi quas, porro ab perferendis nemo eos. Eos esse soluta blanditiis!
-                        </div>                    
-                        <span class="carrito colorBrown">
-                            Añadir al carrito 
-                            <i class="fas fa-shopping-cart"></i>
-                        </span>
                     </div>
-                </div>                
+                </div>
+                <!-- Fin Modal -->
             </div>
+            <div class="card m-2 shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#collar5">            
+                <div class="bgImagen position-absolute"></div>
+                <img src="../imagenes/img-collares/collar-5.jpg" class="card-img-top" alt="..." />
+                <span class="verProducto position-absolute top-50 start-50 translate-middle">
+                    Ver Producto
+                </span>
+                <div class="d-flex flex-column justify-content-center h-100">
+                    <div class="p-2 d-flex flex-column align-items-center">
+                        <h5 class="card-title colorBrown text-uppercase">Collar Gota</h5>
+                        <span class="list-group-item colorBrown text-center border-0">$7000</span>
+                    </div>
+                    <div class="d-flex p-1 justify-content-center">
+                        <a href="#" class="cardLink colorBrown d-flex fs-6">
+                            <i class="fas fa-shopping-cart m-1"></i>
+                            Comprar
+                        </a>
+                        <a href="#" class="cardLink colorBrown d-flex fs-6">
+                            <i class="far fa-star m-1"></i>
+                            Agregar a favorito</a>                    
+                    </div>
+                </div>
+                <!-- Inicio modal -->
+                <div class="modal fade" id="collar5" tabindex="-1"  aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
+                            Collar Gota
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body d-flex justify-content-center align-items-center">
+                            <img src="../imagenes/img-collares/collar-5.jpg"/>
+                            <div class="d-flex flex-column align-items-center">
+                                <div class="descripcion d-flex p-3">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
+                                </div>
+                                <div class="valor d-flex flex-start mt-3 colorBrown">
+                                    $7000
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                Salir
+                            </button>
+                            <button type="button" class="btn btn-primary">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!-- Fin Modal -->
+            </div>
+            <div class="card m-2 shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#collar6">            
+                <div class="bgImagen position-absolute"></div>
+                <img src="../imagenes/img-collares/collar-6.png" class="card-img-top" alt="..." />
+                <span class="verProducto position-absolute top-50 start-50 translate-middle">
+                    Ver Producto
+                </span>
+                <div class="d-flex flex-column justify-content-center h-100">
+                    <div class="p-2 d-flex flex-column align-items-center">
+                        <h5 class="card-title colorBrown text-uppercase">Collar Trebol</h5>
+                        <span class="list-group-item colorBrown text-center border-0">$7000</span>
+                    </div>
+                    <div class="d-flex p-1 justify-content-center">
+                        <a href="#" class="cardLink colorBrown d-flex fs-6">
+                            <i class="fas fa-shopping-cart m-1"></i>
+                            Comprar
+                        </a>
+                        <a href="#" class="cardLink colorBrown d-flex fs-6">
+                            <i class="far fa-star m-1"></i>
+                            Agregar a favorito</a>                    
+                    </div>
+                </div>
+                <!-- Inicio modal -->
+                <div class="modal fade" id="collar6" tabindex="-1"  aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
+                            Collar Trebol
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body d-flex justify-content-center align-items-center">
+                            <img src="../imagenes/img-collares/collar-6.png"/>
+                            <div class="d-flex flex-column align-items-center">
+                                <div class="descripcion d-flex p-3">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
+                                </div>
+                                <div class="valor d-flex flex-start mt-3 colorBrown">
+                                    $7000
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                Salir
+                            </button>
+                            <button type="button" class="btn btn-primary">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!-- Fin Modal -->
+            </div>
+            <div class="card m-2 shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#collar7">            
+                <div class="bgImagen position-absolute"></div>
+                <img src="../imagenes/img-collares/collar-7.jpg" class="card-img-top" alt="..." />
+                <span class="verProducto position-absolute top-50 start-50 translate-middle">
+                    Ver Producto
+                </span>
+                <div class="d-flex flex-column justify-content-center h-100">
+                    <div class="p-2 d-flex flex-column align-items-center">
+                        <h5 class="card-title colorBrown text-uppercase">Corazones</h5>
+                        <span class="list-group-item colorBrown text-center border-0">$7000</span>
+                    </div>
+                    <div class="d-flex p-1 justify-content-center">
+                        <a href="#" class="cardLink colorBrown d-flex fs-6">
+                            <i class="fas fa-shopping-cart m-1"></i>
+                            Comprar
+                        </a>
+                        <a href="#" class="cardLink colorBrown d-flex fs-6">
+                            <i class="far fa-star m-1"></i>
+                            Agregar a favorito</a>                    
+                    </div>
+                </div>
+                <!-- Inicio modal -->
+                <div class="modal fade" id="collar7" tabindex="-1"  aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
+                            Corazones
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body d-flex justify-content-center align-items-center">
+                            <img src="../imagenes/img-collares/collar-7.jpg"/>
+                            <div class="d-flex flex-column align-items-center">
+                                <div class="descripcion d-flex p-3">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
+                                </div>
+                                <div class="valor d-flex flex-start mt-3 colorBrown">
+                                    $7000
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                Salir
+                            </button>
+                            <button type="button" class="btn btn-primary">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!-- Fin Modal -->
+            </div>
+            <div class="card m-2 shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#collar8">            
+                <div class="bgImagen position-absolute"></div>
+                <img src="../imagenes/img-collares/collar-8.jpg" class="card-img-top" alt="..." />
+                <span class="verProducto position-absolute top-50 start-50 translate-middle">
+                    Ver Producto
+                </span>
+                <div class="d-flex flex-column justify-content-center h-100">
+                    <div class="p-2 d-flex flex-column align-items-center">
+                        <h5 class="card-title colorBrown text-uppercase">Collar Zafiro</h5>
+                        <span class="list-group-item colorBrown text-center border-0">$7000</span>
+                    </div>
+                    <div class="d-flex p-1 justify-content-center">
+                        <a href="#" class="cardLink colorBrown d-flex fs-6">
+                            <i class="fas fa-shopping-cart m-1"></i>
+                            Comprar
+                        </a>
+                        <a href="#" class="cardLink colorBrown d-flex fs-6">
+                            <i class="far fa-star m-1"></i>
+                            Agregar a favorito</a>                    
+                    </div>
+                </div>
+                <!-- Inicio modal -->
+                <div class="modal fade" id="collar8" tabindex="-1"  aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
+                            Collar Zafiro
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body d-flex justify-content-center align-items-center">
+                            <img src="../imagenes/img-collares/collar-8.jpg"/>
+                            <div class="d-flex flex-column align-items-center">
+                                <div class="descripcion d-flex p-3">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
+                                </div>
+                                <div class="valor d-flex flex-start mt-3 colorBrown">
+                                    $7000
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                Salir
+                            </button>
+                            <button type="button" class="btn btn-primary">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!-- Fin Modal -->
+            </div>
+            <div class="card m-2 shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#collar9">            
+                <div class="bgImagen position-absolute"></div>
+                <img src="../imagenes/img-collares/collar-9.jpg" class="card-img-top" alt="..." />
+                <span class="verProducto position-absolute top-50 start-50 translate-middle">
+                    Ver Producto
+                </span>
+                <div class="d-flex flex-column justify-content-center h-100">
+                    <div class="p-2 d-flex flex-column align-items-center">
+                        <h5 class="card-title colorBrown text-uppercase">Collar Perla</h5>
+                        <span class="list-group-item colorBrown text-center border-0">$7000</span>
+                    </div>
+                    <div class="d-flex p-1 justify-content-center">
+                        <a href="#" class="cardLink colorBrown d-flex fs-6">
+                            <i class="fas fa-shopping-cart m-1"></i>
+                            Comprar
+                        </a>
+                        <a href="#" class="cardLink colorBrown d-flex fs-6">
+                            <i class="far fa-star m-1"></i>
+                            Agregar a favorito</a>                    
+                    </div>
+                </div>
+                <!-- Inicio modal -->
+                <div class="modal fade" id="collar9" tabindex="-1"  aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
+                            Collar Perla
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body d-flex justify-content-center align-items-center">
+                            <img src="../imagenes/img-collares/collar-9.jpg"/>
+                            <div class="d-flex flex-column align-items-center">
+                                <div class="descripcion d-flex p-3">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
+                                </div>
+                                <div class="valor d-flex flex-start mt-3 colorBrown">
+                                    $7000
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                Salir
+                            </button>
+                            <button type="button" class="btn btn-primary">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!-- Fin Modal -->
+            </div>
+            <div class="card m-2 shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#collar10">            
+                <div class="bgImagen position-absolute"></div>
+                <img src="../imagenes/img-collares/collar-10.jpg" class="card-img-top" alt="..." />
+                <span class="verProducto position-absolute top-50 start-50 translate-middle">
+                    Ver Producto
+                </span>
+                <div class="d-flex flex-column justify-content-center h-100">
+                    <div class="p-2 d-flex flex-column align-items-center">
+                        <h5 class="card-title colorBrown text-uppercase">Collar Cubo</h5>
+                        <span class="list-group-item colorBrown text-center border-0">$7000</span>
+                    </div>
+                    <div class="d-flex p-1 justify-content-center">
+                        <a href="#" class="cardLink colorBrown d-flex fs-6">
+                            <i class="fas fa-shopping-cart m-1"></i>
+                            Comprar
+                        </a>
+                        <a href="#" class="cardLink colorBrown d-flex fs-6">
+                            <i class="far fa-star m-1"></i>
+                            Agregar a favorito</a>                    
+                    </div>
+                </div>
+                <!-- Inicio modal -->
+                <div class="modal fade" id="collar10" tabindex="-1"  aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
+                            Collar Cubo
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body d-flex justify-content-center align-items-center">
+                            <img src="../imagenes/img-collares/collar-10.jpg"/>
+                            <div class="d-flex flex-column align-items-center">
+                                <div class="descripcion d-flex p-3">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
+                                </div>
+                                <div class="valor d-flex flex-start mt-3 colorBrown">
+                                    $7000
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                Salir
+                            </button>
+                            <button type="button" class="btn btn-primary">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!-- Fin Modal -->
+            </div>
+            <div class="card m-2 shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#collar11">            
+                <div class="bgImagen position-absolute"></div>
+                <img src="../imagenes/img-collares/collar-11.jpg" class="card-img-top" alt="..." />
+                <span class="verProducto position-absolute top-50 start-50 translate-middle">
+                    Ver Producto
+                </span>
+                <div class="d-flex flex-column justify-content-center h-100">
+                    <div class="p-2 d-flex flex-column align-items-center">
+                        <h5 class="card-title colorBrown text-uppercase">Cruz de Oro</h5>
+                        <span class="list-group-item colorBrown text-center border-0">$7000</span>
+                    </div>
+                    <div class="d-flex p-1 justify-content-center">
+                        <a href="#" class="cardLink colorBrown d-flex fs-6">
+                            <i class="fas fa-shopping-cart m-1"></i>
+                            Comprar
+                        </a>
+                        <a href="#" class="cardLink colorBrown d-flex fs-6">
+                            <i class="far fa-star m-1"></i>
+                            Agregar a favorito</a>                    
+                    </div>
+                </div>
+                <!-- Inicio modal -->
+                <div class="modal fade" id="collar11" tabindex="-1"  aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
+                            Cruz de Oro
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body d-flex justify-content-center align-items-center">
+                            <img src="../imagenes/img-collares/collar-11.jpg"/>
+                            <div class="d-flex flex-column align-items-center">
+                                <div class="descripcion d-flex p-3">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
+                                </div>
+                                <div class="valor d-flex flex-start mt-3 colorBrown">
+                                    $7000
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                Salir
+                            </button>
+                            <button type="button" class="btn btn-primary">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!-- Fin Modal -->
+            </div>
+            <div class="card m-2 shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#collar12">            
+                <div class="bgImagen position-absolute"></div>
+                <img src="../imagenes/img-collares/collar-12.png" class="card-img-top" alt="..." />
+                <span class="verProducto position-absolute top-50 start-50 translate-middle">
+                    Ver Producto
+                </span>
+                <div class="d-flex flex-column justify-content-center h-100">
+                    <div class="p-2 d-flex flex-column align-items-center">
+                        <h5 class="card-title colorBrown text-uppercase">Dige Inicial</h5>
+                        <span class="list-group-item colorBrown text-center border-0">$7000</span>
+                    </div>
+                    <div class="d-flex p-1 justify-content-center">
+                        <a href="#" class="cardLink colorBrown d-flex fs-6">
+                            <i class="fas fa-shopping-cart m-1"></i>
+                            Comprar
+                        </a>
+                        <a href="#" class="cardLink colorBrown d-flex fs-6">
+                            <i class="far fa-star m-1"></i>
+                            Agregar a favorito</a>                    
+                    </div>
+                </div>
+                <!-- Inicio modal -->
+                <div class="modal fade" id="collar12" tabindex="-1"  aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
+                            Dige Inicial
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body d-flex justify-content-center align-items-center">
+                            <img src="../imagenes/img-collares/collar-12.png"/>
+                            <div class="d-flex flex-column align-items-center">
+                                <div class="descripcion d-flex p-3">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
+                                </div>
+                                <div class="valor d-flex flex-start mt-3 colorBrown">
+                                    $7000
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                Salir
+                            </button>
+                            <button type="button" class="btn btn-primary">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!-- Fin Modal -->
+            </div>
+        </article>
         </article>
     </section>
     <footer id="footer" class="mt-5 d-flex flex-column text-center p-4 align-items-around">
