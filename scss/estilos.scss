@@ -5,15 +5,19 @@
     font-family: $roboto;
     margin: 0;
     padding: 0;
+    
 }
-#encabezado {
-    width: 100%; 
-    background: $pastel;  
+
+#encabezado { 
+    @include background(null, $pastel, '', '', '');
     z-index: 9999;
-    .logo-img {
+    #logo {
         max-width: 3.5rem;
-        width: 100%;
+        .logo-img {
+            max-width: 3.5rem;
+        }
     }
+    
     .fa-user {
         color: $dorado;
         font-size: 1.5rem;
@@ -35,19 +39,17 @@
         color: $oscuro;
     }
     .dropdown-item:hover {
-        background: $dorado;
+        @include background(null, $dorado, '', '', '');
         color: $blanco;
     }
 }
 .banner-medio {
     max-width: 1200px;
-    height: 100%;
     max-height: 510px;
     .item-1 {
         max-width: 580px; 
         .bg-banner-4 {
-            background: url('../imagenes/banner-4.jpg') center center no-repeat;
-            background-size:120%;
+            @include background('../imagenes/banner-4.jpg', null, center, no-repeat, 120%);
             width: 100%;
             height: 100%;
             max-height: 550px;
@@ -80,7 +82,6 @@
 }
 #datosContacto {
     #maps{
-        width: 100%;
         max-width: 450px;
         iframe {
             border: 0;
@@ -90,25 +91,22 @@
         }
     }
     #formContacto {
-        width: 100%;
         max-width: 450px;
         height: 350px;
         .select,
         .form-control {
-            // border: 1px solid $dorado;
             @include border(null, 1px, solid, $dorado);
             width: 100%;
         }
-        #exampleFormControlTextarea1 {
+        .textarea {
             height: 180px;
         }        
         .form-check-input:checked {
-            background-color: $dorado;
+            @include background(null, $dorado, '', '', '');
             box-shadow: none;
             border-color: $pastel;
         }
         .form-control:focus {
-            // border: 2px solid $dorado;
             @include border(null, 2px, solid, $dorado);
             outline: none;
             box-shadow: none;
@@ -125,9 +123,6 @@
 .card {
     height: 430px;
     &:hover {
-        // animation-duration: 1s;
-        // animation-name: rotarImagen;
-        // animation-delay: 0.5s;
         animation-duration: calc(var(--animate-duration) * 0.75);
         backface-visibility: visible !important;
         animation-name: flipOutY;
@@ -140,20 +135,12 @@
         visibility: hidden!important;
         max-width: 263px;
         max-height: 360px;
-        height: 100%;
-        width: 100%;
         background:radial-gradient(circle, $blanco 0%, $dorado-oscuro 70%, $dorado-oscuro-2 100% );    
         opacity: 30%;        
     }
     .verProducto {
         visibility:hidden;
-        font-size: 1em;
         color:$oscuro;
-        text-transform: uppercase;
-    }
-    img {
-        max-width: 300px;
-        width: 100%;
     }
     .cardLink {
         text-decoration: none !important;
@@ -162,18 +149,13 @@
             font-weight: 600;
         }
     }
-    .modal-dialog{
-        max-width: 570px;
-    }
 }
 
 #formCuenta,
 #formRegistro {
-    background: $pastel;
+    @include background(null, $pastel, '', '', '');
     max-width: 400px;
-    width: 100%;
     max-height: 600px;
-    height: 100%;
     .registro {
         height: 350px;
     }
@@ -182,8 +164,7 @@
     }
     .select,
     .form-control {
-        @include border(null, 1px, solid, $dorado);
-        width: 100%;       
+        @include border(null, 1px, solid, $dorado);       
     }
     .form-control:focus {
         @include border(null, 2px, solid, $dorado);
@@ -195,7 +176,7 @@
         box-shadow: none;
     }
     .form-check-input:checked {
-        background-color: $dorado;
+        
         box-shadow: none; 
         border-color: $dorado;   
     }
@@ -210,28 +191,26 @@
 }
 .btn{
     padding: 0.5rem;
-    background: $dorado; 
+    @include background(null, $dorado, '', '', '');
     color: $blanco;
     border: outset;
     opacity: 80%;
 
     &:hover {
-        background: $dorado;
+        @include background(null, $dorado, '', '', '');
         opacity: 100;
         box-shadow: none;
         border-color: $blanco;
     }
     &:focus {
-        background: $oscuro;
+        @include background(null, $oscuro, '', '', '');
         color: $dorado;
     }
 }
 #footer {
     margin: 1rem 0 0 0;
-    background:  $oscuro;
-    width: 100%;
+    @include background(null, $oscuro, '', '', '');
     max-height: 260px;
-    height: 100%;
     color: $dorado;
 }
 

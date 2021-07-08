@@ -5,3 +5,13 @@
         border: $width $style $color;
     }
 }
+@mixin background($url, $color, $direction, $repeat, $size) {
+    @if $url {
+        background-image: url($url);
+        background-position: $direction;
+        background-repeat: $repeat;
+        background-size: $size;
+    } @else {
+        background-color: $color;
+    }
+}

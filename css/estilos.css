@@ -4,12 +4,12 @@
   padding: 0; }
 
 #encabezado {
-  width: 100%;
-  background: #fdf9ee;
+  background-color: #fdf9ee;
   z-index: 9999; }
-  #encabezado .logo-img {
-    max-width: 3.5rem;
-    width: 100%; }
+  #encabezado #logo {
+    max-width: 3.5rem; }
+    #encabezado #logo .logo-img {
+      max-width: 3.5rem; }
   #encabezado .fa-user {
     color: #c7a762;
     font-size: 1.5rem; }
@@ -25,17 +25,18 @@
   #encabezado .dropdown-toggle:hover {
     color: #1d1d1d; }
   #encabezado .dropdown-item:hover {
-    background: #c7a762;
+    background-color: #c7a762;
     color: #ffffff; }
 
 .banner-medio {
   max-width: 1200px;
-  height: 100%;
   max-height: 510px; }
   .banner-medio .item-1 {
     max-width: 580px; }
     .banner-medio .item-1 .bg-banner-4 {
-      background: url("../imagenes/banner-4.jpg") center center no-repeat;
+      background-image: url("../imagenes/banner-4.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
       background-size: 120%;
       width: 100%;
       height: 100%;
@@ -62,7 +63,6 @@
     transform: scale(1.1, 1.1); }
 
 #datosContacto #maps {
-  width: 100%;
   max-width: 450px; }
   #datosContacto #maps iframe {
     border: 0;
@@ -71,14 +71,13 @@
     height: 350px; }
 
 #datosContacto #formContacto {
-  width: 100%;
   max-width: 450px;
   height: 350px; }
   #datosContacto #formContacto .select,
   #datosContacto #formContacto .form-control {
     border: 1px solid #c7a762;
     width: 100%; }
-  #datosContacto #formContacto #exampleFormControlTextarea1 {
+  #datosContacto #formContacto .textarea {
     height: 180px; }
   #datosContacto #formContacto .form-check-input:checked {
     background-color: #c7a762;
@@ -107,33 +106,22 @@
     visibility: hidden !important;
     max-width: 263px;
     max-height: 360px;
-    height: 100%;
-    width: 100%;
     background: radial-gradient(circle, #ffffff 0%, #dd9d14 70%, #d8a73d 100%);
     opacity: 30%; }
   .card .verProducto {
     visibility: hidden;
-    font-size: 1em;
-    color: #1d1d1d;
-    text-transform: uppercase; }
-  .card img {
-    max-width: 300px;
-    width: 100%; }
+    color: #1d1d1d; }
   .card .cardLink {
     text-decoration: none !important; }
     .card .cardLink:hover {
       color: #c7a762;
       font-weight: 600; }
-  .card .modal-dialog {
-    max-width: 570px; }
 
 #formCuenta,
 #formRegistro {
-  background: #fdf9ee;
+  background-color: #fdf9ee;
   max-width: 400px;
-  width: 100%;
-  max-height: 600px;
-  height: 100%; }
+  max-height: 600px; }
   #formCuenta .registro,
   #formRegistro .registro {
     height: 350px; }
@@ -144,8 +132,7 @@
   #formCuenta .form-control,
   #formRegistro .select,
   #formRegistro .form-control {
-    border: 1px solid #c7a762;
-    width: 100%; }
+    border: 1px solid #c7a762; }
   #formCuenta .form-control:focus,
   #formRegistro .form-control:focus {
     border: 2px solid #c7a762;
@@ -157,7 +144,6 @@
     box-shadow: none; }
   #formCuenta .form-check-input:checked,
   #formRegistro .form-check-input:checked {
-    background-color: #c7a762;
     box-shadow: none;
     border-color: #c7a762; }
   #formCuenta .form-check-input:focus,
@@ -170,25 +156,23 @@
 
 .btn {
   padding: 0.5rem;
-  background: #c7a762;
+  background-color: #c7a762;
   color: #ffffff;
   border: outset;
   opacity: 80%; }
   .btn:hover {
-    background: #c7a762;
+    background-color: #c7a762;
     opacity: 100;
     box-shadow: none;
     border-color: #ffffff; }
   .btn:focus {
-    background: #1d1d1d;
+    background-color: #1d1d1d;
     color: #c7a762; }
 
 #footer {
   margin: 1rem 0 0 0;
-  background: #1d1d1d;
-  width: 100%;
+  background-color: #1d1d1d;
   max-height: 260px;
-  height: 100%;
   color: #c7a762; }
 
 #logo,
@@ -233,8 +217,6 @@
 @media only screen and (min-width: 500px) and (max-width: 992px) {
   .nav-link.fs-4 {
     font-size: 1rem; }
-  .logo-img {
-    width: 2.5rem; }
   .input-grup .form-control {
     min-width: 120px; }
   .search-dropdown {
@@ -244,8 +226,6 @@
     margin-top: 3rem; } }
 
 @media only screen and (max-width: 500px) {
-  .logo-img {
-    width: 1.8rem; }
   #formContacto {
     margin-top: 3rem; }
   .search-dropdown {
