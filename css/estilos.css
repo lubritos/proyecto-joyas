@@ -34,6 +34,10 @@
   max-height: 510px; }
   .banner2 .item-1 {
     max-width: 580px; }
+    .banner2 .item-1 img {
+      max-width: 580px;
+      width: 100%;
+      height: auto; }
   .banner2 .item-2-3 {
     max-width: 560px;
     max-height: 510px;
@@ -42,16 +46,12 @@
   .banner2 .item-3 {
     max-width: 560px;
     max-height: 243px; }
-  .banner2 .item-1 img {
-    max-width: 580px;
-    width: 100%;
-    height: auto; }
-  .banner2 .item-3 img,
-  .banner2 .item-2 img {
-    max-width: 560px;
-    width: 100%;
-    max-height: 240px;
-    height: 100%; }
+    .banner2 .item-2 img,
+    .banner2 .item-3 img {
+      max-width: 560px;
+      width: 100%;
+      max-height: 240px;
+      height: 100%; }
   .banner2 .bg-banner-4 {
     background: url("../imagenes/banner-4.jpg") center center no-repeat;
     background-size: 120%;
@@ -99,8 +99,9 @@
 .card {
   height: 430px; }
   .card:hover {
-    animation-duration: 2s;
-    animation-delay: 0.5s; }
+    animation-duration: calc(var(--animate-duration) * 0.75);
+    backface-visibility: visible !important;
+    animation-name: flipOutY; }
     .card:hover .bgImagen,
     .card:hover .verProducto {
       visibility: visible !important; }
@@ -127,8 +128,6 @@
       font-weight: 600; }
   .card .modal-dialog {
     max-width: 570px; }
-  .card .cardLink + .cardLink {
-    margin-left: 0.25rem; }
 
 #formCuenta,
 #formRegistro {
@@ -142,8 +141,7 @@
     height: 350px; }
   #formCuenta #from,
   #formRegistro #from {
-    width: 130px;
-    border: #ffffff; }
+    border: 1px solid #ffffff; }
   #formCuenta .select,
   #formCuenta .form-control,
   #formRegistro .select,
@@ -187,10 +185,6 @@
     background: #1d1d1d;
     color: #c7a762; }
 
-.row {
-  padding: 0;
-  margin: 0; }
-
 #footer {
   margin: 1rem 0 0 0;
   background: #1d1d1d;
@@ -206,6 +200,10 @@
   animation-duration: 1s;
   animation-name: moveFromLeft; }
 
+.img-thumb {
+  max-width: 18rem;
+  width: 100%; }
+
 @keyframes rotarImagen {
   0% {
     transform: rotatey(90deg); }
@@ -219,6 +217,26 @@
   100% {
     opacity: 1;
     transform: translateX(0%); } }
+
+@-webkit-keyframes flipOutY {
+  from {
+    transform: perspective(400px); }
+  30% {
+    transform: perspective(400px) rotate3d(0, 1, 0, -15deg);
+    opacity: 1; }
+  to {
+    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    opacity: 0; } }
+
+@keyframes flipOutY {
+  from {
+    transform: perspective(400px); }
+  30% {
+    transform: perspective(400px) rotate3d(0, 1, 0, -15deg);
+    opacity: 1; }
+  to {
+    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    opacity: 0; } }
 
 @media only screen and (min-width: 500px) and (max-width: 992px) {
   .nav-link.fs-4 {

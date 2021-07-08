@@ -41,13 +41,17 @@
         color: $blanco;
     }
 }
-
 .banner2 {
     max-width: 1200px;
     height: 100%;
     max-height: 510px;
     .item-1 {
-    max-width: 580px; 
+        max-width: 580px; 
+        img {
+            max-width: 580px;
+            width: 100%;
+            height: auto;        
+        }
     }
     .item-2-3 {
         max-width: 560px;
@@ -58,22 +62,16 @@
     .item-3 {
         max-width: 560px;
         max-height:243px;
-    }
-    .item-1 img {
-        max-width: 580px;
-        width: 100%;
-        height: auto;
-        
-    }
-    .item-3 img,
-    .item-2 img {
-        max-width: 560px;
-        width: 100%;
-        max-height:240px;
-        height: 100%;
-    }    
+        img {
+            max-width: 560px;
+            width: 100%;
+            max-height:240px;
+            height: 100%;
+        }
+    }        
     .bg-banner-4 {
-        background: url('../imagenes/banner-4.jpg') center center no-repeat;background-size:120%;
+        background: url('../imagenes/banner-4.jpg') center center no-repeat;
+        background-size:120%;
         width: 100%;
         height: 100%;
         max-height: 550px;
@@ -97,7 +95,6 @@
             height: 350px;
         }
     }
-
     #formContacto {
         width: 100%;
         max-width: 450px;
@@ -134,9 +131,12 @@
 .card {
     height: 430px;
     &:hover {
-        animation-duration: 2s;
+        // animation-duration: 1s;
         // animation-name: rotarImagen;
-        animation-delay: 0.5s;
+        // animation-delay: 0.5s;
+        animation-duration: calc(var(--animate-duration) * 0.75);
+        backface-visibility: visible !important;
+        animation-name: flipOutY;
         .bgImagen, 
         .verProducto {
             visibility: visible!important;
@@ -150,7 +150,6 @@
         width: 100%;
         background:radial-gradient(circle, $blanco 0%, $dorado-oscuro 70%, $dorado-oscuro-2 100% );    
         opacity: 30%;        
-
     }
     .verProducto {
         visibility:hidden;
@@ -172,9 +171,6 @@
     .modal-dialog{
         max-width: 570px;
     }
-    .cardLink+.cardLink {
-        margin-left: 0.25rem;
-    }
 }
 
 #formCuenta,
@@ -188,17 +184,14 @@
         height: 350px;
     }
     #from {
-        width: 130px;
-        border: $blanco;
+        @include border(null, 1px, solid, $blanco);
     }
     .select,
     .form-control {
-        // border: 1px solid $dorado;
         @include border(null, 1px, solid, $dorado);
         width: 100%;       
     }
     .form-control:focus {
-        // border: 2px solid $dorado;
         @include border(null, 2px, solid, $dorado);
         outline: none;
         box-shadow: none;
@@ -221,7 +214,6 @@
 .colorBrown{
     color: $dorado;
 }
-
 .btn{
     padding: 0.5rem;
     background: $dorado; 
@@ -235,18 +227,11 @@
         box-shadow: none;
         border-color: $blanco;
     }
-
     &:focus {
         background: $oscuro;
         color: $dorado;
     }
 }
-
-.row {
-    padding: 0;
-    margin: 0;
-}
-
 #footer {
     margin: 1rem 0 0 0;
     background:  $oscuro;
@@ -259,9 +244,14 @@
 #logo,
 .navbar,
 #contactanos,
-#redes{
+#redes {
     animation-duration: 1s;
     animation-name: moveFromLeft;
 }
+.img-thumb {
+    max-width: 18rem;
+    width: 100%;
+}
+
 @import"./animaciones";
 @import"./responsive";
