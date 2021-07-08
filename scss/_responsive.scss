@@ -4,40 +4,29 @@
     }
     .logo-img {
         width: 2.5rem;   
-    }
-        
-    nav {
-        .container-fluid {
-            padding: 0;
-        }
-    }
-    
+    }   
     .input-grup {
         .form-control {
             min-width: 120px;
         }
     }
-    
+    .search-dropdown {
+        width: 100%;
+        justify-content: space-between;
+    }
     #formContacto {
         margin-top: 3rem;
     }
 }
 @media only screen and (max-width: 500px) {
     .logo-img {
-        width: 2rem;   
-    }
-    nav {
-        .container-fluid {
-            padding: 0;
-        }
-    }
-    .navbar {
-        .container-fluid {
-            justify-content: center;
-        }
+        width: 1.8rem;   
     }
     #formContacto {
         margin-top: 3rem;
     }
-    
+    .search-dropdown {
+        width: 100%;
+        justify-content: space-between;
+    }
 }

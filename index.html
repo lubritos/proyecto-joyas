@@ -47,23 +47,25 @@
                     </li>
                     </ul>
                 </div>
-                <form class="d-flex justify-content-end">
-                    <div class="input-group m-2">
-                        <input type="text" class="rounded-pill form-control colorBrown" placeholder="Buscar..." aria-label="Example text with button addon" aria-describedby="button-addon1">
+                <div class="search-dropdown d-flex align-items-center">
+                    <form class="d-flex justify-content-end">
+                        <div class="input-group m-2">
+                            <input type="text" class="rounded-pill form-control colorBrown" placeholder="Buscar..." aria-label="Example text with button addon" aria-describedby="button-addon1">
+                        </div>
+                    </form>
+                    <div class="dropdown d-flex">
+                        <a href="#" class="dropdown-toggle colorBrown" type="button" id="menuLogin" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-user"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="dropdownMenuButton2">
+                            <li>
+                                <a class="dropdown-item colorBrown fs-5" href="./pages/cuenta.html">Crear cuenta</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item colorBrown fs-5" href="./pages/registro.html">Registrarse</a>
+                            </li>
+                        </ul>
                     </div>
-                </form>
-                <div class="dropdown">
-                    <a href="#" class="dropdown-toggle colorBrown" type="button" id="menuLogin" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="fas fa-user"></i>
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="dropdownMenuButton2">
-                        <li>
-                            <a class="dropdown-item colorBrown fs-5" href="./pages/cuenta.html">Crear cuenta</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item colorBrown fs-5" href="./pages/registro.html">Registrarse</a>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </nav>
@@ -561,19 +563,19 @@
             <!-- Fin Modal -->
         </div>
     </article>
-    <article id="banner2" class="container-fluid d-flex justify-content-center">
+    <article class="container-fluid d-flex justify-content-center">
         <!--Inicio baner2-->
-        <div class="banner2 row w-100d-flex justify-content-center">
+        <div class="banner-medio row w-100 d-flex justify-content-center">
             <div class="item-1 mt-2 mb-2 col-6 col-lg-6">
                 <div class="bg-banner-4"></div>
                 <!-- <img src="./imagenes/banner-4.jpg" class="img-fluid" alt=""/> -->
             </div>
-            <div class="item-2-3 col-6 col-lg-6">
+            <div class="contenedor-items-2-3 col-6 col-lg-6">
                 <div class="item-2 mt-2 mb-3 w-100 h-50">
-                    <img src="./imagenes/banner-5.jpg" class="img-fluid " alt=""/>
+                    <img src="./imagenes/banner-5.jpg" class="img-fluid img-item-2" alt=""/>
                 </div>
                 <div class="item-3 mt-2 mb-2 w-100 h-50">
-                    <img src="./imagenes/banner-6.jpg" class="img-fluid" alt=""/>
+                    <img src="./imagenes/banner-6.jpg" class="img-fluid img-item-3" alt=""/>
                 </div>
             </div>
         </div>

@@ -44,23 +44,25 @@
                     </li>
                     </ul>
                 </div>
-                <form class="d-flex justify-content-end">
-                    <div class="input-group m-2">
-                        <input type="text" class="rounded-pill form-control colorBrown" placeholder="Buscar..." aria-label="Example text with button addon" aria-describedby="button-addon1">
+                <div class="search-dropdown d-flex align-items-center">
+                    <form class="d-flex justify-content-end">
+                        <div class="input-group m-2">
+                            <input type="text" class="rounded-pill form-control colorBrown" placeholder="Buscar..." aria-label="Example text with button addon" aria-describedby="button-addon1">
+                        </div>
+                    </form>
+                    <div class="dropdown d-flex">
+                        <a href="#" class="dropdown-toggle colorBrown" type="button" id="menuLogin" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-user"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="dropdownMenuButton2">
+                            <li>
+                                <a class="dropdown-item colorBrown fs-5" href="./pages/cuenta.html">Crear cuenta</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item colorBrown fs-5" href="./pages/registro.html">Registrarse</a>
+                            </li>
+                        </ul>
                     </div>
-                </form>
-                <div class="dropdown">
-                    <a href="#" class="dropdown-toggle colorBrown" type="button" id="menuLogin" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="fas fa-user"></i>
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="dropdownMenuButton2">
-                        <li>
-                            <a class="dropdown-item colorBrown fs-5" href="./cuenta.html">Crear cuenta</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item colorBrown fs-5" href="./registro.html">Registrarse</a>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </nav>

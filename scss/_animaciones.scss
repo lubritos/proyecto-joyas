@@ -1,11 +1,4 @@
-@keyframes rotarImagen{
-    0% {
-        transform: rotatey(90deg);
-    }
-    100% {
-        transform: rotatey(0deg);
-    }
-}
+
 @keyframes moveFromLeft{
     0% {
         opacity: 0;
@@ -18,32 +11,27 @@
 }
 @-webkit-keyframes flipOutY {
     from {
-      transform: perspective(400px);
+        transform: perspective(400px);
     }
-  
     30% {
-      transform: perspective(400px) rotate3d(0, 1, 0, -15deg);
-      opacity: 1;
+        transform: perspective(400px) rotate3d(0, 1, 0, -15deg);
+        opacity: 1;
     }
-  
     to {
-      transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
-      opacity: 0;
+        transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        opacity: 0;
     }
-  }
+}
 @keyframes flipOutY {
     from {
-      transform: perspective(400px);
+        transform: perspective(400px);
     }
-  
     30% {
-      transform: perspective(400px) rotate3d(0, 1, 0, -15deg);
-      opacity: 1;
+        transform: perspective(400px) rotate3d(0, 1, 0, -15deg);
+        opacity: 1;
     }
-  
     to {
-      transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
-      opacity: 0;
+        transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        opacity: 0;
     }
-  }
-  
+}

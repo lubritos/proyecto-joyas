@@ -45,23 +45,25 @@
                     </li>
                     </ul>
                 </div>
-                <form class="d-flex justify-content-end">
-                    <div class="input-group m-2">
-                        <input type="text" class="rounded-pill form-control colorBrown" placeholder="Buscar..." aria-label="Example text with button addon" aria-describedby="button-addon1">
+                <div class="search-dropdown d-flex align-items-center">
+                    <form class="d-flex justify-content-end">
+                        <div class="input-group m-2">
+                            <input type="text" class="rounded-pill form-control colorBrown" placeholder="Buscar..." aria-label="Example text with button addon" aria-describedby="button-addon1">
+                        </div>
+                    </form>
+                    <div class="dropdown d-flex">
+                        <a href="#" class="dropdown-toggle colorBrown" type="button" id="menuLogin" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-user"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="dropdownMenuButton2">
+                            <li>
+                                <a class="dropdown-item colorBrown fs-5" href="./pages/cuenta.html">Crear cuenta</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item colorBrown fs-5" href="./pages/registro.html">Registrarse</a>
+                            </li>
+                        </ul>
                     </div>
-                </form>
-                <div class="dropdown">
-                    <a href="#" class="dropdown-toggle colorBrown" type="button" id="menuLogin" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="fas fa-user"></i>
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="dropdownMenuButton2">
-                        <li>
-                            <a class="dropdown-item colorBrown fs-5" href="./cuenta.html">Crear cuenta</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item colorBrown fs-5" href="./registro.html">Registrarse</a>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </nav>
@@ -90,40 +92,40 @@
                             Agregar a favorito</a>                    
                     </div>
                 </div>
-                <!-- Inicio modal -->
-                <div class="modal fade" id="anillos1" tabindex="-1"  aria-hidden="true">
-                    <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                        <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
-                            Alianzas Grabadas
-                        </h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body d-flex justify-content-center align-items-center">
-                            <img src="../imagenes/img-anillos/alianzas-grabadas.png"/>
-                            <div class="d-flex flex-column align-items-center">
-                                <div class="descripciond-flex p-3">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
-                                </div>
-                                <div class="valord-flex flex-start mt-3 colorBrown">
-                                    $7000
-                                </div>
+            </div>
+            <!-- Inicio modal -->
+            <div class="modal fade" id="anillos1" tabindex="-1"  aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
+                        Alianzas Grabadas
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex justify-content-center align-items-center">
+                        <img src="../imagenes/img-anillos/alianzas-grabadas.png" class="img-thumb"/>
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="descripciond-flex p-3">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
+                            </div>
+                            <div class="valord-flex flex-start mt-3 colorBrown">
+                                $7000
                             </div>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                                Salir
-                            </button>
-                            <button type="button" class="btn btn-primary">
-                                Comprar
-                            </button>
-                        </div>
                     </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                            Salir
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                            Comprar
+                        </button>
                     </div>
                 </div>
-                <!-- Fin Modal -->
+                </div>
             </div>
+            <!-- Fin Modal -->
             <div class="card m-2 shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#anillos2">            
                 <div class="bgImagen position-absolute"></div>
                 <img src="../imagenes/img-anillos/alianzas-oro-blanco-y-amarillo-mate.jpg" class="card-img-top" alt="..." />
@@ -145,40 +147,40 @@
                             Agregar a favorito</a>                    
                     </div>
                 </div>
-                <!-- Inicio modal -->
-                <div class="modal fade" id="anillos2" tabindex="-1"  aria-hidden="true">
-                    <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                        <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
-                            Alianzas oro blanco y amarillo
-                        </h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body d-flex justify-content-center align-items-center">
-                            <img src="../imagenes/img-anillos/alianzas-oro-blanco-y-amarillo-mate.jpg"/>
-                            <div class="d-flex flex-column align-items-center">
-                                <div class="descripciond-flex p-3">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
-                                </div>
-                                <div class="valord-flex flex-start mt-3 colorBrown">
-                                    $7000
-                                </div>
+            </div>
+            <!-- Inicio modal -->
+            <div class="modal fade" id="anillos2" tabindex="-1"  aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
+                        Alianzas oro blanco y amarillo
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex justify-content-center align-items-center">
+                        <img src="../imagenes/img-anillos/alianzas-oro-blanco-y-amarillo-mate.jpg" class="img-thumb"/>
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="descripciond-flex p-3">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
+                            </div>
+                            <div class="valord-flex flex-start mt-3 colorBrown">
+                                $7000
                             </div>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                                Salir
-                            </button>
-                            <button type="button" class="btn btn-primary">
-                                Comprar
-                            </button>
-                        </div>
                     </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                            Salir
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                            Comprar
+                        </button>
                     </div>
                 </div>
-                <!-- Fin Modal -->
+                </div>
             </div>
+            <!-- Fin Modal -->
             <div class="card m-2 shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#anillo3">            
                 <div class="bgImagen position-absolute"></div>
                 <img src="../imagenes/img-anillos/anillo-3.jpg" class="card-img-top" alt="..." />
@@ -200,40 +202,40 @@
                             Agregar a favorito</a>                    
                     </div>
                 </div>
-                <!-- Inicio modal -->
-                <div class="modal fade" id="anillo3" tabindex="-1"  aria-hidden="true">
-                    <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                        <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
-                            Anillo plata con piedra
-                        </h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body d-flex justify-content-center align-items-center">
-                            <img src="../imagenes/img-anillos/anillo-3.jpg"/>
-                            <div class="d-flex flex-column align-items-center">
-                                <div class="descripciond-flex p-3">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
-                                </div>
-                                <div class="valord-flex flex-start mt-3 colorBrown">
-                                    $7000
-                                </div>
+            </div>
+            <!-- Inicio modal -->
+            <div class="modal fade" id="anillo3" tabindex="-1"  aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
+                        Anillo plata con piedra
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex justify-content-center align-items-center">
+                        <img src="../imagenes/img-anillos/anillo-3.jpg" class="img-thumb"/>
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="descripciond-flex p-3">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
+                            </div>
+                            <div class="valord-flex flex-start mt-3 colorBrown">
+                                $7000
                             </div>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                                Salir
-                            </button>
-                            <button type="button" class="btn btn-primary">
-                                Comprar
-                            </button>
-                        </div>
                     </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                            Salir
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                            Comprar
+                        </button>
                     </div>
                 </div>
-                <!-- Fin Modal -->
+                </div>
             </div>
+            <!-- Fin Modal -->
             <div class="card m-2 shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#anillo4">            
                 <div class="bgImagen position-absolute"></div>
                 <img src="../imagenes/img-anillos/Anillo-4.jpg" class="card-img-top" alt="..." />
@@ -255,40 +257,40 @@
                             Agregar a favorito</a>                    
                     </div>
                 </div>
-                <!-- Inicio modal -->
-                <div class="modal fade" id="anillo4" tabindex="-1"  aria-hidden="true">
-                    <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                        <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
-                            Anillo con brillantes
-                        </h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body d-flex justify-content-center align-items-center">
-                            <img src="../imagenes/img-anillos/Anillo-4.jpg"/>
-                            <div class="d-flex flex-column align-items-center">
-                                <div class="descripciond-flex p-3">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
-                                </div>
-                                <div class="valord-flex flex-start mt-3 colorBrown">
-                                    $7000
-                                </div>
+            </div>
+            <!-- Inicio modal -->
+            <div class="modal fade" id="anillo4" tabindex="-1"  aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
+                        Anillo con brillantes
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex justify-content-center align-items-center">
+                        <img src="../imagenes/img-anillos/Anillo-4.jpg" class="img-thumb"/>
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="descripciond-flex p-3">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
+                            </div>
+                            <div class="valord-flex flex-start mt-3 colorBrown">
+                                $7000
                             </div>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                                Salir
-                            </button>
-                            <button type="button" class="btn btn-primary">
-                                Comprar
-                            </button>
-                        </div>
                     </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                            Salir
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                            Comprar
+                        </button>
                     </div>
                 </div>
-                <!-- Fin Modal -->
+                </div>
             </div>
+            <!-- Fin Modal -->
             <div class="card m-2 shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#anillo5">            
                 <div class="bgImagen position-absolute"></div>
                 <img src="../imagenes/img-anillos/anillo-oro-18.png" class="card-img-top" alt="..." />
@@ -310,40 +312,40 @@
                             Agregar a favorito</a>                    
                     </div>
                 </div>
-                <!-- Inicio modal -->
-                <div class="modal fade" id="anillo5" tabindex="-1"  aria-hidden="true">
-                    <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                        <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
-                            Anillo oro 18k
-                        </h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body d-flex justify-content-center align-items-center">
-                            <img src="../imagenes/img-anillos/anillo-oro-18.png"/>
-                            <div class="d-flex flex-column align-items-center">
-                                <div class="descripciond-flex p-3">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
-                                </div>
-                                <div class="valord-flex flex-start mt-3 colorBrown">
-                                    $7000
-                                </div>
+            </div>
+            <!-- Inicio modal -->
+            <div class="modal fade" id="anillo5" tabindex="-1"  aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
+                        Anillo oro 18k
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex justify-content-center align-items-center">
+                        <img src="../imagenes/img-anillos/anillo-oro-18.png" class="img-thumb"/>
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="descripciond-flex p-3">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
+                            </div>
+                            <div class="valord-flex flex-start mt-3 colorBrown">
+                                $7000
                             </div>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                                Salir
-                            </button>
-                            <button type="button" class="btn btn-primary">
-                                Comprar
-                            </button>
-                        </div>
                     </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                            Salir
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                            Comprar
+                        </button>
                     </div>
                 </div>
-                <!-- Fin Modal -->
+                </div>
             </div>
+            <!-- Fin Modal -->
             <div class="card m-2 shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#anillo6">            
                 <div class="bgImagen position-absolute"></div>
                 <img src="../imagenes/img-anillos/anillo-plata-925-.jpg" class="card-img-top" alt="..." />
@@ -365,40 +367,40 @@
                             Agregar a favorito</a>                    
                     </div>
                 </div>
-                <!-- Inicio modal -->
-                <div class="modal fade" id="anillo6" tabindex="-1"  aria-hidden="true">
-                    <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                        <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
-                            Anillo plata 925
-                        </h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body d-flex justify-content-center align-items-center">
-                            <img src="../imagenes/img-anillos/anillo-plata-925-.jpg"/>
-                            <div class="d-flex flex-column align-items-center">
-                                <div class="descripciond-flex p-3">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
-                                </div>
-                                <div class="valord-flex flex-start mt-3 colorBrown">
-                                    $7000
-                                </div>
+            </div>
+            <!-- Inicio modal -->
+            <div class="modal fade" id="anillo6" tabindex="-1"  aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
+                        Anillo plata 925
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex justify-content-center align-items-center">
+                        <img src="../imagenes/img-anillos/anillo-plata-925-.jpg" class="img-thumb"/>
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="descripciond-flex p-3">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
+                            </div>
+                            <div class="valord-flex flex-start mt-3 colorBrown">
+                                $7000
                             </div>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                                Salir
-                            </button>
-                            <button type="button" class="btn btn-primary">
-                                Comprar
-                            </button>
-                        </div>
                     </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                            Salir
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                            Comprar
+                        </button>
                     </div>
                 </div>
-                <!-- Fin Modal -->
+                </div>
             </div>
+            <!-- Fin Modal -->
             <div class="card m-2 shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#anillo7">            
                 <div class="bgImagen position-absolute"></div>
                 <img src="../imagenes/img-anillos/anillo-diamante.jpg" class="card-img-top" alt="..." />
@@ -420,40 +422,40 @@
                             Agregar a favorito</a>                    
                     </div>
                 </div>
-                <!-- Inicio modal -->
-                <div class="modal fade" id="anillo7" tabindex="-1"  aria-hidden="true">
-                    <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                        <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
-                            Anillo con diamantes
-                        </h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body d-flex justify-content-center align-items-center">
-                            <img src="../imagenes/img-anillos/anillo-diamante.jpg"/>
-                            <div class="d-flex flex-column align-items-center">
-                                <div class="descripciond-flex p-3">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
-                                </div>
-                                <div class="valord-flex flex-start mt-3 colorBrown">
-                                    $7000
-                                </div>
+            </div>
+            <!-- Inicio modal -->
+            <div class="modal fade" id="anillo7" tabindex="-1"  aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
+                        Anillo con diamantes
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex justify-content-center align-items-center">
+                        <img src="../imagenes/img-anillos/anillo-diamante.jpg" class="img-thumb"/>
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="descripciond-flex p-3">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
+                            </div>
+                            <div class="valord-flex flex-start mt-3 colorBrown">
+                                $7000
                             </div>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                                Salir
-                            </button>
-                            <button type="button" class="btn btn-primary">
-                                Comprar
-                            </button>
-                        </div>
                     </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                            Salir
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                            Comprar
+                        </button>
                     </div>
                 </div>
-                <!-- Fin Modal -->
+                </div>
             </div>
+            <!-- Fin Modal -->
             <div class="card m-2 shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#anillo8">            
                 <div class="bgImagen position-absolute"></div>
                 <img src="../imagenes/img-anillos/Anillo-oro.png" class="card-img-top" alt="..." />
@@ -475,40 +477,40 @@
                             Agregar a favorito</a>                    
                     </div>
                 </div>
-                <!-- Inicio modal -->
-                <div class="modal fade" id="anillo8" tabindex="-1"  aria-hidden="true">
-                    <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                        <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
-                            Anillo oro con rubi
-                        </h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body d-flex justify-content-center align-items-center">
-                            <img src="../imagenes/img-anillos/Anillo-oro.png"/>
-                            <div class="d-flex flex-column align-items-center">
-                                <div class="descripciond-flex p-3">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
-                                </div>
-                                <div class="valord-flex flex-start mt-3 colorBrown">
-                                    $7000
-                                </div>
+            </div>
+            <!-- Inicio modal -->
+            <div class="modal fade" id="anillo8" tabindex="-1"  aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
+                        Anillo oro con rubi
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex justify-content-center align-items-center">
+                        <img src="../imagenes/img-anillos/Anillo-oro.png" class="img-thumb"/>
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="descripciond-flex p-3">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
+                            </div>
+                            <div class="valord-flex flex-start mt-3 colorBrown">
+                                $7000
                             </div>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                                Salir
-                            </button>
-                            <button type="button" class="btn btn-primary">
-                                Comprar
-                            </button>
-                        </div>
                     </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                            Salir
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                            Comprar
+                        </button>
                     </div>
                 </div>
-                <!-- Fin Modal -->
+                </div>
             </div>
+            <!-- Fin Modal -->
             <div class="card m-2 shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#anillo9">            
                 <div class="bgImagen position-absolute"></div>
                 <img src="../imagenes/img-anillos/Anillo-zafiro.jpg" class="card-img-top" alt="..." />
@@ -530,40 +532,40 @@
                             Agregar a favorito</a>                    
                     </div>
                 </div>
-                <!-- Inicio modal -->
-                <div class="modal fade" id="anillo9" tabindex="-1"  aria-hidden="true">
-                    <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                        <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
-                            Anillo piedra zafiro
-                        </h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body d-flex justify-content-center align-items-center">
-                            <img src="../imagenes/img-anillos/Anillo-zafiro.jpg"/>
-                            <div class="d-flex flex-column align-items-center">
-                                <div class="descripciond-flex p-3">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
-                                </div>
-                                <div class="valord-flex flex-start mt-3 colorBrown">
-                                    $7000
-                                </div>
+            </div>
+            <!-- Inicio modal -->
+            <div class="modal fade" id="anillo9" tabindex="-1"  aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
+                        Anillo piedra zafiro
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex justify-content-center align-items-center">
+                        <img src="../imagenes/img-anillos/Anillo-zafiro.jpg" class="img-thumb"/>
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="descripciond-flex p-3">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
+                            </div>
+                            <div class="valord-flex flex-start mt-3 colorBrown">
+                                $7000
                             </div>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                                Salir
-                            </button>
-                            <button type="button" class="btn btn-primary">
-                                Comprar
-                            </button>
-                        </div>
                     </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                            Salir
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                            Comprar
+                        </button>
                     </div>
                 </div>
-                <!-- Fin Modal -->
+                </div>
             </div>
+            <!-- Fin Modal -->
             <div class="card m-2 shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#anillo10">            
                 <div class="bgImagen position-absolute"></div>
                 <img src="../imagenes/img-anillos/Anillos-de-boda.jpg" class="card-img-top" alt="..." />
@@ -585,40 +587,40 @@
                             Agregar a favorito</a>                    
                     </div>
                 </div>
-                <!-- Inicio modal -->
-                <div class="modal fade" id="anillo10" tabindex="-1"  aria-hidden="true">
-                    <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                        <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
-                            Anillo tres piedras 
-                        </h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body d-flex justify-content-center align-items-center">
-                            <img src="../imagenes/img-anillos/Anillos-de-boda.jpg"/>
-                            <div class="d-flex flex-column align-items-center">
-                                <div class="descripciond-flex p-3">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
-                                </div>
-                                <div class="valord-flex flex-start mt-3 colorBrown">
-                                    $7000
-                                </div>
+            </div>
+            <!-- Inicio modal -->
+            <div class="modal fade" id="anillo10" tabindex="-1"  aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
+                        Anillo tres piedras 
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex justify-content-center align-items-center">
+                        <img src="../imagenes/img-anillos/Anillos-de-boda.jpg" class="img-thumb"/>
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="descripciond-flex p-3">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
+                            </div>
+                            <div class="valord-flex flex-start mt-3 colorBrown">
+                                $7000
                             </div>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                                Salir
-                            </button>
-                            <button type="button" class="btn btn-primary">
-                                Comprar
-                            </button>
-                        </div>
                     </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                            Salir
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                            Comprar
+                        </button>
                     </div>
                 </div>
-                <!-- Fin Modal -->
+                </div>
             </div>
+            <!-- Fin Modal -->
             <div class="card m-2 shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#anillo11">            
                 <div class="bgImagen position-absolute"></div>
                 <img src="../imagenes/img-anillos/anillo-plata-925-.jpg" class="card-img-top" alt="..." />
@@ -640,40 +642,40 @@
                             Agregar a favorito</a>                    
                     </div>
                 </div>
-                <!-- Inicio modal -->
-                <div class="modal fade" id="anillo11" tabindex="-1"  aria-hidden="true">
-                    <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                        <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
-                            Anillo plata con piedra cubic
-                        </h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body d-flex justify-content-center align-items-center">
-                            <img src="../imagenes/img-anillos/anillo-plata-925-.jpg"/>
-                            <div class="d-flex flex-column align-items-center">
-                                <div class="descripciond-flex p-3">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
-                                </div>
-                                <div class="valord-flex flex-start mt-3 colorBrown">
-                                    $7000
-                                </div>
+            </div>
+            <!-- Inicio modal -->
+            <div class="modal fade" id="anillo11" tabindex="-1"  aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
+                        Anillo plata con piedra cubic
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex justify-content-center align-items-center">
+                        <img src="../imagenes/img-anillos/anillo-plata-925-.jpg" class="img-thumb"/>
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="descripciond-flex p-3">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
+                            </div>
+                            <div class="valord-flex flex-start mt-3 colorBrown">
+                                $7000
                             </div>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                                Salir
-                            </button>
-                            <button type="button" class="btn btn-primary">
-                                Comprar
-                            </button>
-                        </div>
                     </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                            Salir
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                            Comprar
+                        </button>
                     </div>
                 </div>
-                <!-- Fin Modal -->
+                </div>
             </div>
+            <!-- Fin Modal -->
             <div class="card m-2 shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#anillo12">            
                 <div class="bgImagen position-absolute"></div>
                 <img src="../imagenes/img-anillos/anillo-diamante.jpg" class="card-img-top" alt="..." />
@@ -695,40 +697,40 @@
                             Agregar a favorito</a>                    
                     </div>
                 </div>
-                <!-- Inicio modal -->
-                <div class="modal fade" id="anillo12" tabindex="-1"  aria-hidden="true">
-                    <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                        <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
-                            Anillo diamantes grabado
-                        </h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body d-flex justify-content-center align-items-center">
-                            <img src="../imagenes/img-anillos/anillo-diamante.jpg"/>
-                            <div class="d-flex flex-column align-items-center">
-                                <div class="descripciond-flex p-3">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
-                                </div>
-                                <div class="valord-flex flex-start mt-3 colorBrown">
-                                    $7000
-                                </div>
+            </div>
+            <!-- Inicio modal -->
+            <div class="modal fade" id="anillo12" tabindex="-1"  aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
+                        Anillo diamantes grabado
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex justify-content-center align-items-center">
+                        <img src="../imagenes/img-anillos/anillo-diamante.jpg" class="img-thumb"/>
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="descripciond-flex p-3">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
+                            </div>
+                            <div class="valord-flex flex-start mt-3 colorBrown">
+                                $7000
                             </div>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                                Salir
-                            </button>
-                            <button type="button" class="btn btn-primary">
-                                Comprar
-                            </button>
-                        </div>
                     </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                            Salir
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                            Comprar
+                        </button>
                     </div>
                 </div>
-                <!-- Fin Modal -->
+                </div>
             </div>
+            <!-- Fin Modal -->
         </article>
     </section>
     <footer id="footer" class="mt-5 d-flex flex-column text-center p-4 align-items-around">        

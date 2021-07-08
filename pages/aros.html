@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/estilos.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> 
 </head>
 <body>
     <header id="encabezado" class="fixed row">
@@ -44,23 +45,25 @@
                     </li>
                     </ul>
                 </div>
-                <form class="d-flex justify-content-end">
-                    <div class="input-group m-2">
-                        <input type="text" class="rounded-pill form-control colorBrown" placeholder="Buscar..." aria-label="Example text with button addon" aria-describedby="button-addon1">
+                <div class="search-dropdown d-flex align-items-center">
+                    <form class="d-flex justify-content-end">
+                        <div class="input-group m-2">
+                            <input type="text" class="rounded-pill form-control colorBrown" placeholder="Buscar..." aria-label="Example text with button addon" aria-describedby="button-addon1">
+                        </div>
+                    </form>
+                    <div class="dropdown d-flex">
+                        <a href="#" class="dropdown-toggle colorBrown" type="button" id="menuLogin" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-user"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="dropdownMenuButton2">
+                            <li>
+                                <a class="dropdown-item colorBrown fs-5" href="./pages/cuenta.html">Crear cuenta</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item colorBrown fs-5" href="./pages/registro.html">Registrarse</a>
+                            </li>
+                        </ul>
                     </div>
-                </form>
-                <div class="dropdown">
-                    <a href="#" class="dropdown-toggle colorBrown" type="button" id="menuLogin" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="fas fa-user"></i>
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="dropdownMenuButton2">
-                        <li>
-                            <a class="dropdown-item colorBrown fs-5" href="./cuenta.html">Crear cuenta</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item colorBrown fs-5" href="./registro.html">Registrarse</a>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </nav>
@@ -89,40 +92,40 @@
                             Agregar a favorito</a>                    
                     </div>
                 </div>
-                <!-- Inicio modal -->
-                <div class="modal fade" id="aros1" tabindex="-1"  aria-hidden="true">
-                    <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                        <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
-                            Abridores de Oro
-                        </h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body d-flex justify-content-center align-items-center">
-                            <img src="../imagenes/img-aros/aros-1.png"/>
-                            <div class="d-flex flex-column align-items-center">
-                                <div class="descripciond-flex p-3">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
-                                </div>
-                                <div class="valord-flex flex-start mt-3 colorBrown">
-                                    $7000
-                                </div>
+            </div>
+            <!-- Inicio modal -->
+            <div class="modal fade" id="aros1" tabindex="-1"  aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
+                        Abridores de Oro
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex justify-content-center align-items-center">
+                        <img src="../imagenes/img-aros/aros-1.png" class="img-thumb"/>
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="descripciond-flex p-3">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
+                            </div>
+                            <div class="valord-flex flex-start mt-3 colorBrown">
+                                $7000
                             </div>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                                Salir
-                            </button>
-                            <button type="button" class="btn btn-primary">
-                                Comprar
-                            </button>
-                        </div>
                     </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                            Salir
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                            Comprar
+                        </button>
                     </div>
                 </div>
-                <!-- Fin Modal -->
+                </div>
             </div>
+            <!-- Fin Modal -->
             <div class="card m-2 shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#aros2">            
                 <div class="bgImagen position-absolute"></div>
                 <img src="../imagenes/img-aros/aros-2.png" class="card-img-top" alt="..." />
@@ -144,40 +147,40 @@
                             Agregar a favorito</a>                    
                     </div>
                 </div>
-                <!-- Inicio modal -->
-                <div class="modal fade" id="aros2" tabindex="-1"  aria-hidden="true">
-                    <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                        <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
-                            Abridores Mariposa
-                        </h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body d-flex justify-content-center align-items-center">
-                            <img src="../imagenes/img-aros/aros-2.png"/>
-                            <div class="d-flex flex-column align-items-center">
-                                <div class="descripciond-flex p-3">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
-                                </div>
-                                <div class="valord-flex flex-start mt-3 colorBrown">
-                                    $7000
-                                </div>
+            </div>
+            <!-- Inicio modal -->
+            <div class="modal fade" id="aros2" tabindex="-1"  aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
+                        Abridores Mariposa
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex justify-content-center align-items-center">
+                        <img src="../imagenes/img-aros/aros-2.png" class="img-thumb"/>
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="descripciond-flex p-3">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
+                            </div>
+                            <div class="valord-flex flex-start mt-3 colorBrown">
+                                $7000
                             </div>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                                Salir
-                            </button>
-                            <button type="button" class="btn btn-primary">
-                                Comprar
-                            </button>
-                        </div>
                     </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                            Salir
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                            Comprar
+                        </button>
                     </div>
                 </div>
-                <!-- Fin Modal -->
+                </div>
             </div>
+            <!-- Fin Modal -->
             <div class="card m-2 shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#aros3">            
                 <div class="bgImagen position-absolute"></div>
                 <img src="../imagenes/img-aros/aros-3.jpg" class="card-img-top" alt="..." />
@@ -199,40 +202,40 @@
                             Agregar a favorito</a>                    
                     </div>
                 </div>
-                <!-- Inicio modal -->
-                <div class="modal fade" id="aros3" tabindex="-1"  aria-hidden="true">
-                    <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                        <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
-                            Aros Perlas
-                        </h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body d-flex justify-content-center align-items-center">
-                            <img src="../imagenes/img-aros/aros-3.jpg"/>
-                            <div class="d-flex flex-column align-items-center">
-                                <div class="descripciond-flex p-3">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
-                                </div>
-                                <div class="valord-flex flex-start mt-3 colorBrown">
-                                    $7000
-                                </div>
+            </div>
+            <!-- Inicio modal -->
+            <div class="modal fade" id="aros3" tabindex="-1"  aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
+                        Aros Perlas
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex justify-content-center align-items-center">
+                        <img src="../imagenes/img-aros/aros-3.jpg" class="img-thumb"/>
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="descripciond-flex p-3">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
+                            </div>
+                            <div class="valord-flex flex-start mt-3 colorBrown">
+                                $7000
                             </div>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                                Salir
-                            </button>
-                            <button type="button" class="btn btn-primary">
-                                Comprar
-                            </button>
-                        </div>
                     </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                            Salir
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                            Comprar
+                        </button>
                     </div>
                 </div>
-                <!-- Fin Modal -->
+                </div>
             </div>
+            <!-- Fin Modal -->
             <div class="card m-2 shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#aros4">            
                 <div class="bgImagen position-absolute"></div>
                 <img src="../imagenes/img-aros/aros-4.jpg" class="card-img-top" alt="..." />
@@ -254,40 +257,40 @@
                             Agregar a favorito</a>                    
                     </div>
                 </div>
-                <!-- Inicio modal -->
-                <div class="modal fade" id="aros4" tabindex="-1"  aria-hidden="true">
-                    <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                        <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
-                            Aros Estrellas
-                        </h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body d-flex justify-content-center align-items-center">
-                            <img src="../imagenes/img-aros/aros-4.jpg"/>
-                            <div class="d-flex flex-column align-items-center">
-                                <div class="descripciond-flex p-3">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
-                                </div>
-                                <div class="valord-flex flex-start mt-3 colorBrown">
-                                    $7000
-                                </div>
+            </div>
+            <!-- Inicio modal -->
+            <div class="modal fade" id="aros4" tabindex="-1"  aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
+                        Aros Estrellas
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex justify-content-center align-items-center">
+                        <img src="../imagenes/img-aros/aros-4.jpg" class="img-thumb"/>
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="descripciond-flex p-3">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
+                            </div>
+                            <div class="valord-flex flex-start mt-3 colorBrown">
+                                $7000
                             </div>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                                Salir
-                            </button>
-                            <button type="button" class="btn btn-primary">
-                                Comprar
-                            </button>
-                        </div>
                     </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                            Salir
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                            Comprar
+                        </button>
                     </div>
                 </div>
-                <!-- Fin Modal -->
+                </div>
             </div>
+            <!-- Fin Modal -->
             <div class="card m-2 shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#aros5">            
                 <div class="bgImagen position-absolute"></div>
                 <img src="../imagenes/img-aros/aros-5.jpg" class="card-img-top" alt="..." />
@@ -309,40 +312,40 @@
                             Agregar a favorito</a>                    
                     </div>
                 </div>
-                <!-- Inicio modal -->
-                <div class="modal fade" id="aros5" tabindex="-1"  aria-hidden="true">
-                    <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                        <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
-                            Pendientes de Plata
-                        </h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body d-flex justify-content-center align-items-center">
-                            <img src="../imagenes/img-aros/aros-5.jpg"/>
-                            <div class="d-flex flex-column align-items-center">
-                                <div class="descripciond-flex p-3">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
-                                </div>
-                                <div class="valord-flex flex-start mt-3 colorBrown">
-                                    $7000
-                                </div>
+            </div>
+            <!-- Inicio modal -->
+            <div class="modal fade" id="aros5" tabindex="-1"  aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
+                        Pendientes de Plata
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex justify-content-center align-items-center">
+                        <img src="../imagenes/img-aros/aros-5.jpg" class="img-thumb"/>
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="descripciond-flex p-3">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
+                            </div>
+                            <div class="valord-flex flex-start mt-3 colorBrown">
+                                $7000
                             </div>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                                Salir
-                            </button>
-                            <button type="button" class="btn btn-primary">
-                                Comprar
-                            </button>
-                        </div>
                     </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                            Salir
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                            Comprar
+                        </button>
                     </div>
                 </div>
-                <!-- Fin Modal -->
+                </div>
             </div>
+            <!-- Fin Modal -->
             <div class="card m-2 shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#aros6">            
                 <div class="bgImagen position-absolute"></div>
                 <img src="../imagenes/img-aros/aros-6.jpg" class="card-img-top" alt="..." />
@@ -366,40 +369,40 @@
                             Agregar a favorito</a>                    
                     </div>
                 </div>
-                <!-- Inicio modal -->
-                <div class="modal fade" id="aros6" tabindex="-1"  aria-hidden="true">
-                    <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                        <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
-                            Aros Redondos
-                        </h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body d-flex justify-content-center align-items-center">
-                            <img src="../imagenes/img-aros/aros-6.jpg"/>
-                            <div class="d-flex flex-column align-items-center">
-                                <div class="descripciond-flex p-3">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
-                                </div>
-                                <div class="valord-flex flex-start mt-3 colorBrown">
-                                    $7000
-                                </div>
+            </div>
+            <!-- Inicio modal -->
+            <div class="modal fade" id="aros6" tabindex="-1"  aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
+                        Aros Redondos
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex justify-content-center align-items-center">
+                        <img src="../imagenes/img-aros/aros-6.jpg" class="img-thumb"/>
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="descripciond-flex p-3">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
+                            </div>
+                            <div class="valord-flex flex-start mt-3 colorBrown">
+                                $7000
                             </div>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                                Salir
-                            </button>
-                            <button type="button" class="btn btn-primary">
-                                Comprar
-                            </button>
-                        </div>
                     </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                            Salir
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                            Comprar
+                        </button>
                     </div>
                 </div>
-                <!-- Fin Modal -->
+                </div>
             </div>
+            <!-- Fin Modal -->
             <div class="card m-2 shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#aros7">            
                 <div class="bgImagen position-absolute"></div>
                 <img src="../imagenes/img-aros/aros-7.png" class="card-img-top" alt="..." />
@@ -423,40 +426,40 @@
                             Agregar a favorito</a>                    
                     </div>
                 </div>
-                <!-- Inicio modal -->
-                <div class="modal fade" id="aros7" tabindex="-1"  aria-hidden="true">
-                    <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                        <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
-                            Aros Cruz
-                        </h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body d-flex justify-content-center align-items-center">
-                            <img src="../imagenes/img-aros/aros-7.png"/>
-                            <div class="d-flex flex-column align-items-center">
-                                <div class="descripciond-flex p-3">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
-                                </div>
-                                <div class="valord-flex flex-start mt-3 colorBrown">
-                                    $7000
-                                </div>
+            </div>
+            <!-- Inicio modal -->
+            <div class="modal fade" id="aros7" tabindex="-1"  aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
+                        Aros Cruz
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex justify-content-center align-items-center">
+                        <img src="../imagenes/img-aros/aros-7.png" class="img-thumb"/>
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="descripciond-flex p-3">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
+                            </div>
+                            <div class="valord-flex flex-start mt-3 colorBrown">
+                                $7000
                             </div>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                                Salir
-                            </button>
-                            <button type="button" class="btn btn-primary">
-                                Comprar
-                            </button>
-                        </div>
                     </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                            Salir
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                            Comprar
+                        </button>
                     </div>
                 </div>
-                <!-- Fin Modal -->
+                </div>
             </div>
+            <!-- Fin Modal -->
             <div class="card m-2 shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#aros8">            
                 <div class="bgImagen position-absolute"></div>
                 <img src="../imagenes/img-aros/aros-8.png" class="card-img-top" alt="..." />
@@ -480,40 +483,40 @@
                             Agregar a favorito</a>                    
                     </div>
                 </div>
-                <!-- Inicio modal -->
-                <div class="modal fade" id="aros8" tabindex="-1"  aria-hidden="true">
-                    <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                        <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
-                            Aros Cadena de Oro
-                        </h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body d-flex justify-content-center align-items-center">
-                            <img src="../imagenes/img-aros/aros-8.png"/>
-                            <div class="d-flex flex-column align-items-center">
-                                <div class="descripciond-flex p-3">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
-                                </div>
-                                <div class="valord-flex flex-start mt-3 colorBrown">
-                                    $7000
-                                </div>
+            </div>
+            <!-- Inicio modal -->
+            <div class="modal fade" id="aros8" tabindex="-1"  aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
+                        Aros Cadena de Oro
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex justify-content-center align-items-center">
+                        <img src="../imagenes/img-aros/aros-8.png" class="img-thumb"/>
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="descripciond-flex p-3">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
+                            </div>
+                            <div class="valord-flex flex-start mt-3 colorBrown">
+                                $7000
                             </div>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                                Salir
-                            </button>
-                            <button type="button" class="btn btn-primary">
-                                Comprar
-                            </button>
-                        </div>
                     </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                            Salir
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                            Comprar
+                        </button>
                     </div>
                 </div>
-                <!-- Fin Modal -->
+                </div>
             </div>
+            <!-- Fin Modal -->
             <div class="card m-2 shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#aros9">            
                 <div class="bgImagen position-absolute"></div>
                 <img src="../imagenes/img-aros/aros-9.png" class="card-img-top" alt="..." />
@@ -537,40 +540,40 @@
                             Agregar a favorito</a>                    
                     </div>
                 </div>
-                <!-- Inicio modal -->
-                <div class="modal fade" id="aros9" tabindex="-1"  aria-hidden="true">
-                    <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                        <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
-                            Aros Colgantes Cuadrados
-                        </h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body d-flex justify-content-center align-items-center">
-                            <img src="../imagenes/img-aros/aros-9.png"/>
-                            <div class="d-flex flex-column align-items-center">
-                                <div class="descripciond-flex p-3">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
-                                </div>
-                                <div class="valord-flex flex-start mt-3 colorBrown">
-                                    $7000
-                                </div>
+            </div>
+            <!-- Inicio modal -->
+            <div class="modal fade" id="aros9" tabindex="-1"  aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
+                        Aros Colgantes Cuadrados
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex justify-content-center align-items-center">
+                        <img src="../imagenes/img-aros/aros-9.png" class="img-thumb"/>
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="descripciond-flex p-3">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
+                            </div>
+                            <div class="valord-flex flex-start mt-3 colorBrown">
+                                $7000
                             </div>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                                Salir
-                            </button>
-                            <button type="button" class="btn btn-primary">
-                                Comprar
-                            </button>
-                        </div>
                     </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                            Salir
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                            Comprar
+                        </button>
                     </div>
                 </div>
-                <!-- Fin Modal -->
+                </div>
             </div>
+            <!-- Fin Modal -->
             <div class="card m-2 shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#aros10">            
                 <div class="bgImagen position-absolute"></div>
                 <img src="../imagenes/img-aros/aros-10.jpg" class="card-img-top" alt="..." />
@@ -594,40 +597,40 @@
                             Agregar a favorito</a>                    
                     </div>
                 </div>
-                <!-- Inicio modal -->
-                <div class="modal fade" id="aros10" tabindex="-1"  aria-hidden="true">
-                    <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                        <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
-                            Aros de Plata
-                        </h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body d-flex justify-content-center align-items-center">
-                            <img src="../imagenes/img-aros/aros-10.jpg"/>
-                            <div class="d-flex flex-column align-items-center">
-                                <div class="descripciond-flex p-3">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
-                                </div>
-                                <div class="valord-flex flex-start mt-3 colorBrown">
-                                    $7000
-                                </div>
+            </div>
+            <!-- Inicio modal -->
+            <div class="modal fade" id="aros10" tabindex="-1"  aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
+                        Aros de Plata
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex justify-content-center align-items-center">
+                        <img src="../imagenes/img-aros/aros-10.jpg" class="img-thumb"/>
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="descripciond-flex p-3">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
+                            </div>
+                            <div class="valord-flex flex-start mt-3 colorBrown">
+                                $7000
                             </div>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                                Salir
-                            </button>
-                            <button type="button" class="btn btn-primary">
-                                Comprar
-                            </button>
-                        </div>
                     </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                            Salir
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                            Comprar
+                        </button>
                     </div>
                 </div>
-                <!-- Fin Modal -->
+                </div>
             </div>
+            <!-- Fin Modal -->
             <div class="card m-2 shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#aros11">            
                 <div class="bgImagen position-absolute"></div>
                 <img src="../imagenes/img-aros/aros-11.jpg" class="card-img-top" alt="..." />
@@ -651,40 +654,40 @@
                             Agregar a favorito</a>                    
                     </div>
                 </div>
-                <!-- Inicio modal -->
-                <div class="modal fade" id="aros11" tabindex="-1"  aria-hidden="true">
-                    <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                        <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
-                            Aros Brillantes
-                        </h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body d-flex justify-content-center align-items-center">
-                            <img src="../imagenes/img-aros/aros-11.jpg"/>
-                            <div class="d-flex flex-column align-items-center">
-                                <div class="descripciond-flex p-3">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
-                                </div>
-                                <div class="valord-flex flex-start mt-3 colorBrown">
-                                    $7000
-                                </div>
+            </div>
+            <!-- Inicio modal -->
+            <div class="modal fade" id="aros11" tabindex="-1"  aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
+                        Aros Brillantes
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex justify-content-center align-items-center">
+                        <img src="../imagenes/img-aros/aros-11.jpg" class="img-thumb"/>
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="descripciond-flex p-3">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
+                            </div>
+                            <div class="valord-flex flex-start mt-3 colorBrown">
+                                $7000
                             </div>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                                Salir
-                            </button>
-                            <button type="button" class="btn btn-primary">
-                                Comprar
-                            </button>
-                        </div>
                     </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                            Salir
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                            Comprar
+                        </button>
                     </div>
                 </div>
-                <!-- Fin Modal -->
+                </div>
             </div>
+            <!-- Fin Modal -->
             <div class="card m-2 shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#aros12">            
                 <div class="bgImagen position-absolute"></div>
                 <img src="../imagenes/img-aros/aros-12.jpg" class="card-img-top" alt="..." />
@@ -708,40 +711,40 @@
                             Agregar a favorito</a>                    
                     </div>
                 </div>
-                <!-- Inicio modal -->
-                <div class="modal fade" id="aros12" tabindex="-1"  aria-hidden="true">
-                    <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                        <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
-                            Pendientes de Plata
-                        </h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body d-flex justify-content-center align-items-center">
-                            <img src="../imagenes/img-aros/aros-12.jpg"/>
-                            <div class="d-flex flex-column align-items-center">
-                                <div class="descripciond-flex p-3">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
-                                </div>
-                                <div class="valord-flex flex-start mt-3 colorBrown">
-                                    $7000
-                                </div>
+            </div>
+            <!-- Inicio modal -->
+            <div class="modal fade" id="aros12" tabindex="-1"  aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
+                        Pendientes de Plata
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex justify-content-center align-items-center">
+                        <img src="../imagenes/img-aros/aros-12.jpg" class="img-thumb"/>
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="descripciond-flex p-3">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
+                            </div>
+                            <div class="valord-flex flex-start mt-3 colorBrown">
+                                $7000
                             </div>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                                Salir
-                            </button>
-                            <button type="button" class="btn btn-primary">
-                                Comprar
-                            </button>
-                        </div>
                     </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                            Salir
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                            Comprar
+                        </button>
                     </div>
                 </div>
-                <!-- Fin Modal -->
+                </div>
             </div>
+            <!-- Fin Modal -->
         </article>
         </article>
     </section>
