@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Joyas altessa es un sitio donde podras encontrar todo tipo de joyas para mujer, aros, anillos, relojes o collares ya sea de oro o plata. También hacemos diseños personalizados, grabados de alianzas, mantenimiento de joyas y mucho mas.">
+    <meta name="keywords" content="aros anillos relores collares joyas brillantes perlas oro plata">
+    <title>Joyas Altessa/Relojes</title>
+    <link rel="shortcut icon" href="../imagenes/favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -12,12 +15,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> 
 </head>
 <body>
-    <header id="encabezado" class="fixed row w-100 shadow-sm">
+    <header id="encabezado" class="fixed row w-100 shadow-sm m-0">
         <!--Inicio nav-->
         <nav class="navbar navbar-expand-md">
             <div class="container-fluid flex-between p-0">
                 <a id="logo" class="navbar-brand" href="#">
-                    <img class="logo-img" src="../imagenes/logo.png"/>
+                    <img loading="lazy" class="logo-img" src="../imagenes/logo.png" alt="logo"/>
                 </a>
                 <button class="navbar-toggler colorBrown" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     Menú
@@ -55,12 +58,12 @@
                         <a href="#" class="dropdown-toggle colorBrown" type="button" id="menuLogin" data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="fas fa-user"></i>
                         </a>
-                        <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="dropdownMenuButton2">
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton2">
                             <li>
-                                <a class="dropdown-item colorBrown fs-5" href="./cuenta.html">Crear cuenta</a>
+                                <a class="dropdown-item colorBrown" href="./cuenta.html">Crear cuenta</a>
                             </li>
                             <li>
-                                <a class="dropdown-item colorBrown fs-5" href="./registro.html">Registrarse</a>
+                                <a class="dropdown-item colorBrown" href="./registro.html">Registrarse</a>
                             </li>
                         </ul>
                     </div>
@@ -71,15 +74,16 @@
     </header>
     <section id="contenido" class="container">
         <article id="relojes" class="row text-center justify-content-center mt-3 mb-3">
+            <h1 class="text-center text-uppercase fw-bold mt-4 mb-4 p-2 colorBrown">Relojes</h1>
             <div class="card m-2 shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#reloj1">            
                 <div class="bgImagen position-absolute w-100 h-100"></div>
-                <img src="../imagenes/img-relojes/reloj-1.jpg" class="card-img-top" alt="..." />
+                <img loading="lazy" src="../imagenes/img-relojes/reloj-1.jpg" class="card-img-top" alt="reloj de oro lupay"/>
                 <span class="verProducto position-absolute top-50 start-50 translate-middle text-uppercase fs-6">
                     Ver Producto
                 </span>
                 <div class="d-flex flex-column justify-content-center h-100">
                     <div class="p-2 d-flex flex-column align-items-center">
-                        <h5 class="card-title colorBrown text-uppercase">Reloj lupay</h5>
+                        <h2 class="card-title colorBrown text-uppercase fs-5">Reloj lupay</h2>
                         <span class="list-group-item colorBrown text-center border-0">$7000</span>
                     </div>
                     <div class="d-flex p-1 justify-content-center">
@@ -97,16 +101,16 @@
             <div class="modal fade" id="reloj1" tabindex="-1"  aria-hidden="true">
                 <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="modal-header">
-                    <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
+                    <div class="modal-header bg-pastel shadow-sm">
+                    <h2 class="modal-title colorBrown text-uppercase fs-5" id="exampleModalLabel1">
                         Reloj oro brillantes lupay
-                    </h5>
+                    </h2>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body d-flex justify-content-center align-items-center">
-                        <img src="../imagenes/img-relojes/Reloj-1.jpg" class="img-thumb"/>
+                    <div class="modal-body d-flex justify-content-center align-items-center modal-responsive">
+                        <img loading="lazy" src="../imagenes/img-relojes/Reloj-1.jpg" class="img-thumb" alt="reloj de oro lupay"/>
                         <div class="d-flex flex-column align-items-center">
-                            <div class="descripcion d-flex p-3">
+                            <div class="descripcion d-flex p-3 text-center">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
                             </div>
                             <div class="valor d-flex flex-start mt-3 colorBrown">
@@ -114,7 +118,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="modal-footer">
+                    <div class="modal-footer bg-pastel">
                         <button type="button" class="btn rounded-pill" data-bs-dismiss="modal">
                             Salir
                         </button>
@@ -128,13 +132,13 @@
             <!-- Fin Modal -->
             <div class="card m-2 shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#reloj2">            
                 <div class="bgImagen position-absolute w-100 h-100"></div>
-                <img src="../imagenes/img-relojes/reloj-2.jpg" class="card-img-top" alt="..." />
+                <img loading="lazy" src="../imagenes/img-relojes/reloj-2.jpg" class="card-img-top" alt="reloj oro y brillantes lupay"/>
                 <span class="verProducto position-absolute top-50 start-50 translate-middle text-uppercase fs-6">
                     Ver Producto
                 </span>
                 <div class="d-flex flex-column justify-content-center h-100">
                     <div class="p-2 d-flex flex-column align-items-center">
-                        <h5 class="card-title colorBrown text-uppercase">Reloj oro y brillantes lupay</h5>
+                        <h2 class="card-title colorBrown text-uppercase fs-5">Reloj oro y brillantes lupay</h2>
                         <span class="list-group-item colorBrown text-center border-0">$7000</span>
                     </div>
                     <div class="d-flex p-1 justify-content-center">
@@ -152,16 +156,16 @@
             <div class="modal fade" id="reloj2" tabindex="-1"  aria-hidden="true">
                 <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="modal-header">
-                    <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
+                    <div class="modal-header bg-pastel shadow-sm">
+                    <h2 class="modal-title colorBrown text-uppercase fs-5" id="exampleModalLabel1">
                         Reloj Carude
-                    </h5>
+                    </h2>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body d-flex justify-content-center align-items-center">
-                        <img src="../imagenes/img-relojes/reloj-2.jpg" class="img-thumb"/>
+                    <div class="modal-body d-flex justify-content-center align-items-center modal-responsive">
+                        <img loading="lazy" src="../imagenes/img-relojes/reloj-2.jpg" class="img-thumb" alt="reloj oro y brillantes lupay"/>
                         <div class="d-flex flex-column align-items-center">
-                            <div class="descripcion d-flex p-3">
+                            <div class="descripcion d-flex p-3 text-center">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
                             </div>
                             <div class="valor d-flex flex-start mt-3 colorBrown">
@@ -169,7 +173,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="modal-footer">
+                    <div class="modal-footer bg-pastel">
                         <button type="button" class="btn rounded-pill" data-bs-dismiss="modal">
                             Salir
                         </button>
@@ -183,13 +187,13 @@
             <!-- Fin Modal -->
             <div class="card m-2 shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#reloj3">            
                 <div class="bgImagen position-absolute w-100 h-100"></div>
-                <img src="../imagenes/img-relojes/reloj-3.jpg" class="card-img-top" alt="..." />
+                <img loading="lazy" src="../imagenes/img-relojes/reloj-3.jpg" class="card-img-top" alt="reloj hongeui"/>
                 <span class="verProducto position-absolute top-50 start-50 translate-middle text-uppercase fs-6">
                     Ver Producto
                 </span>
                 <div class="d-flex flex-column justify-content-center h-100">
                     <div class="p-2 d-flex flex-column align-items-center">
-                        <h5 class="card-title colorBrown text-uppercase">Reloj hongeui</h5>
+                        <h2 class="card-title colorBrown text-uppercase fs-5">Reloj hongeui</h2>
                         <span class="list-group-item colorBrown text-center border-0">$7000</span>
                     </div>
                     <div class="d-flex p-1 justify-content-center">
@@ -207,16 +211,16 @@
             <div class="modal fade" id="reloj3" tabindex="-1"  aria-hidden="true">
                 <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="modal-header">
-                    <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
+                    <div class="modal-header bg-pastel shadow-sm">
+                    <h2 class="modal-title colorBrown text-uppercase fs-5" id="exampleModalLabel1">
                         Reloj hongeui
-                    </h5>
+                    </h2>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body d-flex justify-content-center align-items-center">
-                        <img src="../imagenes/img-relojes/reloj-3.jpg" class="img-thumb"/>
+                    <div class="modal-body d-flex justify-content-center align-items-center modal-responsive">
+                        <img loading="lazy" src="../imagenes/img-relojes/reloj-3.jpg" class="img-thumb" alt="reloj hongeui"/>
                         <div class="d-flex flex-column align-items-center">
-                            <div class="descripcion d-flex p-3">
+                            <div class="descripcion d-flex p-3 text-center">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
                             </div>
                             <div class="valord-flex flex-start mt-3 colorBrown">
@@ -224,7 +228,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="modal-footer">
+                    <div class="modal-footer bg-pastel">
                         <button type="button" class="btn rounded-pill" data-bs-dismiss="modal">
                             Salir
                         </button>
@@ -238,13 +242,13 @@
             <!-- Fin Modal -->
             <div class="card m-2 shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#reloj4">            
                 <div class="bgImagen position-absolute w-100 h-100"></div>
-                <img src="../imagenes/img-relojes/Reloj-4.jpg" class="card-img-top" alt="..." />
+                <img loading="lazy" src="../imagenes/img-relojes/Reloj-4.jpg" class="card-img-top" alt="reloj jen"/>
                 <span class="verProducto position-absolute top-50 start-50 translate-middle text-uppercase fs-6">
                     Ver Producto
                 </span>
                 <div class="d-flex flex-column justify-content-center h-100">
                     <div class="p-2 d-flex flex-column align-items-center">
-                        <h5 class="card-title colorBrown text-uppercase">Reloj jen</h5>
+                        <h2 class="card-title colorBrown text-uppercase fs-5">Reloj jen</h2>
                         <span class="list-group-item colorBrown text-center border-0">$7000</span>
                     </div>
                     <div class="d-flex p-1 justify-content-center">
@@ -262,16 +266,16 @@
             <div class="modal fade" id="reloj4" tabindex="-1"  aria-hidden="true">
                 <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="modal-header">
-                    <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
+                    <div class="modal-header bg-pastel shadow-sm">
+                    <h2 class="modal-title colorBrown text-uppercase fs-5" id="exampleModalLabel1">
                         Reloj Jen
-                    </h5>
+                    </h2>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body d-flex justify-content-center align-items-center">
-                        <img src="../imagenes/img-relojes/Reloj-4.jpg" class="img-thumb"/>
+                    <div class="modal-body d-flex justify-content-center align-items-center modal-responsive">
+                        <img loading="lazy" src="../imagenes/img-relojes/Reloj-4.jpg" class="img-thumb" alt="reloj jen"/>
                         <div class="d-flex flex-column align-items-center">
-                            <div class="descripciond-flex p-3">
+                            <div class="descripcion d-flex p-3 text-center">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
                             </div>
                             <div class="valord-flex flex-start mt-3 colorBrown">
@@ -279,7 +283,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="modal-footer">
+                    <div class="modal-footer bg-pastel">
                         <button type="button" class="btn rounded-pill" data-bs-dismiss="modal">
                             Salir
                         </button>
@@ -293,13 +297,13 @@
             <!-- Fin Modal -->
             <div class="card m-2 shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#reloj5">            
                 <div class="bgImagen position-absolute w-100 h-100"></div>
-                <img src="../imagenes/img-relojes/reloj-5.jpg" class="card-img-top" alt="..." />
+                <img loading="lazy" src="../imagenes/img-relojes/reloj-5.jpg" class="card-img-top" alt="reloj lupay plata"/>
                 <span class="verProducto position-absolute top-50 start-50 translate-middle text-uppercase fs-6">
                     Ver Producto
                 </span>
                 <div class="d-flex flex-column justify-content-center h-100">
                     <div class="p-2 d-flex flex-column align-items-center">
-                        <h5 class="card-title colorBrown text-uppercase">Reloj lupay plata</h5>
+                        <h2 class="card-title colorBrown text-uppercase fs-5">Reloj lupay plata</h2>
                         <span class="list-group-item colorBrown text-center border-0">$7000</span>
                     </div>
                     <div class="d-flex p-1 justify-content-center">
@@ -317,16 +321,16 @@
             <div class="modal fade" id="reloj5" tabindex="-1"  aria-hidden="true">
                 <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="modal-header">
-                    <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
+                    <div class="modal-header bg-pastel shadow-sm">
+                    <h2 class="modal-title colorBrown text-uppercase fs-5" id="exampleModalLabel1">
                         Reloj plata lupay
-                    </h5>
+                    </h2>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body d-flex justify-content-center align-items-center">
-                        <img src="../imagenes/img-relojes/reloj-5.jpg" class="img-thumb"/>
+                    <div class="modal-body d-flex justify-content-center align-items-center modal-responsive">
+                        <img loading="lazy" src="../imagenes/img-relojes/reloj-5.jpg" class="img-thumb" alt="reloj lupay plata"/>
                         <div class="d-flex flex-column align-items-center">
-                            <div class="descripciond-flex p-3">
+                            <div class="descripcion d-flex p-3 text-center">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
                             </div>
                             <div class="valord-flex flex-start mt-3 colorBrown">
@@ -334,7 +338,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="modal-footer">
+                    <div class="modal-footer bg-pastel">
                         <button type="button" class="btn rounded-pill" data-bs-dismiss="modal">
                             Salir
                         </button>
@@ -348,13 +352,13 @@
             <!-- Fin Modal -->
             <div class="card m-2 shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#reloj6">            
                 <div class="bgImagen position-absolute w-100 h-100"></div>
-                <img src="../imagenes/img-relojes/reloj-6.jpg" class="card-img-top" alt="..." />
+                <img loading="lazy" src="../imagenes/img-relojes/reloj-6.jpg" class="card-img-top" alt="reloj de oro cuadrado jen"/>
                 <span class="verProducto position-absolute top-50 start-50 translate-middle text-uppercase fs-6">
                     Ver Producto
                 </span>
                 <div class="d-flex flex-column justify-content-center h-100">
                     <div class="p-2 d-flex flex-column align-items-center">
-                        <h5 class="card-title colorBrown text-uppercase">Reloj cuadrado jen</h5>
+                        <h2 class="card-title colorBrown text-uppercase fs-5">Reloj cuadrado jen</h2>
                         <span class="list-group-item colorBrown text-center border-0">$7000</span>
                     </div>
                     <div class="d-flex p-1 justify-content-center">
@@ -372,16 +376,16 @@
             <div class="modal fade" id="reloj6" tabindex="-1"  aria-hidden="true">
                 <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="modal-header">
-                    <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
+                    <div class="modal-header bg-pastel shadow-sm">
+                    <h2 class="modal-title colorBrown text-uppercase fs-5" id="exampleModalLabel1">
                         Reloj Cuadrado jen
-                    </h5>
+                    </h2>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body d-flex justify-content-center align-items-center">
-                        <img src="../imagenes/img-relojes/reloj-6.jpg" class="img-thumb"/>
+                    <div class="modal-body d-flex justify-content-center align-items-center modal-responsive">
+                        <img loading="lazy" src="../imagenes/img-relojes/reloj-6.jpg" class="img-thumb" alt="reloj de oro cuadrado jen"/>
                         <div class="d-flex flex-column align-items-center">
-                            <div class="descripciond-flex p-3">
+                            <div class="descripcion d-flex p-3 text-center">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
                             </div>
                             <div class="valord-flex flex-start mt-3 colorBrown">
@@ -389,7 +393,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="modal-footer">
+                    <div class="modal-footer bg-pastel">
                         <button type="button" class="btn rounded-pill" data-bs-dismiss="modal">
                             Salir
                         </button>
@@ -403,13 +407,13 @@
             <!-- Fin Modal -->
             <div class="card m-2 shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#reloj7">            
                 <div class="bgImagen position-absolute w-100 h-100"></div>
-                <img src="../imagenes/img-relojes/Reloj-7.jpg" class="card-img-top" alt="..." />
+                <img loading="lazy" src="../imagenes/img-relojes/Reloj-7.jpg" class="card-img-top" alt="reloj detalles de flores golow"/>
                 <span class="verProducto position-absolute top-50 start-50 translate-middle text-uppercase fs-6">
                     Ver Producto
                 </span>
                 <div class="d-flex flex-column justify-content-center h-100">
                     <div class="p-2 d-flex flex-column align-items-center">
-                        <h5 class="card-title colorBrown text-uppercase">Reloj golow</h5>
+                        <h2 class="card-title colorBrown text-uppercase fs-5">Reloj golow</h2>
                         <span class="list-group-item colorBrown text-center border-0">$7000</span>
                     </div>
                     <div class="d-flex p-1 justify-content-center">
@@ -427,16 +431,16 @@
             <div class="modal fade" id="reloj7" tabindex="-1"  aria-hidden="true">
                 <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="modal-header">
-                    <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
+                    <div class="modal-header bg-pastel shadow-sm">
+                    <h2 class="modal-title colorBrown text-uppercase fs-5" id="exampleModalLabel1">
                         Reloj Golow
-                    </h5>
+                    </h2>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body d-flex justify-content-center align-items-center">
-                        <img src="../imagenes/img-relojes/Reloj-7.jpg" class="img-thumb"/>
+                    <div class="modal-body d-flex justify-content-center align-items-center modal-responsive">
+                        <img loading="lazy" src="../imagenes/img-relojes/Reloj-7.jpg" class="img-thumb"  alt="reloj detalles de flores golow"/>
                         <div class="d-flex flex-column align-items-center">
-                            <div class="descripciond-flex p-3">
+                            <div class="descripcion d-flex p-3 text-center">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
                             </div>
                             <div class="valord-flex flex-start mt-3 colorBrown">
@@ -444,7 +448,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="modal-footer">
+                    <div class="modal-footer bg-pastel">
                         <button type="button" class="btn rounded-pill" data-bs-dismiss="modal">
                             Salir
                         </button>
@@ -458,13 +462,13 @@
             <!-- Fin Modal -->
             <div class="card m-2 shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#reloj8">            
                 <div class="bgImagen position-absolute w-100 h-100"></div>
-                <img src="../imagenes/img-relojes/reloj-pulsera.jpg" class="card-img-top" alt="..." />
+                <img loading="lazy" src="../imagenes/img-relojes/reloj-pulsera.jpg" class="card-img-top" alt="reloj genova pelas blancas y negras"/>
                 <span class="verProducto position-absolute top-50 start-50 translate-middle text-uppercase fs-6">
                     Ver Producto
                 </span>
                 <div class="d-flex flex-column justify-content-center h-100">
                     <div class="p-2 d-flex flex-column align-items-center">
-                        <h5 class="card-title colorBrown text-uppercase">Reloj Genova</h5>
+                        <h2 class="card-title colorBrown text-uppercase fs-5">Reloj Genova</h2>
                         <span class="list-group-item colorBrown text-center border-0">$7000</span>
                     </div>
                     <div class="d-flex p-1 justify-content-center">
@@ -482,16 +486,16 @@
             <div class="modal fade" id="reloj8" tabindex="-1"  aria-hidden="true">
                 <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="modal-header">
-                    <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
+                    <div class="modal-header bg-pastel shadow-sm">
+                    <h2 class="modal-title colorBrown text-uppercase fs-5" id="exampleModalLabel1">
                         Reloj Genova
-                    </h5>
+                    </h2>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body d-flex justify-content-center align-items-center">
-                        <img src="../imagenes/img-relojes/reloj-pulsera.jpg" class="img-thumb"/>
+                    <div class="modal-body d-flex justify-content-center align-items-center modal-responsive">
+                        <img loading="lazy" src="../imagenes/img-relojes/reloj-pulsera.jpg" class="img-thumb" alt="reloj genova pelas blancas y negras"/>
                         <div class="d-flex flex-column align-items-center">
-                            <div class="descripciond-flex p-3">
+                            <div class="descripcion d-flex p-3 text-center">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
                             </div>
                             <div class="valord-flex flex-start mt-3 colorBrown">
@@ -499,7 +503,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="modal-footer">
+                    <div class="modal-footer bg-pastel">
                         <button type="button" class="btn rounded-pill" data-bs-dismiss="modal">
                             Salir
                         </button>
@@ -513,13 +517,13 @@
             <!-- Fin Modal -->
             <div class="card m-2 shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#reloj9">            
                 <div class="bgImagen position-absolute w-100 h-100"></div>
-                <img src="../imagenes/img-relojes/Reloj-9.jpg" class="card-img-top" alt="..." />
+                <img loading="lazy" src="../imagenes/img-relojes/Reloj-9.jpg" class="card-img-top" alt="reloj con detalles de Corazones"/>
                 <span class="verProducto position-absolute top-50 start-50 translate-middle text-uppercase fs-6">
                     Ver Producto
                 </span>
                 <div class="d-flex flex-column justify-content-center h-100">
                     <div class="p-2 d-flex flex-column align-items-center">
-                        <h5 class="card-title colorBrown text-uppercase">Reloj detalle corazones</h5>
+                        <h2 class="card-title colorBrown text-uppercase fs-5">Reloj detalle corazones</h2>
                         <span class="list-group-item colorBrown text-center border-0">$7000</span>
                     </div>
                     <div class="d-flex p-1 justify-content-center">
@@ -537,16 +541,16 @@
             <div class="modal fade" id="reloj9" tabindex="-1"  aria-hidden="true">
                 <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="modal-header">
-                    <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
+                    <div class="modal-header bg-pastel shadow-sm">
+                    <h2 class="modal-title colorBrown text-uppercase fs-5" id="exampleModalLabel1">
                         Reloj detalle corazones
-                    </h5>
+                    </h2>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body d-flex justify-content-center align-items-center">
-                        <img src="../imagenes/img-relojes/Reloj-9.jpg" class="img-thumb"/>
+                    <div class="modal-body d-flex justify-content-center align-items-center modal-responsive">
+                        <img loading="lazy" src="../imagenes/img-relojes/Reloj-9.jpg" class="img-thumb" alt="reloj con detalles de Corazones"/>
                         <div class="d-flex flex-column align-items-center">
-                            <div class="descripciond-flex p-3">
+                            <div class="descripcion d-flex p-3 text-center">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
                             </div>
                             <div class="valord-flex flex-start mt-3 colorBrown">
@@ -554,7 +558,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="modal-footer">
+                    <div class="modal-footer bg-pastel">
                         <button type="button" class="btn rounded-pill" data-bs-dismiss="modal">
                             Salir
                         </button>
@@ -568,13 +572,13 @@
             <!-- Fin Modal -->
             <div class="card m-2 shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#reloj10">            
                 <div class="bgImagen position-absolute w-100 h-100"></div>
-                <img src="../imagenes/img-relojes/Reloj-10.jpg" class="card-img-top" alt="..." />
+                <img loading="lazy" src="../imagenes/img-relojes/Reloj-10.jpg" class="card-img-top" alt="reloj carude malla triple"/>
                 <span class="verProducto position-absolute top-50 start-50 translate-middle text-uppercase fs-6">
                     Ver Producto
                 </span>
                 <div class="d-flex flex-column justify-content-center h-100">
                     <div class="p-2 d-flex flex-column align-items-center">
-                        <h5 class="card-title colorBrown text-uppercase">Reloj carude</h5>
+                        <h2 class="card-title colorBrown text-uppercase fs-5">Reloj carude</h2>
                         <span class="list-group-item colorBrown text-center border-0">$7000</span>
                     </div>
                     <div class="d-flex p-1 justify-content-center">
@@ -592,16 +596,16 @@
             <div class="modal fade" id="reloj10" tabindex="-1"  aria-hidden="true">
                 <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="modal-header">
-                    <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
+                    <div class="modal-header bg-pastel shadow-sm">
+                    <h2 class="modal-title colorBrown text-uppercase fs-5" id="exampleModalLabel1">
                         Reloj Carude
-                    </h5>
+                    </h2>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body d-flex justify-content-center align-items-center">
-                        <img src="../imagenes/img-relojes/Reloj-10.jpg" class="img-thumb"/>
+                    <div class="modal-body d-flex justify-content-center align-items-center modal-responsive">
+                        <img loading="lazy" src="../imagenes/img-relojes/Reloj-10.jpg" class="img-thumb"  alt="reloj carude malla triple"/>
                         <div class="d-flex flex-column align-items-center">
-                            <div class="descripciond-flex p-3">
+                            <div class="descripcion d-flex p-3 text-center">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
                             </div>
                             <div class="valord-flex flex-start mt-3 colorBrown">
@@ -609,7 +613,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="modal-footer">
+                    <div class="modal-footer bg-pastel">
                         <button type="button" class="btn rounded-pill" data-bs-dismiss="modal">
                             Salir
                         </button>
@@ -623,13 +627,13 @@
             <!-- Fin Modal -->
             <div class="card m-2 shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#reloj11">            
                 <div class="bgImagen position-absolute w-100 h-100"></div>
-                <img src="../imagenes/img-relojes/CAY-relojes-de-lujo.jpg" class="card-img-top" alt="..." />
+                <img loading="lazy" src="../imagenes/img-relojes/CAY-relojes-de-lujo.jpg" class="card-img-top" alt="reloj con perlas cay"/>
                 <span class="verProducto position-absolute top-50 start-50 translate-middle text-uppercase fs-6">
                     Ver Producto
                 </span>
                 <div class="d-flex flex-column justify-content-center h-100">
                     <div class="p-2 d-flex flex-column align-items-center">
-                        <h5 class="card-title colorBrown text-uppercase">Reloj con perlas cay</h5>
+                        <h2 class="card-title colorBrown text-uppercase fs-5">Reloj con perlas cay</h2>
                         <span class="list-group-item colorBrown text-center border-0">$7000</span>
                     </div>
                     <div class="d-flex p-1 justify-content-center">
@@ -647,16 +651,16 @@
             <div class="modal fade" id="reloj11" tabindex="-1"  aria-hidden="true">
                 <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="modal-header">
-                    <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
+                    <div class="modal-header bg-pastel shadow-sm">
+                    <h2 class="modal-title colorBrown text-uppercase fs-5" id="exampleModalLabel1">
                         Reloj con perlas cay
-                    </h5>
+                    </h2>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body d-flex justify-content-center align-items-center">
-                        <img src="../imagenes/img-relojes/CAY-relojes-de-lujo.jpg" class="img-thumb"/>
+                    <div class="modal-body d-flex justify-content-center align-items-center modal-responsive">
+                        <img loading="lazy" src="../imagenes/img-relojes/CAY-relojes-de-lujo.jpg" class="img-thumb"  alt="reloj con perlas cay"/>
                         <div class="d-flex flex-column align-items-center">
-                            <div class="descripciond-flex p-3">
+                            <div class="descripcion d-flex p-3 text-center">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
                             </div>
                             <div class="valord-flex flex-start mt-3 colorBrown">
@@ -664,7 +668,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="modal-footer">
+                    <div class="modal-footer bg-pastel">
                         <button type="button" class="btn rounded-pill" data-bs-dismiss="modal">
                             Salir
                         </button>
@@ -678,13 +682,13 @@
             <!-- Fin Modal -->
             <div class="card m-2 shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#reloj12">            
                 <div class="bgImagen position-absolute w-100 h-100"></div>
-                <img src="../imagenes/img-relojes/Reloj-12.jpg" class="card-img-top" alt="..." />
+                <img loading="lazy" src="../imagenes/img-relojes/Reloj-12.jpg" class="card-img-top" alt="reloj de oro bs detalles de strass"/>
                 <span class="verProducto position-absolute top-50 start-50 translate-middle text-uppercase fs-6">
                     Ver Producto
                 </span>
                 <div class="d-flex flex-column justify-content-center h-100">
                     <div class="p-2 d-flex flex-column align-items-center">
-                        <h5 class="card-title colorBrown text-uppercase">Reloj Bs</h5>
+                        <h2 class="card-title colorBrown text-uppercase fs-5">Reloj Bs</h2>
                         <span class="list-group-item colorBrown text-center border-0">$7000</span>
                     </div>
                     <div class="d-flex p-1 justify-content-center">
@@ -702,16 +706,16 @@
             <div class="modal fade" id="reloj12" tabindex="-1"  aria-hidden="true">
                 <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="modal-header">
-                    <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
+                    <div class="modal-header bg-pastel shadow-sm">
+                    <h2 class="modal-title colorBrown text-uppercase fs-5" id="exampleModalLabel1">
                         Reloj BS
-                    </h5>
+                    </h2>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body d-flex justify-content-center align-items-center">
-                        <img src="../imagenes/img-relojes/Reloj-12.jpg" class="img-thumb"/>
+                    <div class="modal-body d-flex justify-content-center align-items-center modal-responsive">
+                        <img loading="lazy" src="../imagenes/img-relojes/Reloj-12.jpg" class="img-thumb" alt="reloj de oro bs detalles de strass"/>
                         <div class="d-flex flex-column align-items-center">
-                            <div class="descripciond-flex p-3">
+                            <div class="descripcion d-flex p-3 text-center">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
                             </div>
                             <div class="valord-flex flex-start mt-3 colorBrown">
@@ -719,7 +723,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="modal-footer">
+                    <div class="modal-footer bg-pastel">
                         <button type="button" class="btn rounded-pill" data-bs-dismiss="modal">
                             Salir
                         </button>

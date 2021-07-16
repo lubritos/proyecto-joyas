@@ -25,10 +25,13 @@
     color: #ffffff; }
 
 .banner-medio {
-  max-width: 75rem;
-  max-height: 31.87rem; }
+  max-width: 75rem; }
   .banner-medio .item-1 {
-    max-width: 36.25rem; }
+    max-width: 35rem;
+    max-height: 31.87;
+    min-height: 20rem; }
+    .banner-medio .item-1:hover {
+      transform: scale(1.1, 1.1); }
     .banner-medio .item-1 .bg-banner-4 {
       background-image: url("../imagenes/banner-4.jpg");
       background-position: center;
@@ -47,14 +50,12 @@
     .banner-medio .contenedor-items-2-3 .item-3 {
       max-width: 35rem;
       max-height: 15rem; }
-  .banner-medio .item-1:hover,
-  .banner-medio .item-2:hover,
-  .banner-medio .contenedor-items-2-3 .item-2 .img-item-2:hover,
-  .banner-medio .contenedor-items-2-3 .item-2 .img-item-3:hover,
-  .banner-medio .contenedor-items-2-3 .item-3 .img-item-2:hover,
-  .banner-medio .contenedor-items-2-3 .item-3 .img-item-3:hover,
-  .banner-medio .item-3:hover {
-    transform: scale(1.1, 1.1); }
+      .banner-medio .contenedor-items-2-3 .item-2:hover, .banner-medio .contenedor-items-2-3 .item-2 .img-item-2:hover,
+      .banner-medio .contenedor-items-2-3 .item-2 .img-item-3:hover,
+      .banner-medio .contenedor-items-2-3 .item-3 .img-item-2:hover,
+      .banner-medio .contenedor-items-2-3 .item-3 .img-item-3:hover,
+      .banner-medio .contenedor-items-2-3 .item-3:hover {
+        transform: scale(1.1, 1.1); }
 
 #datosContacto #maps, #datosContacto #maps iframe {
   max-width: 28rem; }
@@ -86,6 +87,9 @@
     .card .cardLink:hover {
       color: #c7a762;
       font-weight: 600; }
+
+#imgDestacados .modal .bg-pastel, #aros .modal .bg-pastel, #anillos .modal .bg-pastel, #relojes .modal .bg-pastel, #collares .modal .bg-pastel {
+  background-color: #fdf9ee; }
 
 #formRegistro, #formContacto, #formCuenta {
   background-color: #fdf9ee;
@@ -129,6 +133,7 @@
 
 .btn {
   background-color: #c7a762;
+  min-width: 4rem;
   color: #ffffff;
   border: outset;
   padding: 0.8rem;
@@ -144,7 +149,6 @@
 
 #footer {
   background-color: #1d1d1d;
-  margin: 1rem 0 0 0;
   max-height: 16.25rem;
   color: #c7a762; }
 
@@ -159,6 +163,13 @@
 .img-thumb {
   max-width: 18rem;
   width: 100%; }
+
+.title {
+  font-family: 'Archivo Narrow', sans-serif;
+  font-size: 4vw;
+  top: 15%;
+  left: 5%;
+  z-index: 9; }
 
 @keyframes moveFromLeft {
   0% {
@@ -204,4 +215,11 @@
     margin-top: 3rem; }
   .search-dropdown {
     width: 100%;
-    justify-content: space-between; } }
+    justify-content: space-between; }
+  .modal-responsive {
+    flex-direction: column;
+    justify-content: center; }
+  .modal-footer bg-pastel {
+    justify-content: space-evenly; }
+  .img-thumb {
+    width: 60%; } }

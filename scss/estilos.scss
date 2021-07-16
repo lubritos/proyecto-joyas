@@ -1,6 +1,5 @@
 @import"./variables";
 @import "./mixin";
-
 * {
     font-family: $roboto;
     margin: 0;
@@ -44,16 +43,20 @@
 }
 .banner-medio {
     max-width: 75rem;
-    max-height: 31.87rem;
     .item-1 {
-        max-width: 36.25rem; 
+        max-width: 35rem;
+        max-height:31.87;
+        min-height: 20rem;
+        &:hover{
+            transform: scale(1.1,1.1);
+        } 
         .bg-banner-4 {
             @include background('../imagenes/banner-4.jpg', null, center, no-repeat, 120%);
             width: 100%;
             height: 100%;
             max-height: 31.87rem;
         }
-    }
+    }    
     .contenedor-items-2-3 {
         max-width: 35rem;
         max-height: 31.87rem;
@@ -61,19 +64,15 @@
         .item-3 {
             max-width: 35rem;
             max-height:15rem;
+            &:hover {
+                transform: scale(1.1,1.1);
+            }
             .img-item-2,
             .img-item-3 {
                 @extend .item-2;
             }
-        }        
-    }    
-    .item-1,
-    .item-2,
-    .item-3 {
-        &:hover {
-            transform: scale(1.1,1.1);
         }
-    }
+    }    
 }
 #datosContacto {
     #maps{
@@ -116,7 +115,19 @@
         }
     }
 }
-
+#imgDestacados {
+    .modal {
+        .bg-pastel {
+            @include background(null, $pastel, '', '', '');
+        }
+    }
+}
+#aros,
+#anillos,
+#relojes,
+#collares {
+    @extend #imgDestacados;
+}
 
 #formRegistro {
     @include background(null, $pastel, '', '', '');
@@ -176,6 +187,7 @@
 
 .btn {
     @include background(null, $dorado, '', '', '');
+    min-width: 4rem;
     color: $blanco;
     border: outset;
     padding: 0.8rem;
@@ -194,7 +206,6 @@
 }
 #footer {
     @include background(null, $oscuro, '', '', '');
-    margin: 1rem 0 0 0;
     max-height: 16.25rem;
     color: $dorado;
 }
@@ -209,6 +220,13 @@
 .img-thumb {
     max-width: 18rem;
     width: 100%;
+}
+.title {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 4vw;
+    top: 15%;
+    left: 5%;
+    z-index: 9;
 }
 
 @import"./animaciones";

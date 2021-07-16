@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Joyas altessa es un sitio donde podras encontrar todo tipo de joyas para mujer, aros, anillos, relojes o collares ya sea de oro o plata. También hacemos diseños personalizados, grabados de alianzas, mantenimiento de joyas y mucho mas.">
+    <meta name="keywords" content="aros anillos relores collares joyas brillantes perlas oro plata">
+    <title>Joyas Altessa/Anillos</title>
+    <link rel="shortcut icon" href="../imagenes/favicon.ico" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -12,12 +15,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
-    <header id="encabezado" class="fixed row w-100 shadow-sm">
+    <header id="encabezado" class="fixed row w-100 shadow-sm m-0">
         <!--Inicio nav-->
         <nav class="navbar navbar-expand-md">
             <div class="container-fluid flex-between p-0">
                 <a id="logo" class="navbar-brand" href="#">
-                    <img class="logo-img" src="../imagenes/logo.png"/>
+                    <img loading="lazy" class="logo-img" src="../imagenes/logo.png" alt="logo"/>
                 </a>
                 <button class="navbar-toggler colorBrown" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     Menú
@@ -55,12 +58,12 @@
                         <a href="#" class="dropdown-toggle colorBrown" type="button" id="menuLogin" data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="fas fa-user"></i>
                         </a>
-                        <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="dropdownMenuButton2">
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton2">
                             <li>
-                                <a class="dropdown-item colorBrown fs-5" href="./cuenta.html">Crear cuenta</a>
+                                <a class="dropdown-item colorBrown" href="./cuenta.html">Crear cuenta</a>
                             </li>
                             <li>
-                                <a class="dropdown-item colorBrown fs-5" href="./registro.html">Registrarse</a>
+                                <a class="dropdown-item colorBrown" href="./registro.html">Registrarse</a>
                             </li>
                         </ul>
                     </div>
@@ -71,15 +74,16 @@
     </header>
     <section id="contenido" class="container">
         <article id="anillos" class="row text-center justify-content-center mt-3 mb-3">
+            <h1 class="text-center text-uppercase fw-bold mt-4 mb-4 p-2 colorBrown">Anillos</h1>
             <div class="card m-2 shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#anillos1">            
                 <div class="bgImagen position-absolute w-100 h-100"></div>
-                <img src="../imagenes/img-anillos/alianzas-grabadas.png" class="card-img-top" alt="..." />
+                <img loading="lazy" src="../imagenes/img-anillos/alianzas-grabadas.png" class="card-img-top" alt="..." />
                 <span class="verProducto position-absolute top-50 start-50 translate-middle text-uppercase ps-6">
                     Ver Producto
                 </span>
                 <div class="d-flex flex-column justify-content-center h-100">
                     <div class="p-2 d-flex flex-column align-items-center">
-                        <h5 class="card-title colorBrown text-uppercase">Alianzas grabadas</h5>
+                        <h2 class="card-title colorBrown text-uppercase fs-6">Alianzas grabadas</h2>
                         <span class="list-group-item colorBrown text-center border-0">$7000</span>
                     </div>
                     <div class="d-flex p-1 justify-content-center">
@@ -97,16 +101,16 @@
             <div class="modal fade" id="anillos1" tabindex="-1"  aria-hidden="true">
                 <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="modal-header">
-                    <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
+                    <div class="modal-header bg-pastel shadow-sm">
+                    <h2 class="modal-title colorBrown text-uppercase fs-5" id="exampleModalLabel1">
                         Alianzas Grabadas
-                    </h5>
+                    </h2>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body d-flex justify-content-center align-items-center">
-                        <img src="../imagenes/img-anillos/alianzas-grabadas.png" class="img-thumb"/>
+                    <div class="modal-body d-flex justify-content-center align-items-center modal-responsive">
+                        <img loading="lazy" src="../imagenes/img-anillos/alianzas-grabadas.png" class="img-thumb"/>
                         <div class="d-flex flex-column align-items-center">
-                            <div class="descripciond-flex p-3">
+                            <div class="descripciond-flex p-3 text-center">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
                             </div>
                             <div class="valord-flex flex-start mt-3 colorBrown">
@@ -114,7 +118,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="modal-footer">
+                    <div class="modal-footer bg-pastel">
                         <button type="button" class="btn rounded-pill" data-bs-dismiss="modal">
                             Salir
                         </button>
@@ -128,13 +132,13 @@
             <!-- Fin Modal -->
             <div class="card m-2 shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#anillos2">            
                 <div class="bgImagen position-absolute w-100 h-100"></div>
-                <img src="../imagenes/img-anillos/alianzas-oro-blanco-y-amarillo-mate.jpg" class="card-img-top" alt="..." />
+                <img loading="lazy" src="../imagenes/img-anillos/alianzas-oro-blanco-y-amarillo-mate.jpg" class="card-img-top" alt="..." />
                 <span class="verProducto position-absolute top-50 start-50 translate-middle text-uppercase ps-6">
                     Ver Producto
                 </span>
                 <div class="d-flex flex-column justify-content-center h-100">
                     <div class="p-2 d-flex flex-column align-items-center">
-                        <h5 class="card-title colorBrown text-uppercase">Alianzas oro blanco y amarillo</h5>
+                        <h2 class="card-title colorBrown text-uppercase fs-5">Alianzas oro blanco y amarillo</h2>
                         <span class="list-group-item colorBrown text-center border-0">$7000</span>
                     </div>
                     <div class="d-flex p-1 justify-content-center">
@@ -152,16 +156,16 @@
             <div class="modal fade" id="anillos2" tabindex="-1"  aria-hidden="true">
                 <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="modal-header">
-                    <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
+                    <div class="modal-header bg-pastel shadow-sm">
+                    <h2 class="modal-title colorBrown text-uppercase fs-5" id="exampleModalLabel1">
                         Alianzas oro blanco y amarillo
-                    </h5>
+                    </h2>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body d-flex justify-content-center align-items-center">
-                        <img src="../imagenes/img-anillos/alianzas-oro-blanco-y-amarillo-mate.jpg" class="img-thumb"/>
+                    <div class="modal-body d-flex justify-content-center align-items-center modal-responsive">
+                        <img loading="lazy" src="../imagenes/img-anillos/alianzas-oro-blanco-y-amarillo-mate.jpg" class="img-thumb"/>
                         <div class="d-flex flex-column align-items-center">
-                            <div class="descripciond-flex p-3">
+                            <div class="descripciond-flex p-3 text-center">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
                             </div>
                             <div class="valord-flex flex-start mt-3 colorBrown">
@@ -169,7 +173,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="modal-footer">
+                    <div class="modal-footer bg-pastel">
                         <button type="button" class="btn rounded-pill" data-bs-dismiss="modal">
                             Salir
                         </button>
@@ -183,13 +187,13 @@
             <!-- Fin Modal -->
             <div class="card m-2 shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#anillo3">            
                 <div class="bgImagen position-absolute w-100 h-100"></div>
-                <img src="../imagenes/img-anillos/anillo-3.jpg" class="card-img-top" alt="..." />
+                <img loading="lazy" src="../imagenes/img-anillos/putent-incorrupte.jpg" class="card-img-top" alt="anillo de oro con piedra" />
                 <span class="verProducto position-absolute top-50 start-50 translate-middle text-uppercase ps-6">
                     Ver Producto
                 </span>
                 <div class="d-flex flex-column justify-content-center h-100">
                     <div class="p-2 d-flex flex-column align-items-center">
-                        <h5 class="card-title colorBrown text-uppercase">Anillo plata con piedra</h5>
+                        <h2 class="card-title colorBrown text-uppercase fs-5">Anillo oro con piedra</h2>
                         <span class="list-group-item colorBrown text-center border-0">$7000</span>
                     </div>
                     <div class="d-flex p-1 justify-content-center">
@@ -207,16 +211,16 @@
             <div class="modal fade" id="anillo3" tabindex="-1"  aria-hidden="true">
                 <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="modal-header">
-                    <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
-                        Anillo plata con piedra
-                    </h5>
+                    <div class="modal-header bg-pastel shadow-sm">
+                    <h2 class="modal-title colorBrown text-uppercase fs-5" id="exampleModalLabel1">
+                        Anillo oro con piedra
+                    </h2>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body d-flex justify-content-center align-items-center">
-                        <img src="../imagenes/img-anillos/anillo-3.jpg" class="img-thumb"/>
+                    <div class="modal-body d-flex justify-content-center align-items-center modal-responsive">
+                        <img loading="lazy" src="../imagenes/img-anillos/putent-incorrupte.jpg" class="img-thumb" alt="anillo de oro con piedra"/>
                         <div class="d-flex flex-column align-items-center">
-                            <div class="descripciond-flex p-3">
+                            <div class="descripciond-flex p-3 text-center">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
                             </div>
                             <div class="valord-flex flex-start mt-3 colorBrown">
@@ -224,7 +228,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="modal-footer">
+                    <div class="modal-footer bg-pastel">
                         <button type="button" class="btn rounded-pill" data-bs-dismiss="modal">
                             Salir
                         </button>
@@ -238,13 +242,13 @@
             <!-- Fin Modal -->
             <div class="card m-2 shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#anillo4">            
                 <div class="bgImagen position-absolute w-100 h-100"></div>
-                <img src="../imagenes/img-anillos/Anillo-4.jpg" class="card-img-top" alt="..." />
+                <img loading="lazy" src="../imagenes/img-anillos/Anillo-4.jpg" class="card-img-top" alt="anillo con brillantes" />
                 <span class="verProducto position-absolute top-50 start-50 translate-middle text-uppercase ps-6">
                     Ver Producto
                 </span>
                 <div class="d-flex flex-column justify-content-center h-100">
                     <div class="p-2 d-flex flex-column align-items-center">
-                        <h5 class="card-title colorBrown text-uppercase">Anillo con brillantes</h5>
+                        <h2 class="card-title colorBrown text-uppercase fs-5">Anillo con brillantes</h2>
                         <span class="list-group-item colorBrown text-center border-0">$7000</span>
                     </div>
                     <div class="d-flex p-1 justify-content-center">
@@ -262,16 +266,16 @@
             <div class="modal fade" id="anillo4" tabindex="-1"  aria-hidden="true">
                 <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="modal-header">
-                    <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
+                    <div class="modal-header bg-pastel shadow-sm">
+                    <h2 class="modal-title colorBrown text-uppercase fs-5" id="exampleModalLabel1">
                         Anillo con brillantes
-                    </h5>
+                    </h2>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body d-flex justify-content-center align-items-center">
-                        <img src="../imagenes/img-anillos/Anillo-4.jpg" class="img-thumb"/>
+                    <div class="modal-body d-flex justify-content-center align-items-center modal-responsive">
+                        <img loading="lazy" src="../imagenes/img-anillos/Anillo-4.jpg" class="img-thumb" alt="anillo con brillantes"/>
                         <div class="d-flex flex-column align-items-center">
-                            <div class="descripciond-flex p-3">
+                            <div class="descripciond-flex p-3 text-center">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
                             </div>
                             <div class="valord-flex flex-start mt-3 colorBrown">
@@ -279,7 +283,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="modal-footer">
+                    <div class="modal-footer bg-pastel">
                         <button type="button" class="btn rounded-pill" data-bs-dismiss="modal">
                             Salir
                         </button>
@@ -293,13 +297,13 @@
             <!-- Fin Modal -->
             <div class="card m-2 shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#anillo5">            
                 <div class="bgImagen position-absolute w-100 h-100"></div>
-                <img src="../imagenes/img-anillos/anillo-oro-18.png" class="card-img-top" alt="..." />
+                <img loading="lazy" src="../imagenes/img-anillos/anillo-oro-18.png" class="card-img-top" alt="anillo de oro 18k" />
                 <span class="verProducto position-absolute top-50 start-50 translate-middle text-uppercase ps-6">
                     Ver Producto
                 </span>
                 <div class="d-flex flex-column justify-content-center h-100">
                     <div class="p-2 d-flex flex-column align-items-center">
-                        <h5 class="card-title colorBrown text-uppercase">Anillo oro 18k plata</h5>
+                        <h2 class="card-title colorBrown text-uppercase fs-5">Anillo oro 18k</h2>
                         <span class="list-group-item colorBrown text-center border-0">$7000</span>
                     </div>
                     <div class="d-flex p-1 justify-content-center">
@@ -317,16 +321,16 @@
             <div class="modal fade" id="anillo5" tabindex="-1"  aria-hidden="true">
                 <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="modal-header">
-                    <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
+                    <div class="modal-header bg-pastel shadow-sm">
+                    <h2 class="modal-title colorBrown text-uppercase fs-5" id="exampleModalLabel1">
                         Anillo oro 18k
-                    </h5>
+                    </h2>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body d-flex justify-content-center align-items-center">
-                        <img src="../imagenes/img-anillos/anillo-oro-18.png" class="img-thumb"/>
+                    <div class="modal-body d-flex justify-content-center align-items-center modal-responsive">
+                        <img loading="lazy" src="../imagenes/img-anillos/anillo-oro-18.png" class="img-thumb" alt="anillo de oro 18k"/>
                         <div class="d-flex flex-column align-items-center">
-                            <div class="descripciond-flex p-3">
+                            <div class="descripciond-flex p-3 text-center">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
                             </div>
                             <div class="valord-flex flex-start mt-3 colorBrown">
@@ -334,7 +338,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="modal-footer">
+                    <div class="modal-footer bg-pastel">
                         <button type="button" class="btn rounded-pill" data-bs-dismiss="modal">
                             Salir
                         </button>
@@ -348,13 +352,13 @@
             <!-- Fin Modal -->
             <div class="card m-2 shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#anillo6">            
                 <div class="bgImagen position-absolute w-100 h-100"></div>
-                <img src="../imagenes/img-anillos/anillo-plata-925-.jpg" class="card-img-top" alt="..." />
+                <img loading="lazy" src="../imagenes/img-anillos/anillo-plata-925-.jpg" class="card-img-top" alt="anillo de plata 925" />
                 <span class="verProducto position-absolute top-50 start-50 translate-middle text-uppercase ps-6">
                     Ver Producto
                 </span>
                 <div class="d-flex flex-column justify-content-center h-100">
                     <div class="p-2 d-flex flex-column align-items-center">
-                        <h5 class="card-title colorBrown text-uppercase">Anillo plata 925</h5>
+                        <h2 class="card-title colorBrown text-uppercase fs-5">Anillo plata 925</h2>
                         <span class="list-group-item colorBrown text-center border-0">$7000</span>
                     </div>
                     <div class="d-flex p-1 justify-content-center">
@@ -372,16 +376,16 @@
             <div class="modal fade" id="anillo6" tabindex="-1"  aria-hidden="true">
                 <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="modal-header">
-                    <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
+                    <div class="modal-header bg-pastel shadow-sm">
+                    <h2 class="modal-title colorBrown text-uppercase fs-5" id="exampleModalLabel1">
                         Anillo plata 925
-                    </h5>
+                    </h2>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body d-flex justify-content-center align-items-center">
-                        <img src="../imagenes/img-anillos/anillo-plata-925-.jpg" class="img-thumb"/>
+                    <div class="modal-body d-flex justify-content-center align-items-center modal-responsive">
+                        <img loading="lazy" src="../imagenes/img-anillos/anillo-plata-925-.jpg" class="img-thumb" alt="anillo de plata 925"/>
                         <div class="d-flex flex-column align-items-center">
-                            <div class="descripciond-flex p-3">
+                            <div class="descripciond-flex p-3 text-center">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
                             </div>
                             <div class="valord-flex flex-start mt-3 colorBrown">
@@ -389,7 +393,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="modal-footer">
+                    <div class="modal-footer bg-pastel">
                         <button type="button" class="btn rounded-pill" data-bs-dismiss="modal">
                             Salir
                         </button>
@@ -403,13 +407,13 @@
             <!-- Fin Modal -->
             <div class="card m-2 shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#anillo7">            
                 <div class="bgImagen position-absolute w-100 h-100"></div>
-                <img src="../imagenes/img-anillos/anillo-diamante.jpg" class="card-img-top" alt="..." />
+                <img loading="lazy" src="../imagenes/img-anillos/anillo-diamante.jpg" class="card-img-top" alt="anillo con diamantes"/>
                 <span class="verProducto position-absolute top-50 start-50 translate-middle text-uppercase ps-6">
                     Ver Producto
                 </span>
                 <div class="d-flex flex-column justify-content-center h-100">
                     <div class="p-2 d-flex flex-column align-items-center">
-                        <h5 class="card-title colorBrown text-uppercase">Anillo con diamantes</h5>
+                        <h2 class="card-title colorBrown text-uppercase fs-5">Anillo con diamantes</h2>
                         <span class="list-group-item colorBrown text-center border-0">$7000</span>
                     </div>
                     <div class="d-flex p-1 justify-content-center">
@@ -427,16 +431,16 @@
             <div class="modal fade" id="anillo7" tabindex="-1"  aria-hidden="true">
                 <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="modal-header">
-                    <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
+                    <div class="modal-header bg-pastel shadow-sm">
+                    <h2 class="modal-title colorBrown text-uppercase fs-5" id="exampleModalLabel1">
                         Anillo con diamantes
-                    </h5>
+                    </h2>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body d-flex justify-content-center align-items-center">
-                        <img src="../imagenes/img-anillos/anillo-diamante.jpg" class="img-thumb"/>
+                    <div class="modal-body d-flex justify-content-center align-items-center modal-responsive">
+                        <img loading="lazy" src="../imagenes/img-anillos/anillo-diamante.jpg" class="img-thumb" alt="anillo con diamantes"/>
                         <div class="d-flex flex-column align-items-center">
-                            <div class="descripciond-flex p-3">
+                            <div class="descripciond-flex p-3 text-center">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
                             </div>
                             <div class="valord-flex flex-start mt-3 colorBrown">
@@ -444,7 +448,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="modal-footer">
+                    <div class="modal-footer bg-pastel">
                         <button type="button" class="btn rounded-pill" data-bs-dismiss="modal">
                             Salir
                         </button>
@@ -458,13 +462,13 @@
             <!-- Fin Modal -->
             <div class="card m-2 shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#anillo8">            
                 <div class="bgImagen position-absolute w-100 h-100"></div>
-                <img src="../imagenes/img-anillos/Anillo-oro.png" class="card-img-top" alt="..." />
+                <img loading="lazy" src="../imagenes/img-anillos/Anillo-oro.png" class="card-img-top" alt="anillo de oro con piedra rubi"/>
                 <span class="verProducto position-absolute top-50 start-50 translate-middle text-uppercase ps-6">
                     Ver Producto
                 </span>
                 <div class="d-flex flex-column justify-content-center h-100">
                     <div class="p-2 d-flex flex-column align-items-center">
-                        <h5 class="card-title colorBrown text-uppercase">Anillo oro con rubi</h5>
+                        <h2 class="card-title colorBrown text-uppercase fs-5">Anillo oro con rubi</h2>
                         <span class="list-group-item colorBrown text-center border-0">$7000</span>
                     </div>
                     <div class="d-flex p-1 justify-content-center">
@@ -482,16 +486,16 @@
             <div class="modal fade" id="anillo8" tabindex="-1"  aria-hidden="true">
                 <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="modal-header">
-                    <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
+                    <div class="modal-header bg-pastel shadow-sm">
+                    <h2 class="modal-title colorBrown text-uppercase fs-5" id="exampleModalLabel1">
                         Anillo oro con rubi
-                    </h5>
+                    </h2>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body d-flex justify-content-center align-items-center">
-                        <img src="../imagenes/img-anillos/Anillo-oro.png" class="img-thumb"/>
+                    <div class="modal-body d-flex justify-content-center align-items-center modal-responsive">
+                        <img loading="lazy" src="../imagenes/img-anillos/Anillo-oro.png" class="img-thumb" alt="anillo de oro con piedra rubi"/>
                         <div class="d-flex flex-column align-items-center">
-                            <div class="descripciond-flex p-3">
+                            <div class="descripciond-flex p-3 text-center">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
                             </div>
                             <div class="valord-flex flex-start mt-3 colorBrown">
@@ -499,7 +503,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="modal-footer">
+                    <div class="modal-footer bg-pastel">
                         <button type="button" class="btn rounded-pill" data-bs-dismiss="modal">
                             Salir
                         </button>
@@ -513,13 +517,13 @@
             <!-- Fin Modal -->
             <div class="card m-2 shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#anillo9">            
                 <div class="bgImagen position-absolute w-100 h-100"></div>
-                <img src="../imagenes/img-anillos/Anillo-zafiro.jpg" class="card-img-top" alt="..." />
+                <img loading="lazy" src="../imagenes/img-anillos/Anillo-zafiro.jpg" class="card-img-top" alt="anillo con piedra zafiro de compromiso"/>
                 <span class="verProducto position-absolute top-50 start-50 translate-middle text-uppercase ps-6">
                     Ver Producto
                 </span>
                 <div class="card-items d-flex flex-column justify-content-center h-100">
                     <div class="p-2 d-flex flex-column align-items-center">
-                        <h5 class="card-title colorBrown text-uppercase">Anillo piedra zafiro</h5>
+                        <h2 class="card-title colorBrown text-uppercase fs-5">Anillo piedra zafiro</h2>
                         <span class="list-group-item colorBrown text-center border-0">$7000</span>
                     </div>
                     <div class="d-flex p-1 justify-content-center">
@@ -537,16 +541,16 @@
             <div class="modal fade" id="anillo9" tabindex="-1"  aria-hidden="true">
                 <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="modal-header">
-                    <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
+                    <div class="modal-header bg-pastel shadow-sm">
+                    <h2 class="modal-title colorBrown text-uppercase fs-5" id="exampleModalLabel1">
                         Anillo piedra zafiro
-                    </h5>
+                    </h2>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body d-flex justify-content-center align-items-center">
-                        <img src="../imagenes/img-anillos/Anillo-zafiro.jpg" class="img-thumb"/>
+                    <div class="modal-body d-flex justify-content-center align-items-center modal-responsive">
+                        <img loading="lazy" src="../imagenes/img-anillos/Anillo-zafiro.jpg" class="img-thumb" alt="anillo con piedra zafiro de compromiso"/>
                         <div class="d-flex flex-column align-items-center">
-                            <div class="descripciond-flex p-3">
+                            <div class="descripciond-flex p-3 text-center">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
                             </div>
                             <div class="valord-flex flex-start mt-3 colorBrown">
@@ -554,7 +558,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="modal-footer">
+                    <div class="modal-footer bg-pastel">
                         <button type="button" class="btn rounded-pill" data-bs-dismiss="modal">
                             Salir
                         </button>
@@ -568,13 +572,13 @@
             <!-- Fin Modal -->
             <div class="card m-2 shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#anillo10">            
                 <div class="bgImagen position-absolute w-100 h-100"></div>
-                <img src="../imagenes/img-anillos/Anillos-de-boda.jpg" class="card-img-top" alt="..." />
+                <img loading="lazy" src="../imagenes/img-anillos/Anillos-de-boda.jpg" class="card-img-top" alt="anillo tres piedras azules"/>
                 <span class="verProducto position-absolute top-50 start-50 translate-middle text-uppercase ps-6">
                     Ver Producto
                 </span>
                 <div class="d-flex flex-column justify-content-center h-100">
                     <div class="p-2 d-flex flex-column align-items-center">
-                        <h5 class="card-title colorBrown text-uppercase">Anillo tres piedras</h5>
+                        <h2 class="card-title colorBrown text-uppercase fs-5">Anillo tres piedras</h2>
                         <span class="list-group-item colorBrown text-center border-0">$7000</span>
                     </div>
                     <div class="d-flex p-1 justify-content-center">
@@ -592,16 +596,16 @@
             <div class="modal fade" id="anillo10" tabindex="-1"  aria-hidden="true">
                 <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="modal-header">
-                    <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
+                    <div class="modal-header bg-pastel shadow-sm">
+                    <h2 class="modal-title colorBrown text-uppercase fs-5" id="exampleModalLabel1">
                         Anillo tres piedras 
-                    </h5>
+                    </h2>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body d-flex justify-content-center align-items-center">
-                        <img src="../imagenes/img-anillos/Anillos-de-boda.jpg" class="img-thumb"/>
+                    <div class="modal-body d-flex justify-content-center align-items-center modal-responsive">
+                        <img loading="lazy" src="../imagenes/img-anillos/Anillos-de-boda.jpg" class="img-thumb" alt="anillo tres piedras azules"/>
                         <div class="d-flex flex-column align-items-center">
-                            <div class="descripciond-flex p-3">
+                            <div class="descripciond-flex p-3 text-center">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
                             </div>
                             <div class="valord-flex flex-start mt-3 colorBrown">
@@ -609,7 +613,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="modal-footer">
+                    <div class="modal-footer bg-pastel">
                         <button type="button" class="btn rounded-pill" data-bs-dismiss="modal">
                             Salir
                         </button>
@@ -623,13 +627,13 @@
             <!-- Fin Modal -->
             <div class="card m-2 shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#anillo11">            
                 <div class="bgImagen position-absolute w-100 h-100"></div>
-                <img src="../imagenes/img-anillos/anillo-oro-diamantes.png" class="card-img-top" alt="..." />
+                <img loading="lazy" src="../imagenes/img-anillos/anillo-oro-diamantes.png" class="card-img-top" alt="anillo de oro con brillantes de compromiso"/>
                 <span class="verProducto position-absolute top-50 start-50 translate-middle text-uppercase ps-6">
                     Ver Producto
                 </span>
                 <div class="d-flex flex-column justify-content-center h-100">
                     <div class="p-2 d-flex flex-column align-items-center">
-                        <h5 class="card-title colorBrown text-uppercase">Anillo oro con brillantes</h5>
+                        <h2 class="card-title colorBrown text-uppercase fs-5">Anillo oro con brillantes</h2>
                         <span class="list-group-item colorBrown text-center border-0">$7000</span>
                     </div>
                     <div class="d-flex p-1 justify-content-center">
@@ -647,16 +651,16 @@
             <div class="modal fade" id="anillo11" tabindex="-1"  aria-hidden="true">
                 <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="modal-header">
-                    <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
+                    <div class="modal-header bg-pastel shadow-sm">
+                    <h2 class="modal-title colorBrown text-uppercase fs-5" id="exampleModalLabel1">
                         Anillo oro con brillantes
-                    </h5>
+                    </h2>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body d-flex justify-content-center align-items-center">
-                        <img src="../imagenes/img-anillos/anillo-oro-diamantes.png" class="img-thumb"/>
+                    <div class="modal-body d-flex justify-content-center align-items-center modal-responsive">
+                        <img loading="lazy" src="../imagenes/img-anillos/anillo-oro-diamantes.png" class="img-thumb" alt="anillo de oro con brillantes de compromiso"/>
                         <div class="d-flex flex-column align-items-center">
-                            <div class="descripciond-flex p-3">
+                            <div class="descripciond-flex p-3 text-center">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
                             </div>
                             <div class="valord-flex flex-start mt-3 colorBrown">
@@ -664,7 +668,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="modal-footer">
+                    <div class="modal-footer bg-pastel">
                         <button type="button" class="btn rounded-pill" data-bs-dismiss="modal">
                             Salir
                         </button>
@@ -678,13 +682,13 @@
             <!-- Fin Modal -->
             <div class="card m-2 shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#anillo12">            
                 <div class="bgImagen position-absolute w-100 h-100"></div>
-                <img src="../imagenes/img-anillos/Anillo_plata_925.jpg" class="card-img-top" alt="..." />
+                <img loading="lazy" src="../imagenes/img-anillos/Anillo_plata_925.jpg" class="card-img-top" alt="anillo con brillantes y piedra grande"/>
                 <span class="verProducto position-absolute top-50 start-50 translate-middle text-uppercase ps-6">
                     Ver Producto
                 </span>
                 <div class="d-flex flex-column justify-content-center h-100">
                     <div class="p-2 d-flex flex-column align-items-center">
-                        <h5 class="card-title colorBrown text-uppercase">Anillo diamantes con piedra</h5>
+                        <h2 class="card-title colorBrown text-uppercase fs-5">Anillo diamantes con piedra</h2>
                         <span class="list-group-item colorBrown text-center border-0">$7000</span>
                     </div>
                     <div class="d-flex p-1 justify-content-center">
@@ -702,16 +706,16 @@
             <div class="modal fade" id="anillo12" tabindex="-1"  aria-hidden="true">
                 <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="modal-header">
-                    <h5 class="modal-title colorBrown text-uppercase" id="exampleModalLabel1">
+                    <div class="modal-header bg-pastel shadow-sm">
+                    <h2 class="modal-title colorBrown text-uppercase fs-5" id="exampleModalLabel1">
                         Anillo diamantes con piedra
-                    </h5>
+                    </h2>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body d-flex justify-content-center align-items-center">
-                        <img src="../imagenes/img-anillos/Anillo_plata_925.jpg" class="img-thumb"/>
+                    <div class="modal-body d-flex justify-content-center align-items-center modal-responsive">
+                        <img loading="lazy" src="../imagenes/img-anillos/Anillo_plata_925.jpg" class="img-thumb" alt="anillo con brillantes y piedra grande"/>
                         <div class="d-flex flex-column align-items-center">
-                            <div class="descripciond-flex p-3">
+                            <div class="descripciond-flex p-3 text-center">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam non quibusdam. Accusamus neque, repudiandae ratione aliquam error.
                             </div>
                             <div class="valord-flex flex-start mt-3 colorBrown">
@@ -719,7 +723,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="modal-footer">
+                    <div class="modal-footer bg-pastel">
                         <button type="button" class="btn rounded-pill" data-bs-dismiss="modal">
                             Salir
                         </button>
