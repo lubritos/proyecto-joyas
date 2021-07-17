@@ -88,6 +88,10 @@
       color: #c7a762;
       font-weight: 600; }
 
+.img-map {
+  max-width: 26.5rem;
+  width: 100%; }
+
 #imgDestacados .modal .bg-pastel, #aros .modal .bg-pastel, #anillos .modal .bg-pastel, #relojes .modal .bg-pastel, #collares .modal .bg-pastel {
   background-color: #fdf9ee; }
 
