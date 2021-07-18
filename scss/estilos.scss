@@ -229,11 +229,23 @@
 }
 .title {
     font-family: 'Archivo Narrow', sans-serif;
-    font-size: 4vw;
+    font-size: 6vw;
     top: 15%;
     left: 5%;
     z-index: 9;
 }
+.textDestacado {
+    h2 {
+        font-size: 2em;
+    }
+    p {
+        font-size: 1.5em;
+    }   
+}
+.nombreProducto {
+    font-size: 1.2em;
+}
+
 
 @import"./animaciones";
 @import"./responsive";
