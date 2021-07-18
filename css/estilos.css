@@ -65,7 +65,9 @@
     height: 22rem; }
 
 .card {
-  height: 26.87rem; }
+  max-width: 18rem;
+  width: 100%;
+  max-height: 26.87rem; }
   .card:hover {
     animation-duration: calc(var(--animate-duration) * 0.75);
     backface-visibility: visible !important;
