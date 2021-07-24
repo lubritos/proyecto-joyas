@@ -1,4 +1,4 @@
-@media only screen and (min-width:500px) and (max-width:992px) {
+@media only screen and (min-width:650px) and (max-width:992px) {
     .nav-link.fs-4 {
         font-size: 1rem;
     }   
@@ -14,8 +14,24 @@
     #formContacto {
         margin-top: 3rem;
     }
-}   
-@media only screen and (max-width: 500px) {
+
+}
+
+@media only screen and (min-width:650px) and (max-width:800px) {
+    .textDestacado {
+        h2 {
+            font-size: 1.5em;
+        }
+        p {
+            font-size: 1.2em;
+        }   
+    }
+    .descripcion {
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width: 650px) {
     #formContacto {
         margin-top: 3rem;
     }
@@ -35,13 +51,20 @@
     }
     .textDestacado {
         h2 {
-            font-size: 1.8em;
+            font-size: 1.2em;
         }
         p {
-            font-size: 1.2em;
+            font-size: 1em;
         }   
     }
     .nombreProducto {
         font-size: 1em;
     }
+    .title {
+        display: none;
+    }
+    .descripcion {
+        font-size: 0.8rem;
+    }
 }
+
