@@ -97,12 +97,12 @@
 #imgDestacados .modal .bg-pastel, #aros .modal .bg-pastel, #anillos .modal .bg-pastel, #relojes .modal .bg-pastel, #collares .modal .bg-pastel {
   background-color: #fdf9ee; }
 
-#formRegistro, #formContacto, #formCuenta {
+#registro, #cuenta, #formContacto, #formCuenta {
   background-color: #fdf9ee;
-  max-width: 25rem; }
-  #formRegistro .form-control, #formContacto .form-control, #formCuenta .form-control {
+  width: 25rem; }
+  #registro .form-control, #cuenta .form-control, #formContacto .form-control, #formCuenta .form-control {
     border: 1px solid #c7a762; }
-    #formRegistro .form-control:focus, #formContacto .form-control:focus, #formCuenta .form-control:focus {
+    #registro .form-control:focus, #cuenta .form-control:focus, #formContacto .form-control:focus, #formCuenta .form-control:focus {
       border: 2px solid #c7a762;
       outline: none;
       box-shadow: none; }
@@ -255,4 +255,5 @@
   .title {
     display: none; }
   .descripcion {
-    font-size: 0.8rem; } }
+    font-size: 0.8rem;
+    text-align: center; } }

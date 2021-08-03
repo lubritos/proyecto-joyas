@@ -75,7 +75,7 @@
     }    
 }
 #datosContacto {
-    #maps{
+    #maps {
         max-width: 28rem;
         iframe {
             @extend #maps;
@@ -135,9 +135,9 @@
     @extend #imgDestacados;
 }
 
-#formRegistro {
+#registro {
     @include background(null, $pastel, '', '', '');
-    max-width: 25rem;
+    width: 25rem;
     .form-control {
         @include border(null, 1px, solid, $dorado);       
         &:focus {
@@ -146,6 +146,9 @@
             box-shadow: none;
         }
     }
+}
+#cuenta {
+    @extend #registro;
 }
 
 .form-select {
@@ -165,7 +168,7 @@
     }
 }
 #formContacto {
-    @extend #formRegistro;
+    @extend #registro;
     background: none;
     max-width: 28rem;
     height: 22rem;
@@ -176,7 +179,7 @@
 }
 
 #formCuenta {
-    @extend #formRegistro;
+    @extend #registro;
     max-height: 37.5rem;   
     .form-check-input {
         &:focus {

@@ -20,9 +20,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
 </head>
 <body>
-    <noscript>
-        <h2>Your browser not support Javascript</h2>
-    </noscript>
     <header id="encabezado" class="fixed row w-100 shadow-sm m-0">
         <!--Inicio nav-->
         <nav class="navbar navbar-expand-md">
@@ -52,7 +49,7 @@
                         <a class="nav-link colorBrown fs-4" aria-current="page" href="./relojes.html">Relojes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link colorBrown fs-4" href="./contacto.html">Contacto</a>
+                        <a class="nav-link colorBrown fs-4" href="../index.html#datosContacto">Contacto</a>
                     </li>
                     </ul>
                 </div>
@@ -68,10 +65,7 @@
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton2">
                             <li>
-                                <a class="dropdown-item colorBrown" href="./cuenta.html">Crear cuenta</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item colorBrown" href="./registro.html">Registrarse</a>
+                                <a class="dropdown-item colorBrown" href="./cuenta.html">Iniciar sesión</a>
                             </li>
                         </ul>
                     </div>
@@ -80,69 +74,96 @@
         </nav>
         <!--Fin nav-->
     </header>
-    <section id="cuenta" class="d-flex justify-content-center">
-        <!--Inicio form-->
-        <form action="#" method="POST" id="formCuenta"class="d-flex flex-column text-center mt-3 p-3 w-100">
-            <h1 class="fs-3 text-uppercase fw-bold colorBrown mb-3">Crear cuenta</h1>
-            <div class="mb-3 mt-2 px-2">
-                <div class="col-sm-10">
-                    <input type="name" class="form-control" id="inputNombre3" placeholder="Nombre...">
-                </div>
-            </div>
-            <div class="mb-3 mt-2 px-2">
-                <div class="col-sm-10">
-                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email...">
-                </div>
-            </div>
-            <div class="mb-3 mt-2 px-2">
-                <div class="col-sm-10">
-                    <input type="password" class="form-control" id="inputPassword3" placeholder="Contraseña">
-                </div>
-            </div>
-            <div id="from" class="col-sm-10 mt-2 mb-2 px-2">
-                <select class="form-select" aria-label="Default select example">
-                    <option selected>Argentina</option>
-                    <option value="1">Colombia</option>
-                    <option value="2">Chile</option>
-                    <option value="3">Ecuador</option>
-                    <option value="4">Uruguay</option>
-                    <option value="5">Paraguay</option>
-                    <option value="6">Perú</option>
-                    <option value="7">EEUU</option> 
-                    <option value="8">Bolivia</option>               
-                    <option value="9">Brasil</option>
-                </select>
-            </div>
-            <fieldset class="mb-3 mt-2 px-2 d-flex">
-                <legend class="col-form-label col-2 pt-0">Sexo</legend>
-                <div class="col-sm-10">
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-                        <label class="form-check-label" for="gridRadios1">
-                            Masculino
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                        <label class="form-check-label" for="gridRadios2">
-                            Femenino
-                        </label>
+    <section class="cuentaRegistro d-flex flex-wrap justify-content-evenly p-3 m-3 w-100">
+        <article id="cuenta" class="d-flex h-100">
+            <!--Inicio form-->
+            <form action="#" method="POST" id="formCuenta"class="d-flex flex-column text-center mt-3 p-3 w-100">
+                <h1 class="fs-3 text-uppercase fw-bold colorBrown mb-3">Crear Cuenta</h1>
+                <div class="mb-3 mt-2 px-2">
+                    <div class="col-sm-10">
+                        <input type="name" class="form-control" id="inputNombre3" placeholder="Nombre...">
                     </div>
                 </div>
-            </fieldset>
-            <div class="mb-3 mt-3 d-flex flex-start px-2">
-                <div class="col-sm-10 offset-sm-2 d-flex flex-start">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="gridCheck1">
-                        <label class="form-check-label" for="gridCheck1">
-                            Recibir nuestras promosiones
-                        </label>
+                <div class="mb-3 mt-2 px-2">
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="inputEmail2" placeholder="Email...">
                     </div>
                 </div>
-            </div>            
-            <button type="submit" class="px-2 btn rounded-pill w-25">Enviar</button>
-        </form>
-        <!--Fin form-->
+                <div class="mb-3 mt-2 px-2">
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" id="inputPassword3" placeholder="Contraseña">
+                    </div>
+                </div>
+                <div id="from" class="col-sm-10 mt-2 mb-2 px-2">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Argentina</option>
+                        <option value="1">Colombia</option>
+                        <option value="2">Chile</option>
+                        <option value="3">Ecuador</option>
+                        <option value="4">Uruguay</option>
+                        <option value="5">Paraguay</option>
+                        <option value="6">Perú</option>
+                        <option value="7">EEUU</option> 
+                        <option value="8">Bolivia</option>               
+                        <option value="9">Brasil</option>
+                    </select>
+                </div>
+                <fieldset class="mb-3 mt-2 px-2 d-flex">
+                    <legend class="col-form-label col-2 pt-0">Sexo</legend>
+                    <div class="col-sm-10">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                            <label class="form-check-label" for="gridRadios1">
+                                Masculino
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                            <label class="form-check-label" for="gridRadios2">
+                                Femenino
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="mb-3 mt-3 d-flex flex-start px-2">
+                    <div class="col-sm-10 offset-sm-2 d-flex flex-start">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck1">
+                            <label class="form-check-label" for="gridCheck1">
+                                Recibir nuestras promosiones
+                            </label>
+                        </div>
+                    </div>
+                </div>            
+                <button type="submit" class="px-2 btn rounded-pill w-25">Enviar</button>
+            </form>
+            <!--Fin form-->
+        </article>
+        <article id="registro" class= "d-flex h-100">
+            <!--Inicio form-->
+            <form action="#" method="POST" id="formRegistro" class="d-flex flex-column text-center mt-3 p-3 w-100">
+                <h2 class="fs-3 text-uppercase fw-bold colorBrown">Registro</h2>
+                <div class="mt-3 mb-3 justify-content-center">
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="inputEmail3"
+                        placeholder="Email...">
+                    </div>
+                </div>
+                <div class="mt-3 mb-3 justify-content-center">
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" id="inputPassword"
+                        placeholder="Contraseña...">
+                    </div>
+                </div>
+                <div class="mt-3">
+                    <div class="d-flex justify-content-between">
+                        <button class="btn rounded-pill w-50" type="submit">Guardar</button>
+                        <button class="btn rounded-pill w-50" type="reset">Borrar</button>
+                    </div>
+                </div>
+            </form>
+            <!--Fin form-->
+        </article>
     </section>
     <footer id="footer" class="mt-5 d-flex flex-column text-center p-4 align-items-around w-100 h-100">        
         <!--Inicio pie de página-->
