@@ -25,37 +25,61 @@
     color: #ffffff; }
 
 .banner-medio {
-  max-width: 75rem; }
+  max-width: 1200px; }
   .banner-medio .item-1 {
-    max-width: 35rem;
-    max-height: 31.87;
-    min-height: 20rem; }
-    .banner-medio .item-1:hover {
-      transform: scale(1.1, 1.1); }
-    .banner-medio .item-1 .bg-banner-4 {
+    overflow: hidden;
+    max-width: 36rem;
+    max-height: 33.93rem;
+    width: 100%;
+    height: 100%; }
+    .banner-medio .item-1 .bg-item-1 {
       background-image: url("../imagenes/banner-4.jpg");
       background-position: center;
       background-repeat: no-repeat;
-      background-size: 120%;
+      background-size: cover;
+      max-width: 36rem;
       width: 100%;
-      height: 100%;
-      max-height: 31.87rem; }
+      height: 33.91rem;
+      transform: scale(1.1);
+      transition: all 0.5s ease-out; }
+      .banner-medio .item-1 .bg-item-1:hover {
+        transform: scale(1); }
   .banner-medio .contenedor-items-2-3 {
-    max-width: 35rem;
-    max-height: 31.87rem; }
-    .banner-medio .contenedor-items-2-3 .item-2, .banner-medio .contenedor-items-2-3 .item-2 .img-item-2,
-    .banner-medio .contenedor-items-2-3 .item-2 .img-item-3,
-    .banner-medio .contenedor-items-2-3 .item-3 .img-item-2,
-    .banner-medio .contenedor-items-2-3 .item-3 .img-item-3,
+    max-width: 36rem;
+    width: 100%; }
+    .banner-medio .contenedor-items-2-3 .item-2,
     .banner-medio .contenedor-items-2-3 .item-3 {
-      max-width: 35rem;
-      max-height: 15rem; }
-      .banner-medio .contenedor-items-2-3 .item-2:hover, .banner-medio .contenedor-items-2-3 .item-2 .img-item-2:hover,
-      .banner-medio .contenedor-items-2-3 .item-2 .img-item-3:hover,
-      .banner-medio .contenedor-items-2-3 .item-3 .img-item-2:hover,
-      .banner-medio .contenedor-items-2-3 .item-3 .img-item-3:hover,
-      .banner-medio .contenedor-items-2-3 .item-3:hover {
-        transform: scale(1.1, 1.1); }
+      overflow: hidden;
+      max-height: 16.5rem;
+      height: 100%; }
+      .banner-medio .contenedor-items-2-3 .item-2 .bg-item-2,
+      .banner-medio .contenedor-items-2-3 .item-3 .bg-item-2 {
+        background-image: url("../imagenes/banner-5.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-width: 36rem;
+        width: 100%;
+        height: 16.5rem;
+        transform: scale(1.1);
+        transition: all 0.5s ease-out; }
+        .banner-medio .contenedor-items-2-3 .item-2 .bg-item-2:hover,
+        .banner-medio .contenedor-items-2-3 .item-3 .bg-item-2:hover {
+          transform: scale(1); }
+      .banner-medio .contenedor-items-2-3 .item-2 .bg-item-3,
+      .banner-medio .contenedor-items-2-3 .item-3 .bg-item-3 {
+        background-image: url("../imagenes/banner-6.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-width: 36rem;
+        width: 100%;
+        height: 16.5rem;
+        transform: scale(1.1);
+        transition: all 0.5s ease-out; }
+        .banner-medio .contenedor-items-2-3 .item-2 .bg-item-3:hover,
+        .banner-medio .contenedor-items-2-3 .item-3 .bg-item-3:hover {
+          transform: scale(1); }
 
 #datosContacto #maps, #datosContacto #maps iframe {
   max-width: 28rem; }
@@ -231,7 +255,10 @@
   .textDestacado p {
     font-size: 1.2em; }
   .descripcion {
-    font-size: 0.9rem; } }
+    font-size: 0.9rem; }
+  .item-1,
+  .bg-item-1 {
+    height: 16.5rem !important; } }
 
 @media only screen and (max-width: 650px) {
   #formContacto {
@@ -256,4 +283,7 @@
     display: none; }
   .descripcion {
     font-size: 0.8rem;
-    text-align: center; } }
+    text-align: center; }
+  .item-1,
+  .bg-item-1 {
+    height: 16.5rem !important; } }

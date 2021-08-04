@@ -29,6 +29,10 @@
     .descripcion {
         font-size: 0.9rem;
     }
+    .item-1,
+    .bg-item-1 {
+        height: 16.5rem !important;
+    }
 }
 
 @media only screen and (max-width: 650px) {
@@ -66,6 +70,10 @@
     .descripcion {
         font-size: 0.8rem;
         text-align: center;
+    }
+    .item-1,
+    .bg-item-1 {
+        height: 16.5rem !important;
     }
 }
 
